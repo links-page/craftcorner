@@ -4,13 +4,14 @@
 const collectionsData = [
     {
         id: 1,
+        code: 'ATM9',
         title: 'All the Mods 9',
         description: 'Полный пак модов для Minecraft 1.20.1 с более чем 400 модами',
         version: '1.20.1',
         type: 'kitchen',
         size: '2.1 GB',
         modCount: 450,
-        image: 'https://via.placeholder.com/400x200/2563eb/ffffff?text=ATM9',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkFUTTk8L3RleHQ+PC9zdmc+',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/atm9',
         mods: ['Industrial Craft 2', 'Thaumcraft', 'Applied Energistics 2', 'Botania', 'Tinkers Construct'],
@@ -25,13 +26,14 @@ const collectionsData = [
     },
     {
         id: 2,
+        code: 'FTBSKIES',
         title: 'FTB Skies',
         description: 'Уникальная сборка с системой островов и прогрессии',
         version: '1.19.2',
         type: 'adventure',
         size: '1.8 GB',
         modCount: 380,
-        image: 'https://via.placeholder.com/400x200/3b82f6/ffffff?text=FTB+Skies',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkZUQiBTa2llczwvdGV4dD48L3N2Zz4=',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/ftbskies',
         mods: ['Create', 'Mekanism', 'Thermal Series', 'Mystical Agriculture', 'Refined Storage'],
@@ -46,13 +48,14 @@ const collectionsData = [
     },
     {
         id: 3,
+        code: 'CAB',
         title: 'Create: Above and Beyond',
         description: 'Сборка, полностью основанная на модах Create и автоматизации',
         version: '1.18.2',
         type: 'tech',
         size: '1.5 GB',
         modCount: 320,
-        image: 'https://via.placeholder.com/400x200/1d4ed8/ffffff?text=Create+CAB',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkNyZWF0ZSBDQUI8L3RleHQ+PC9zdmc+',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/createcab',
         mods: ['Create', 'Applied Energistics 2', 'Refined Storage', 'Thermal Series', 'Mekanism'],
@@ -67,13 +70,14 @@ const collectionsData = [
     },
     {
         id: 4,
+        code: 'ENIGMATICA9',
         title: 'Enigmatica 9',
         description: 'Сбалансированная сборка с квестами и прогрессией',
         version: '1.20.1',
         type: 'kitchen',
         size: '2.3 GB',
         modCount: 480,
-        image: 'https://via.placeholder.com/400x200/2563eb/ffffff?text=Enigmatica+9',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkVuaWdtYXRpY2EgOTwvdGV4dD48L3N2Zz4=',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/enigmatica9',
         mods: ['Industrial Craft 2', 'Thaumcraft', 'Botania', 'Mystical Agriculture', 'Applied Energistics 2'],
@@ -88,13 +92,14 @@ const collectionsData = [
     },
     {
         id: 5,
+        code: 'STONEBLOCK3',
         title: 'StoneBlock 3',
         description: 'Сборка в стиле SkyBlock, но под землей',
         version: '1.18.2',
         type: 'adventure',
         size: '1.7 GB',
         modCount: 350,
-        image: 'https://via.placeholder.com/400x200/3b82f6/ffffff?text=StoneBlock+3',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlN0b25lQmxvY2sgMzwvdGV4dD48L3N2Zz4=',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/stoneblock3',
         mods: ['Mystical Agriculture', 'Applied Energistics 2', 'Thermal Series', 'Mekanism', 'Refined Storage'],
@@ -109,13 +114,14 @@ const collectionsData = [
     },
     {
         id: 6,
+        code: 'VALHELSIA5',
         title: 'Valhelsia 5',
         description: 'Современная сборка с акцентом на строительство и декор',
         version: '1.20.1',
         type: 'building',
         size: '1.9 GB',
         modCount: 420,
-        image: 'https://via.placeholder.com/400x200/1d4ed8/ffffff?text=Valhelsia+5',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlZhbGhlbHNpYSA1PC90ZXh0Pjwvc3ZnPg==',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/valhelsia5',
         mods: ['Create', 'Chisel', 'Decocraft', 'Bibliocraft', 'Architects Palette'],
@@ -131,10 +137,10 @@ const collectionsData = [
 ];
 
 // Current page state
-let currentPage = 1;
-let itemsPerPage = 6;
+let collectionsCurrentPage = 1;
+let collectionsItemsPerPage = 6;
 let filteredCollections = [...collectionsData];
-let currentFilters = {
+let collectionsCurrentFilters = {
     search: '',
     version: '',
     type: '',
@@ -153,7 +159,6 @@ function initializeCollectionsPage() {
     const searchInput = document.getElementById('collectionSearchInput');
     const versionFilter = document.getElementById('versionFilter');
     const typeFilter = document.getElementById('typeFilter');
-    const sortFilter = document.getElementById('sortFilter');
     const loadMoreBtn = document.getElementById('loadMoreBtn');
 
     if (searchInput) {
@@ -168,10 +173,6 @@ function initializeCollectionsPage() {
         typeFilter.addEventListener('change', handleFilterChange);
     }
 
-    if (sortFilter) {
-        sortFilter.addEventListener('change', handleFilterChange);
-    }
-
     if (loadMoreBtn) {
         loadMoreBtn.addEventListener('click', loadMoreCollections);
     }
@@ -179,71 +180,51 @@ function initializeCollectionsPage() {
 
 function initializeFilters() {
     // Set default values
-    currentFilters = {
+    collectionsCurrentFilters = {
         search: '',
         version: '',
-        type: '',
-        sort: 'popular'
+        type: ''
     };
 }
 
 function handleCollectionSearch(e) {
-    currentFilters.search = e.target.value.toLowerCase().trim();
+    collectionsCurrentFilters.search = e.target.value.toLowerCase().trim();
     applyFilters();
 }
 
 function handleFilterChange(e) {
     const filterType = e.target.id.replace('Filter', '');
-    currentFilters[filterType] = e.target.value;
+    collectionsCurrentFilters[filterType] = e.target.value;
     applyFilters();
 }
 
 function applyFilters() {
     filteredCollections = collectionsData.filter(collection => {
         // Search filter
-        if (currentFilters.search) {
-            const searchMatch = collection.title.toLowerCase().includes(currentFilters.search) ||
-                               collection.description.toLowerCase().includes(currentFilters.search) ||
-                               collection.mods.some(mod => mod.toLowerCase().includes(currentFilters.search));
+        if (collectionsCurrentFilters.search) {
+            const searchMatch = collection.title.toLowerCase().includes(collectionsCurrentFilters.search) ||
+                               collection.description.toLowerCase().includes(collectionsCurrentFilters.search) ||
+                               collection.code.toLowerCase().includes(collectionsCurrentFilters.search) ||
+                               collection.mods.some(mod => mod.toLowerCase().includes(collectionsCurrentFilters.search));
             if (!searchMatch) return false;
         }
 
         // Version filter
-        if (currentFilters.version && collection.version !== currentFilters.version) {
+        if (collectionsCurrentFilters.version && collection.version !== collectionsCurrentFilters.version) {
             return false;
         }
 
         // Type filter
-        if (currentFilters.type && collection.type !== currentFilters.type) {
+        if (collectionsCurrentFilters.type && collection.type !== collectionsCurrentFilters.type) {
             return false;
         }
 
         return true;
     });
 
-    // Sort collections
-    sortCollections();
-
     // Reset to first page
-    currentPage = 1;
+    collectionsCurrentPage = 1;
     loadCollections();
-}
-
-function sortCollections() {
-    switch (currentFilters.sort) {
-        case 'popular':
-            filteredCollections.sort((a, b) => b.isFeatured - a.isFeatured || b.isNew - a.isNew);
-            break;
-        case 'newest':
-            filteredCollections.sort((a, b) => b.isNew - a.isNew);
-            break;
-        case 'name':
-            filteredCollections.sort((a, b) => a.title.localeCompare(b.title));
-            break;
-        case 'downloads':
-            filteredCollections.sort((a, b) => b.isFeatured - a.isFeatured || b.isNew - a.isNew);
-            break;
-    }
 }
 
 function loadCollections() {
@@ -254,8 +235,8 @@ function loadCollections() {
     collectionsGrid.innerHTML = '';
 
     // Calculate pagination
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
+    const startIndex = (collectionsCurrentPage - 1) * collectionsItemsPerPage;
+    const endIndex = startIndex + collectionsItemsPerPage;
     const collectionsToShow = filteredCollections.slice(startIndex, endIndex);
 
     if (collectionsToShow.length === 0) {
@@ -283,7 +264,7 @@ function createCollectionCard(collection) {
 
     card.innerHTML = `
         ${collection.isNew ? '<div class="new-badge">Новый</div>' : ''}
-        ${collection.isFeatured ? '<div class="featured-badge">Рекомендуемый</div>' : ''}
+        <div class="collection-code">${collection.code}</div>
         <div class="collection-size">${collection.size}</div>
         <div class="collection-mod-count">${collection.modCount} модов</div>
 
@@ -327,9 +308,6 @@ function createCollectionCard(collection) {
                 <button class="info-btn" onclick="showCollectionInfo(${collection.id})">
                     <i class="fas fa-info"></i>
                 </button>
-                <button class="favorite-btn" data-favorite="collection_${collection.id}" onclick="toggleFavorite(${collection.id}, 'collection')">
-                    <i class="fas fa-heart"></i>
-                </button>
             </div>
         </div>
     `;
@@ -362,13 +340,13 @@ function showEmptyState() {
 }
 
 function loadMoreCollections() {
-    currentPage++;
+    collectionsCurrentPage++;
     const collectionsGrid = document.getElementById('collectionsGrid');
     if (!collectionsGrid) return;
 
     // Calculate pagination
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
+    const startIndex = (collectionsCurrentPage - 1) * collectionsItemsPerPage;
+    const endIndex = startIndex + collectionsItemsPerPage;
     const collectionsToShow = filteredCollections.slice(startIndex, endIndex);
 
     // Add new collections with animation
@@ -387,9 +365,9 @@ function updateLoadMoreButton() {
     const loadMoreBtn = document.getElementById('loadMoreBtn');
     if (!loadMoreBtn) return;
 
-    const totalPages = Math.ceil(filteredCollections.length / itemsPerPage);
+    const totalPages = Math.ceil(filteredCollections.length / collectionsItemsPerPage);
 
-    if (currentPage >= totalPages) {
+    if (collectionsCurrentPage >= totalPages) {
         loadMoreBtn.style.display = 'none';
     } else {
         loadMoreBtn.style.display = 'inline-flex';
@@ -407,39 +385,95 @@ function showCollectionInfo(collectionId) {
     modal.innerHTML = `
         <div class="info-content">
             <div class="info-header">
-                <h3 class="info-title">${collection.title}</h3>
+                <div class="info-header-content">
+                    <div class="info-title-section">
+                        <h3 class="info-title">${collection.title}</h3>
+                        <div class="info-subtitle">${collection.code} • ${collection.modCount} модов</div>
+                    </div>
+                    <div class="info-badges">
+                        ${collection.isNew ? '<span class="info-badge new">Новый</span>' : ''}
+                        ${collection.isFeatured ? '<span class="info-badge featured">Рекомендуемый</span>' : ''}
+                    </div>
+                </div>
                 <button class="info-close">&times;</button>
             </div>
             <div class="info-body">
+                <div class="info-hero">
+                    <div class="info-image">
+                        <img src="${collection.image}" alt="${collection.title}">
+                    </div>
+                    <div class="info-stats">
+                        <div class="stat-item">
+                            <div class="stat-label">Версия</div>
+                            <div class="stat-value">${collection.version}</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Размер</div>
+                            <div class="stat-value">${collection.size}</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Тип</div>
+                            <div class="stat-value">${getTypeName(collection.type)}</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Модов</div>
+                            <div class="stat-value">${collection.modCount}</div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="info-description">
                     <h4>Описание</h4>
                     <p>${collection.description}</p>
                 </div>
 
                 <div class="info-mods">
-                    <h3>Моды в сборке (${collection.modCount})</h3>
-                    <div class="mod-grid">
+                    <h4>Основные моды в сборке</h4>
+                    <div class="mods-grid">
                         ${collection.mods.map(mod => `
                             <div class="mod-item-detailed">
-                                <h4>${mod}</h4>
-                                <p>Включен в сборку</p>
+                                <div class="mod-icon">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                </div>
+                                <div class="mod-info">
+                                    <div class="mod-name">${mod}</div>
+                                    <div class="mod-status">Включен в сборку</div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="info-requirements">
+                    <h4>Системные требования</h4>
+                    <div class="requirements-grid">
+                        ${collection.requirements.map(req => `
+                            <div class="requirement-item-detailed">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="requirement-text">${req}</div>
                             </div>
                         `).join('')}
                     </div>
                 </div>
 
                 <div class="info-installation">
-                    <h3>Инструкция по установке</h3>
-                    ${collection.installation.map((step, index) => `
-                        <div class="installation-step">
-                            <div class="step-number">${index + 1}</div>
-                            <div class="step-text">${step}</div>
-                        </div>
-                    `).join('')}
+                    <h4>Инструкция по установке</h4>
+                    <div class="installation-steps">
+                        ${collection.installation.map((step, index) => `
+                            <div class="installation-step">
+                                <div class="step-number">${index + 1}</div>
+                                <div class="step-content">
+                                    <div class="step-text">${step}</div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
                 </div>
 
                 <div class="info-actions">
-                    <button class="download-btn" onclick="handleDownload(${collection.id}, 'collection', '${collection.downloadUrl}', '${collection.affiliateUrl}')">
+                    <button class="download-btn primary" onclick="handleDownload(${collection.id}, 'collection', '${collection.downloadUrl}', '${collection.affiliateUrl}')">
                         <i class="fas fa-download"></i>
                         Скачать сборку
                     </button>
@@ -479,3 +513,4 @@ function debounce(func, wait) {
 
 // Export functions for global use
 window.showCollectionInfo = showCollectionInfo;
+window.handleDownload = handleDownload;

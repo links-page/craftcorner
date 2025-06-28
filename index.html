@@ -6,6 +6,9 @@
     <title>MineSite - Моды, Ресурс паки и Сборки</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/themes.css">
+    <link rel="stylesheet" href="styles/mods.css">
+    <link rel="stylesheet" href="styles/resourcepacks.css">
+    <link rel="stylesheet" href="styles/collections.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -63,69 +66,28 @@
                     <i class="fas fa-search"></i>
                     <input type="text" id="searchInput" placeholder="Поиск модов, ресурс паков, сборок...">
                 </div>
-
                 <div class="search-stats">
                     <div class="stat-item">
                         <i class="fas fa-download"></i>
-                        <span class="stat-number" id="totalDownloads">479</span>
+                        <span class="stat-number" id="totalDownloads">15.5K</span>
                         <span class="stat-label">Всего скачиваний</span>
                     </div>
                     <div class="stat-item">
                         <i class="fas fa-calendar-day"></i>
-                        <span class="stat-number" id="todayDownloads">23</span>
+                        <span class="stat-number" id="todayDownloads">234</span>
                         <span class="stat-label">Сегодня</span>
                     </div>
-                    <div class="stat-item">
-                        <i class="fas fa-users"></i>
-                        <span class="stat-number">1,247</span>
-                        <span class="stat-label">Пользователей</span>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Section -->
-    <section class="featured-section">
+    <!-- Search Results Section -->
+    <section class="search-results-section" id="searchResultsSection" style="display: none;">
         <div class="container">
-            <h2 class="section-title">Популярные моды</h2>
-            <div class="mods-grid" id="featuredMods">
-                <!-- Моды будут загружены через JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Categories Section -->
-    <section class="categories-section">
-        <div class="container">
-            <h2 class="section-title">Категории</h2>
-            <div class="categories-grid">
-                <div class="category-card" onclick="window.location.href='mods.html'">
-                    <div class="category-icon">
-                        <i class="fas fa-puzzle-piece"></i>
-                    </div>
-                    <h3>Моды</h3>
-                    <p>Добавляйте новые возможности в игру</p>
-                    <span class="category-count">156 модов</span>
-                </div>
-
-                <div class="category-card" onclick="window.location.href='resourcepacks.html'">
-                    <div class="category-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3>Ресурс паки</h3>
-                    <p>Изменяйте внешний вид блоков и предметов</p>
-                    <span class="category-count">89 паков</span>
-                </div>
-
-                <div class="category-card" onclick="window.location.href='collections.html'">
-                    <div class="category-icon">
-                        <i class="fas fa-boxes"></i>
-                    </div>
-                    <h3>Сборки</h3>
-                    <p>Готовые наборы модов для разных версий</p>
-                    <span class="category-count">34 сборки</span>
-                </div>
+            <h2 class="section-title">Результаты поиска</h2>
+            <div class="search-results-grid" id="searchResultsGrid">
+                <!-- Результаты поиска будут загружены через JavaScript -->
             </div>
         </div>
     </section>
@@ -158,7 +120,10 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/search.js"></script>
+    <script src="js/mods.js"></script>
+    <script src="js/resourcepacks.js"></script>
+    <script src="js/collections.js"></script>
+    <script src="js/global-search.js"></script>
     <script src="js/themes.js"></script>
 </body>
 </html>

@@ -4,11 +4,12 @@
 const modsData = [
     {
         id: 1,
+        code: 'IC2',
         title: 'Industrial Craft 2',
         description: 'Добавляет множество технологических блоков и предметов для автоматизации производства',
         version: '1.20.1',
         category: 'technology',
-        image: 'https://via.placeholder.com/300x200/2563eb/ffffff?text=IC2',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPklDMjwvdGV4dD48L3N2Zz4=',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/ic2',
         tags: ['Технологии', 'Автоматизация', 'Энергия'],
@@ -17,11 +18,12 @@ const modsData = [
     },
     {
         id: 2,
+        code: 'THAUM',
         title: 'Thaumcraft',
         description: 'Магический мод с системой заклинаний, исследования и магических устройств',
         version: '1.19.2',
         category: 'magic',
-        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Thaumcraft',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlRoYXVtY3JhZnQ8L3RleHQ+PC9zdmc+',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/thaumcraft',
         tags: ['Магия', 'Заклинания', 'Исследования'],
@@ -30,11 +32,12 @@ const modsData = [
     },
     {
         id: 3,
+        code: 'BOP',
         title: 'Biomes O\' Plenty',
         description: 'Добавляет множество новых биомов, растений и природных объектов',
         version: '1.20.1',
         category: 'adventure',
-        image: 'https://via.placeholder.com/300x200/1d4ed8/ffffff?text=BOP',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkJPUDwvdGV4dD48L3N2Zz4=',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/bop',
         tags: ['Природа', 'Биомы', 'Растения'],
@@ -43,11 +46,12 @@ const modsData = [
     },
     {
         id: 4,
+        code: 'AE2',
         title: 'Applied Energistics 2',
         description: 'Система цифрового хранения и автоматизации с использованием энергии',
         version: '1.20.1',
         category: 'technology',
-        image: 'https://via.placeholder.com/300x200/2563eb/ffffff?text=AE2',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkFFMjwvdGV4dD48L3N2Zz4=',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/ae2',
         tags: ['Технологии', 'Хранение', 'Автоматизация'],
@@ -56,11 +60,12 @@ const modsData = [
     },
     {
         id: 5,
+        code: 'BOTANIA',
         title: 'Botania',
         description: 'Магический мод, основанный на природной магии и цветах',
         version: '1.19.2',
         category: 'magic',
-        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Botania',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkJvdGFuaWE8L3RleHQ+PC9zdmc+',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/botania',
         tags: ['Магия', 'Природа', 'Цветы'],
@@ -69,11 +74,12 @@ const modsData = [
     },
     {
         id: 6,
+        code: 'CHISEL',
         title: 'Chisel',
         description: 'Добавляет множество декоративных блоков и инструменты для их создания',
         version: '1.20.1',
         category: 'decoration',
-        image: 'https://via.placeholder.com/300x200/1d4ed8/ffffff?text=Chisel',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkNoaXNlbDwvdGV4dD48L3N2Zz4=',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/chisel',
         tags: ['Декор', 'Блоки', 'Строительство'],
@@ -82,11 +88,12 @@ const modsData = [
     },
     {
         id: 7,
+        code: 'JOURNEYMAP',
         title: 'JourneyMap',
         description: 'Карта мира в реальном времени с множеством полезных функций',
         version: '1.20.1',
         category: 'utility',
-        image: 'https://via.placeholder.com/300x200/2563eb/ffffff?text=JourneyMap',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkpvdXJuZXlNYXA8L3RleHQ+PC9zdmc+',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/journeymap',
         tags: ['Карта', 'Навигация', 'Утилиты'],
@@ -95,11 +102,12 @@ const modsData = [
     },
     {
         id: 8,
+        code: 'TINKERS',
         title: 'Tinkers Construct',
         description: 'Система создания инструментов с множеством материалов и улучшений',
         version: '1.19.2',
         category: 'technology',
-        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Tinkers',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlRpbmtlcnM8L3RleHQ+PC9zdmc+',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/tinkers',
         tags: ['Инструменты', 'Крафтинг', 'Материалы'],
@@ -109,10 +117,10 @@ const modsData = [
 ];
 
 // Current page state
-let currentPage = 1;
-let itemsPerPage = 8;
+let modsCurrentPage = 1;
+let modsItemsPerPage = 8;
 let filteredMods = [...modsData];
-let currentFilters = {
+let modsCurrentFilters = {
     search: '',
     version: '',
     category: '',
@@ -131,7 +139,6 @@ function initializeModsPage() {
     const searchInput = document.getElementById('modSearchInput');
     const versionFilter = document.getElementById('versionFilter');
     const categoryFilter = document.getElementById('categoryFilter');
-    const sortFilter = document.getElementById('sortFilter');
     const loadMoreBtn = document.getElementById('loadMoreBtn');
 
     if (searchInput) {
@@ -146,10 +153,6 @@ function initializeModsPage() {
         categoryFilter.addEventListener('change', handleFilterChange);
     }
 
-    if (sortFilter) {
-        sortFilter.addEventListener('change', handleFilterChange);
-    }
-
     if (loadMoreBtn) {
         loadMoreBtn.addEventListener('click', loadMoreMods);
     }
@@ -157,74 +160,51 @@ function initializeModsPage() {
 
 function initializeFilters() {
     // Set default values
-    currentFilters = {
+    modsCurrentFilters = {
         search: '',
         version: '',
-        category: '',
-        sort: 'popular'
+        category: ''
     };
 }
 
 function handleModSearch(e) {
-    currentFilters.search = e.target.value.toLowerCase().trim();
+    modsCurrentFilters.search = e.target.value.toLowerCase().trim();
     applyFilters();
 }
 
 function handleFilterChange(e) {
     const filterType = e.target.id.replace('Filter', '');
-    currentFilters[filterType] = e.target.value;
+    modsCurrentFilters[filterType] = e.target.value;
     applyFilters();
 }
 
 function applyFilters() {
     filteredMods = modsData.filter(mod => {
         // Search filter
-        if (currentFilters.search) {
-            const searchMatch = mod.title.toLowerCase().includes(currentFilters.search) ||
-                               mod.description.toLowerCase().includes(currentFilters.search) ||
-                               mod.tags.some(tag => tag.toLowerCase().includes(currentFilters.search));
+        if (modsCurrentFilters.search) {
+            const searchMatch = mod.title.toLowerCase().includes(modsCurrentFilters.search) ||
+                               mod.description.toLowerCase().includes(modsCurrentFilters.search) ||
+                               mod.code.toLowerCase().includes(modsCurrentFilters.search) ||
+                               mod.tags.some(tag => tag.toLowerCase().includes(modsCurrentFilters.search));
             if (!searchMatch) return false;
         }
 
         // Version filter
-        if (currentFilters.version && mod.version !== currentFilters.version) {
+        if (modsCurrentFilters.version && mod.version !== modsCurrentFilters.version) {
             return false;
         }
 
         // Category filter
-        if (currentFilters.category && mod.category !== currentFilters.category) {
+        if (modsCurrentFilters.category && mod.category !== modsCurrentFilters.category) {
             return false;
         }
 
         return true;
     });
 
-    // Sort mods
-    sortMods();
-
     // Reset to first page
-    currentPage = 1;
+    modsCurrentPage = 1;
     loadMods();
-}
-
-function sortMods() {
-    switch (currentFilters.sort) {
-        case 'popular':
-            filteredMods.sort((a, b) => b.isNew - a.isNew);
-            break;
-        case 'newest':
-            filteredMods.sort((a, b) => b.isNew - a.isNew);
-            break;
-        case 'name':
-            filteredMods.sort((a, b) => a.title.localeCompare(b.title));
-            break;
-        case 'downloads':
-            filteredMods.sort((a, b) => b.isNew - a.isNew);
-            break;
-        case 'rating':
-            filteredMods.sort((a, b) => b.isNew - a.isNew);
-            break;
-    }
 }
 
 function loadMods() {
@@ -235,8 +215,8 @@ function loadMods() {
     modsGrid.innerHTML = '';
 
     // Calculate pagination
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
+    const startIndex = (modsCurrentPage - 1) * modsItemsPerPage;
+    const endIndex = startIndex + modsItemsPerPage;
     const modsToShow = filteredMods.slice(startIndex, endIndex);
 
     if (modsToShow.length === 0) {
@@ -263,6 +243,7 @@ function createModCard(mod) {
 
     card.innerHTML = `
         ${mod.isNew ? '<div class="new-badge">Новый</div>' : ''}
+        <div class="mod-code">${mod.code}</div>
 
         <div class="mod-image">
             <img src="${mod.image}" alt="${mod.title}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -296,8 +277,8 @@ function createModCard(mod) {
                 <i class="fas fa-download"></i>
                 Скачать
             </button>
-            <button class="favorite-btn" data-favorite="mod_${mod.id}" onclick="toggleFavorite(${mod.id}, 'mod')">
-                <i class="fas fa-heart"></i>
+            <button class="info-btn" onclick="showModInfo(${mod.id})">
+                <i class="fas fa-info"></i>
             </button>
         </div>
     `;
@@ -330,13 +311,13 @@ function showEmptyState() {
 }
 
 function loadMoreMods() {
-    currentPage++;
+    modsCurrentPage++;
     const modsGrid = document.getElementById('modsGrid');
     if (!modsGrid) return;
 
     // Calculate pagination
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
+    const startIndex = (modsCurrentPage - 1) * modsItemsPerPage;
+    const endIndex = startIndex + modsItemsPerPage;
     const modsToShow = filteredMods.slice(startIndex, endIndex);
 
     // Add new mods with animation
@@ -355,9 +336,9 @@ function updateLoadMoreButton() {
     const loadMoreBtn = document.getElementById('loadMoreBtn');
     if (!loadMoreBtn) return;
 
-    const totalPages = Math.ceil(filteredMods.length / itemsPerPage);
+    const totalPages = Math.ceil(filteredMods.length / modsItemsPerPage);
 
-    if (currentPage >= totalPages) {
+    if (modsCurrentPage >= totalPages) {
         loadMoreBtn.style.display = 'none';
     } else {
         loadMoreBtn.style.display = 'inline-flex';
@@ -477,6 +458,61 @@ function showModPreview(modId) {
     });
 }
 
+function showModInfo(modId) {
+    const mod = modsData.find(m => m.id === modId);
+    if (!mod) return;
+
+    // Create modal
+    const modal = document.createElement('div');
+    modal.className = 'info-modal active';
+    modal.innerHTML = `
+        <div class="info-content">
+            <div class="info-header">
+                <h3 class="info-title">${mod.title}</h3>
+                <button class="info-close">&times;</button>
+            </div>
+            <div class="info-body">
+                <div class="info-description">
+                    <h4>Описание</h4>
+                    <p>${mod.description}</p>
+                </div>
+                <div class="info-meta">
+                    <div><b>Версия:</b> ${mod.version}</div>
+                    <div><b>Категория:</b> ${getCategoryName(mod.category)}</div>
+                    <div><b>Код:</b> ${mod.code}</div>
+                </div>
+                <div class="info-tags">
+                    <h4>Теги</h4>
+                    <div>${mod.tags.map(tag => `<span class='mod-tag'>${tag}</span>`).join(' ')}</div>
+                </div>
+                <div class="info-requirements">
+                    <h4>Требования</h4>
+                    <ul>${mod.requirements.map(req => `<li>${req}</li>`).join('')}</ul>
+                </div>
+                <div class="info-actions">
+                    <button class="download-btn" onclick="handleDownload(${mod.id}, 'mod', '${mod.downloadUrl}', '${mod.affiliateUrl}')">
+                        <i class="fas fa-download"></i>
+                        Скачать мод
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+    // Close modal functionality
+    modal.querySelector('.info-close').addEventListener('click', () => {
+        modal.classList.remove('active');
+        setTimeout(() => modal.remove(), 300);
+    });
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            setTimeout(() => modal.remove(), 300);
+        }
+    });
+}
+
 // Export functions for global use
 window.handleModDownload = handleModDownload;
 window.showModPreview = showModPreview;
+window.showModInfo = showModInfo;

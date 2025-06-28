@@ -4,13 +4,14 @@
 const packsData = [
     {
         id: 1,
+        code: 'FAITHFUL32',
         title: 'Faithful 32x',
         description: 'Классический ресурс пак с улучшенным разрешением 32x32',
         version: '1.20.1',
         style: 'realistic',
         size: '45 MB',
         resolution: '32x',
-        image: 'https://via.placeholder.com/300x200/2563eb/ffffff?text=Faithful',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkZhaXRoZnVsPC90ZXh0Pjwvc3ZnPg==',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/faithful',
         tags: ['Классический', '32x', 'Ваннила'],
@@ -19,13 +20,14 @@ const packsData = [
     },
     {
         id: 2,
+        code: 'SPHAX',
         title: 'Sphax PureBDCraft',
         description: 'Мультяшный стиль с яркими цветами и детализированными текстурами',
         version: '1.20.1',
         style: 'cartoon',
         size: '128 MB',
         resolution: '128x',
-        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Sphax',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlNwaGF4PC90ZXh0Pjwvc3ZnPg==',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/sphax',
         tags: ['Мультяшный', '128x', 'Яркий'],
@@ -34,28 +36,30 @@ const packsData = [
     },
     {
         id: 3,
+        code: 'REALISTICO',
         title: 'Realistico',
         description: 'Фотореалистичные текстуры для максимальной реалистичности',
         version: '1.19.2',
         style: 'realistic',
         size: '256 MB',
         resolution: '256x',
-        image: 'https://via.placeholder.com/300x200/1d4ed8/ffffff?text=Realistico',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlJlYWxpc3RpY288L3RleHQ+PC9zdmc+',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/realistico',
-        tags: ['Реалистичный', '256x', 'PBR'],
+        tags: ['Реалистичный', '256x'],
         features: ['Все блоки', 'PBR текстуры', 'Нормал мапы'],
         isNew: true
     },
     {
         id: 4,
+        code: 'CHROMA',
         title: 'Chroma Hills',
         description: 'Средневековый фэнтези стиль с богатыми деталями',
         version: '1.20.1',
         style: 'fantasy',
         size: '89 MB',
         resolution: '64x',
-        image: 'https://via.placeholder.com/300x200/2563eb/ffffff?text=Chroma',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkNocm9tYTwvdGV4dD48L3N2Zz4=',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/chroma',
         tags: ['Фэнтези', '64x', 'Средневековье'],
@@ -64,13 +68,14 @@ const packsData = [
     },
     {
         id: 5,
+        code: 'MODERNHD',
         title: 'Modern HD',
         description: 'Современный минималистичный дизайн с четкими линиями',
         version: '1.20.1',
         style: 'modern',
         size: '67 MB',
         resolution: '64x',
-        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Modern',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk1vZGVybjwvdGV4dD48L3N2Zz4=',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/modern',
         tags: ['Современный', '64x', 'Минимализм'],
@@ -79,13 +84,14 @@ const packsData = [
     },
     {
         id: 6,
+        code: 'MEDIEVAL',
         title: 'Medieval',
         description: 'Аутентичные средневековые текстуры для исторических серверов',
         version: '1.19.2',
         style: 'medieval',
         size: '78 MB',
         resolution: '64x',
-        image: 'https://via.placeholder.com/300x200/1d4ed8/ffffff?text=Medieval',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk1lZGlldmFsPC90ZXh0Pjwvc3ZnPg==',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/medieval',
         tags: ['Средневековье', '64x', 'Исторический'],
@@ -94,13 +100,14 @@ const packsData = [
     },
     {
         id: 7,
+        code: 'SOARTEX',
         title: 'Soartex Fanver',
         description: 'Плавные и мягкие текстуры с приятными цветами',
         version: '1.20.1',
         style: 'realistic',
         size: '92 MB',
         resolution: '64x',
-        image: 'https://via.placeholder.com/300x200/2563eb/ffffff?text=Soartex',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlNvYXJ0ZXg8L3RleHQ+PC9zdmc+',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/soartex',
         tags: ['Плавный', '64x', 'Мягкий'],
@@ -109,13 +116,14 @@ const packsData = [
     },
     {
         id: 8,
+        code: 'DOKUCRAFT',
         title: 'Dokucraft',
         description: 'Классический фэнтези стиль с богатой историей',
         version: '1.19.2',
         style: 'fantasy',
         size: '56 MB',
         resolution: '32x',
-        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Dokucraft',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkRva3VjcmFmdDwvdGV4dD48L3N2Zz4=',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/dokucraft',
         tags: ['Фэнтези', '32x', 'Классический'],
@@ -125,10 +133,10 @@ const packsData = [
 ];
 
 // Current page state
-let currentPage = 1;
-let itemsPerPage = 8;
+let packsCurrentPage = 1;
+let packsItemsPerPage = 8;
 let filteredPacks = [...packsData];
-let currentFilters = {
+let packsCurrentFilters = {
     search: '',
     version: '',
     style: '',
@@ -147,7 +155,6 @@ function initializePacksPage() {
     const searchInput = document.getElementById('packSearchInput');
     const versionFilter = document.getElementById('versionFilter');
     const styleFilter = document.getElementById('styleFilter');
-    const sortFilter = document.getElementById('sortFilter');
     const loadMoreBtn = document.getElementById('loadMoreBtn');
 
     if (searchInput) {
@@ -162,10 +169,6 @@ function initializePacksPage() {
         styleFilter.addEventListener('change', handleFilterChange);
     }
 
-    if (sortFilter) {
-        sortFilter.addEventListener('change', handleFilterChange);
-    }
-
     if (loadMoreBtn) {
         loadMoreBtn.addEventListener('click', loadMorePacks);
     }
@@ -173,74 +176,51 @@ function initializePacksPage() {
 
 function initializeFilters() {
     // Set default values
-    currentFilters = {
+    packsCurrentFilters = {
         search: '',
         version: '',
-        style: '',
-        sort: 'popular'
+        style: ''
     };
 }
 
 function handlePackSearch(e) {
-    currentFilters.search = e.target.value.toLowerCase().trim();
+    packsCurrentFilters.search = e.target.value.toLowerCase().trim();
     applyFilters();
 }
 
 function handleFilterChange(e) {
     const filterType = e.target.id.replace('Filter', '');
-    currentFilters[filterType] = e.target.value;
+    packsCurrentFilters[filterType] = e.target.value;
     applyFilters();
 }
 
 function applyFilters() {
     filteredPacks = packsData.filter(pack => {
         // Search filter
-        if (currentFilters.search) {
-            const searchMatch = pack.title.toLowerCase().includes(currentFilters.search) ||
-                               pack.description.toLowerCase().includes(currentFilters.search) ||
-                               pack.tags.some(tag => tag.toLowerCase().includes(currentFilters.search));
+        if (packsCurrentFilters.search) {
+            const searchMatch = pack.title.toLowerCase().includes(packsCurrentFilters.search) ||
+                               pack.description.toLowerCase().includes(packsCurrentFilters.search) ||
+                               pack.code.toLowerCase().includes(packsCurrentFilters.search) ||
+                               pack.tags.some(tag => tag.toLowerCase().includes(packsCurrentFilters.search));
             if (!searchMatch) return false;
         }
 
         // Version filter
-        if (currentFilters.version && pack.version !== currentFilters.version) {
+        if (packsCurrentFilters.version && pack.version !== packsCurrentFilters.version) {
             return false;
         }
 
         // Style filter
-        if (currentFilters.style && pack.style !== currentFilters.style) {
+        if (packsCurrentFilters.style && pack.style !== packsCurrentFilters.style) {
             return false;
         }
 
         return true;
     });
 
-    // Sort packs
-    sortPacks();
-
     // Reset to first page
-    currentPage = 1;
+    packsCurrentPage = 1;
     loadPacks();
-}
-
-function sortPacks() {
-    switch (currentFilters.sort) {
-        case 'popular':
-            filteredPacks.sort((a, b) => b.isNew - a.isNew);
-            break;
-        case 'newest':
-            filteredPacks.sort((a, b) => b.isNew - a.isNew);
-            break;
-        case 'name':
-            filteredPacks.sort((a, b) => a.title.localeCompare(b.title));
-            break;
-        case 'downloads':
-            filteredPacks.sort((a, b) => b.isNew - a.isNew);
-            break;
-        case 'rating':
-            filteredPacks.sort((a, b) => b.isNew - a.isNew);
-            break;
-    }
 }
 
 function loadPacks() {
@@ -251,8 +231,8 @@ function loadPacks() {
     packsGrid.innerHTML = '';
 
     // Calculate pagination
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
+    const startIndex = (packsCurrentPage - 1) * packsItemsPerPage;
+    const endIndex = startIndex + packsItemsPerPage;
     const packsToShow = filteredPacks.slice(startIndex, endIndex);
 
     if (packsToShow.length === 0) {
@@ -281,6 +261,7 @@ function createPackCard(pack) {
 
     card.innerHTML = `
         ${pack.isNew ? '<div class="new-badge">Новый</div>' : ''}
+        <div class="pack-code">${pack.code}</div>
         <div class="pack-resolution">${pack.resolution}</div>
         <div class="pack-size">${pack.size}</div>
 
@@ -319,9 +300,6 @@ function createPackCard(pack) {
             <button class="preview-btn" onclick="showPackPreview(${pack.id})">
                 <i class="fas fa-eye"></i>
             </button>
-            <button class="favorite-btn" data-favorite="pack_${pack.id}" onclick="toggleFavorite(${pack.id}, 'pack')">
-                <i class="fas fa-heart"></i>
-            </button>
         </div>
     `;
 
@@ -353,13 +331,13 @@ function showEmptyState() {
 }
 
 function loadMorePacks() {
-    currentPage++;
+    packsCurrentPage++;
     const packsGrid = document.getElementById('packsGrid');
     if (!packsGrid) return;
 
     // Calculate pagination
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
+    const startIndex = (packsCurrentPage - 1) * packsItemsPerPage;
+    const endIndex = startIndex + packsItemsPerPage;
     const packsToShow = filteredPacks.slice(startIndex, endIndex);
 
     // Add new packs with animation
@@ -378,9 +356,9 @@ function updateLoadMoreButton() {
     const loadMoreBtn = document.getElementById('loadMoreBtn');
     if (!loadMoreBtn) return;
 
-    const totalPages = Math.ceil(filteredPacks.length / itemsPerPage);
+    const totalPages = Math.ceil(filteredPacks.length / packsItemsPerPage);
 
-    if (currentPage >= totalPages) {
+    if (packsCurrentPage >= totalPages) {
         loadMoreBtn.style.display = 'none';
     } else {
         loadMoreBtn.style.display = 'inline-flex';
@@ -407,10 +385,10 @@ function showPackPreview(packId) {
                         <img src="${pack.image}" alt="${pack.title}">
                     </div>
                     <div class="preview-image">
-                        <img src="https://via.placeholder.com/200x150/2563eb/ffffff?text=Preview+1" alt="Preview 1">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlByZXZpZXcgMTwvdGV4dD48L3N2Zz4=" alt="Preview 1">
                     </div>
                     <div class="preview-image">
-                        <img src="https://via.placeholder.com/200x150/3b82f6/ffffff?text=Preview+2" alt="Preview 2">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlByZXZpZXcgMjwvdGV4dD48L3N2Zz4=" alt="Preview 2">
                     </div>
                 </div>
                 <div class="preview-info">
