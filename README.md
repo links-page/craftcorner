@@ -1,4 +1,4 @@
-# MineSite - Minecraft Mods, Resource Packs & Collections Website
+# CraftCorner - Minecraft Mods, Resource Packs & Collections Website
 
 A modern, responsive website for hosting Minecraft mods, resource packs, and mod collections. Built for GitHub Pages with beautiful UI, theme switching, search functionality, and monetization features.
 
@@ -33,7 +33,7 @@ A modern, responsive website for hosting Minecraft mods, resource packs, and mod
 ## 📁 File Structure
 
 ```
-minesite/
+craftcorner/
 ├── index.html              # Main homepage
 ├── mods.html              # Mods listing page
 ├── resourcepacks.html     # Resource packs listing page
@@ -253,9 +253,10 @@ This project is open source and available under the [MIT License](LICENSE).
 4. Test thoroughly
 5. Submit a pull request
 
-## 📞 Support
+## 📞 Contact
 
 For support and questions:
+- Email: craftcornerconnection@gmail.com
 - Create an issue on GitHub
 - Check the troubleshooting section
 - Review the code comments for implementation details

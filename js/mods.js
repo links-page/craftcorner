@@ -368,8 +368,8 @@ function handleModDownload(modId, downloadUrl, affiliateUrl) {
         }
 
         // Show success notification
-        if (window.MineSite && window.MineSite.showNotification) {
-            window.MineSite.showNotification(`Мод "${mod.title}" успешно скачан!`, 'success');
+        if (window.CraftCorner && window.CraftCorner.showNotification) {
+            window.CraftCorner.showNotification(`Мод "${mod.title}" успешно скачан!`, 'success');
         }
 
     }, 2000);

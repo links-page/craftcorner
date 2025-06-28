@@ -1,4 +1,4 @@
-// Main JavaScript file for MineSite
+// Main JavaScript file for CraftCorner
 
 // Global variables
 let currentTheme = localStorage.getItem('theme') || 'light';
@@ -215,7 +215,7 @@ function debounce(func, wait) {
 }
 
 // Export functions for use in other files
-window.MineSite = {
+window.CraftCorner = {
     handleDownload,
     showNotification,
     incrementDownloads,

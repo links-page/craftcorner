@@ -1,4 +1,4 @@
-// Global search functionality for MineSite
+// Global search functionality for CraftCorner
 
 // Search functionality for the main search bar
 document.addEventListener('DOMContentLoaded', function() {

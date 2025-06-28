@@ -1,20 +1,20 @@
-# Deployment Guide for MineSite
+# Deployment Guide for CraftCorner
 
-This guide will help you deploy your MineSite website to various hosting platforms.
+This guide will help you deploy your CraftCorner website to various hosting platforms.
 
 ## 🚀 GitHub Pages Deployment (Recommended)
 
 ### Step 1: Create GitHub Repository
 1. Go to [GitHub](https://github.com) and sign in
 2. Click the "+" icon in the top right and select "New repository"
-3. Name your repository (e.g., `minesite`)
+3. Name your repository (e.g., `craftcorner`)
 4. Make it public (required for free GitHub Pages)
 5. Don't initialize with README (we already have one)
 6. Click "Create repository"
 
 ### Step 2: Upload Files
 1. In your new repository, click "uploading an existing file"
-2. Drag and drop all your MineSite files into the upload area
+2. Drag and drop all your CraftCorner files into the upload area
 3. Add a commit message like "Initial commit"
 4. Click "Commit changes"
 
@@ -50,7 +50,7 @@ This guide will help you deploy your MineSite website to various hosting platfor
 
 ### Step 4: Add CNAME File
 1. Create a file named `CNAME` in your repository root
-2. Add your domain name to the file (e.g., `minesite.com`)
+2. Add your domain name to the file (e.g., `craftcorner.com`)
 3. Commit and push the changes
 
 ## 🔧 Netlify Deployment

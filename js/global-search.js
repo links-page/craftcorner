@@ -1,4 +1,4 @@
-// Simple Global Search for MineSite
+// Simple Global Search for CraftCorner
 
 console.log('Global search script loaded');
 
