@@ -1,0 +1,431 @@
+/* CSS Variables for Themes */
+
+/* Light Theme (Default) */
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #8b5cf6;
+    --bg-color: #ffffff;
+    --bg-secondary: #f8fafc;
+    --card-bg: #ffffff;
+    --header-bg: rgba(255, 255, 255, 0.95);
+    --footer-bg: #1e293b;
+    --text-color: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme */
+.theme-dark {
+    --primary-color: #8b5cf6;
+    --secondary-color: #a855f7;
+    --bg-color: #0f172a;
+    --bg-secondary: #1e293b;
+    --card-bg: #334155;
+    --header-bg: rgba(15, 23, 42, 0.95);
+    --footer-bg: #020617;
+    --text-color: #f1f5f9;
+    --text-muted: #94a3b8;
+    --border-color: #475569;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Blue Theme */
+.theme-blue {
+    --primary-color: #3b82f6;
+    --secondary-color: #1d4ed8;
+    --bg-color: #f0f9ff;
+    --bg-secondary: #e0f2fe;
+    --card-bg: #ffffff;
+    --header-bg: rgba(240, 249, 255, 0.95);
+    --footer-bg: #1e40af;
+    --text-color: #1e3a8a;
+    --text-muted: #475569;
+    --border-color: #bfdbfe;
+    --shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(59, 130, 246, 0.1);
+}
+
+/* Green Theme */
+.theme-green {
+    --primary-color: #10b981;
+    --secondary-color: #059669;
+    --bg-color: #f0fdf4;
+    --bg-secondary: #dcfce7;
+    --card-bg: #ffffff;
+    --header-bg: rgba(240, 253, 244, 0.95);
+    --footer-bg: #065f46;
+    --text-color: #064e3b;
+    --text-muted: #374151;
+    --border-color: #bbf7d0;
+    --shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(16, 185, 129, 0.1);
+}
+
+/* Purple Theme */
+.theme-purple {
+    --primary-color: #8b5cf6;
+    --secondary-color: #7c3aed;
+    --bg-color: #faf5ff;
+    --bg-secondary: #f3e8ff;
+    --card-bg: #ffffff;
+    --header-bg: rgba(250, 245, 255, 0.95);
+    --footer-bg: #581c87;
+    --text-color: #4c1d95;
+    --text-muted: #6b7280;
+    --border-color: #ddd6fe;
+    --shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(139, 92, 246, 0.1);
+}
+
+/* Orange Theme */
+.theme-orange {
+    --primary-color: #f97316;
+    --secondary-color: #ea580c;
+    --bg-color: #fff7ed;
+    --bg-secondary: #fed7aa;
+    --card-bg: #ffffff;
+    --header-bg: rgba(255, 247, 237, 0.95);
+    --footer-bg: #9a3412;
+    --text-color: #7c2d12;
+    --text-muted: #57534e;
+    --border-color: #fed7aa;
+    --shadow: 0 4px 6px -1px rgba(249, 115, 22, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(249, 115, 22, 0.1);
+}
+
+/* Red Theme */
+.theme-red {
+    --primary-color: #ef4444;
+    --secondary-color: #dc2626;
+    --bg-color: #fef2f2;
+    --bg-secondary: #fee2e2;
+    --card-bg: #ffffff;
+    --header-bg: rgba(254, 242, 242, 0.95);
+    --footer-bg: #991b1b;
+    --text-color: #7f1d1d;
+    --text-muted: #6b7280;
+    --border-color: #fecaca;
+    --shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(239, 68, 68, 0.1);
+}
+
+/* Pink Theme */
+.theme-pink {
+    --primary-color: #ec4899;
+    --secondary-color: #db2777;
+    --bg-color: #fdf2f8;
+    --bg-secondary: #fce7f3;
+    --card-bg: #ffffff;
+    --header-bg: rgba(253, 242, 248, 0.95);
+    --footer-bg: #9d174d;
+    --text-color: #831843;
+    --text-muted: #6b7280;
+    --border-color: #fbcfe8;
+    --shadow: 0 4px 6px -1px rgba(236, 72, 153, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(236, 72, 153, 0.1);
+}
+
+/* Yellow Theme */
+.theme-yellow {
+    --primary-color: #eab308;
+    --secondary-color: #ca8a04;
+    --bg-color: #fefce8;
+    --bg-secondary: #fef3c7;
+    --card-bg: #ffffff;
+    --header-bg: rgba(254, 252, 232, 0.95);
+    --footer-bg: #a16207;
+    --text-color: #713f12;
+    --text-muted: #6b7280;
+    --border-color: #fde68a;
+    --shadow: 0 4px 6px -1px rgba(234, 179, 8, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(234, 179, 8, 0.1);
+}
+
+/* Teal Theme */
+.theme-teal {
+    --primary-color: #14b8a6;
+    --secondary-color: #0d9488;
+    --bg-color: #f0fdfa;
+    --bg-secondary: #ccfbf1;
+    --card-bg: #ffffff;
+    --header-bg: rgba(240, 253, 250, 0.95);
+    --footer-bg: #134e4a;
+    --text-color: #042f2e;
+    --text-muted: #374151;
+    --border-color: #99f6e4;
+    --shadow: 0 4px 6px -1px rgba(20, 184, 166, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(20, 184, 166, 0.1);
+}
+
+/* Indigo Theme */
+.theme-indigo {
+    --primary-color: #6366f1;
+    --secondary-color: #4f46e5;
+    --bg-color: #eef2ff;
+    --bg-secondary: #e0e7ff;
+    --card-bg: #ffffff;
+    --header-bg: rgba(238, 242, 255, 0.95);
+    --footer-bg: #3730a3;
+    --text-color: #312e81;
+    --text-muted: #6b7280;
+    --border-color: #c7d2fe;
+    --shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(99, 102, 241, 0.1);
+}
+
+/* Theme Transition */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme Switcher Active State */
+.theme-btn.active {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Card Hover Effects */
+.category-card:hover,
+.mod-card:hover,
+.pack-card:hover,
+.collection-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-5px);
+}
+
+/* Button Hover Effects */
+.search-btn:hover,
+.load-more-btn:hover,
+.download-btn:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+/* Input Focus Effects */
+.search-input:focus,
+.filter-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Gradient Backgrounds */
+.search-section,
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Category Icon Gradients */
+.category-icon {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Download Button Gradients */
+.download-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Stats Number Animation */
+.stat-number {
+    animation: countUp 2s ease-out;
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--border-color);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pulse Animation for New Items */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+    }
+}
+
+/* Fade In Animation */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide In Animation */
+.slide-in {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Bounce Animation for Buttons */
+.bounce {
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    80% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Shake Animation for Errors */
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+/* Scale Animation for Icons */
+.scale {
+    animation: scale 0.3s ease;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Glow Effect for Premium Items */
+.glow {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+    }
+    to {
+        box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
+    }
+}
+
+/* Floating Animation */
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Rotate Animation */
+.rotate {
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Typing Animation */
+.typing {
+    overflow: hidden;
+    border-right: 2px solid var(--primary-color);
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--primary-color);
+    }
+}
