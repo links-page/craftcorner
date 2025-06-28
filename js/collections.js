@@ -113,7 +113,7 @@ const collectionsData = [
         modCount: 113,
         image: 'https://minecraft-inside.ru/uploads/files/2025-06/186026_685cf0581ea8c.png',
         downloadUrl: 'https://vexfile.com/download/BO9dD5A4YV',
-        affiliateUrl: 'https://example.com/affiliate/valhelsia5',
+        affiliateUrl: 'https://vexfile.com/download/BO9dD5A4YV',
         mods: ['Create', 'Solo Leveling: Reawakening', 'DungeonsArise', 'Quark', "L_Ender 's Cataclysm"],
         requirements: ['Forge', '8GB RAM', '1.20.1'],
         installation: [
