@@ -215,11 +215,7 @@ function createModCard(mod) {
     const card = document.createElement('div');
     card.className = 'mod-card fade-in';
 
-    // Add special classes
-    if (mod.isNew) card.classList.add('new');
-
     card.innerHTML = `
-        ${mod.isNew ? '<div class="new-badge">Новый</div>' : ''}
         <div class="mod-code">${mod.code}</div>
 
         <div class="mod-image">
@@ -268,12 +264,10 @@ function createPackCard(pack) {
     card.className = 'pack-card fade-in';
 
     // Add special classes
-    if (pack.isNew) card.classList.add('new');
     if (pack.resolution === '256x') card.classList.add('high-res');
     if (pack.tags.includes('PBR')) card.classList.add('pbr');
 
     card.innerHTML = `
-        ${pack.isNew ? '<div class="new-badge">Новый</div>' : ''}
         <div class="pack-code">${pack.code}</div>
         <div class="pack-resolution">${pack.resolution}</div>
         <div class="pack-size">${pack.size}</div>
@@ -323,12 +317,7 @@ function createCollectionCard(collection) {
     const card = document.createElement('div');
     card.className = 'collection-card fade-in';
 
-    // Add special classes
-    if (collection.isNew) card.classList.add('new');
-    if (collection.isFeatured) card.classList.add('featured');
-
     card.innerHTML = `
-        ${collection.isNew ? '<div class="new-badge">Новый</div>' : ''}
         <div class="collection-code">${collection.code}</div>
         <div class="collection-size">${collection.size}</div>
         <div class="collection-mod-count">${collection.modCount} модов</div>

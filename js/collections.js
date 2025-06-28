@@ -20,9 +20,7 @@ const collectionsData = [
             'Скачайте и установите Forge для версии 1.20.1',
             'Скачайте сборку и распакуйте в папку mods',
             'Запустите игру с профилем Forge'
-        ],
-        isNew: true,
-        isFeatured: true
+        ]
     },
     {
         id: 2,
@@ -42,9 +40,7 @@ const collectionsData = [
             'Установите Forge для версии 1.19.2',
             'Скачайте сборку и запустите установщик',
             'Следуйте инструкциям установщика'
-        ],
-        isNew: false,
-        isFeatured: true
+        ]
     },
     {
         id: 3,
@@ -64,9 +60,7 @@ const collectionsData = [
             'Установите Forge для версии 1.18.2',
             'Скачайте и распакуйте сборку',
             'Скопируйте файлы в папку .minecraft'
-        ],
-        isNew: false,
-        isFeatured: false
+        ]
     },
     {
         id: 4,
@@ -86,9 +80,7 @@ const collectionsData = [
             'Скачайте Forge для версии 1.20.1',
             'Установите сборку через лаунчер',
             'Настройте параметры запуска'
-        ],
-        isNew: true,
-        isFeatured: false
+        ]
     },
     {
         id: 5,
@@ -108,9 +100,7 @@ const collectionsData = [
             'Установите Forge для версии 1.18.2',
             'Скачайте сборку и запустите',
             'Создайте новый мир с настройками сборки'
-        ],
-        isNew: false,
-        isFeatured: false
+        ]
     },
     {
         id: 6,
@@ -130,9 +120,7 @@ const collectionsData = [
             'Скачайте Forge для версии 1.20.1',
             'Установите сборку через лаунчер',
             'Настройте параметры запуска'
-        ],
-        isNew: false,
-        isFeatured: false
+        ]
     }
 ];
 
@@ -258,12 +246,7 @@ function createCollectionCard(collection) {
     const card = document.createElement('div');
     card.className = 'collection-card fade-in';
 
-    // Add special classes
-    if (collection.isNew) card.classList.add('new');
-    if (collection.isFeatured) card.classList.add('featured');
-
     card.innerHTML = `
-        ${collection.isNew ? '<div class="new-badge">Новый</div>' : ''}
         <div class="collection-code">${collection.code}</div>
         <div class="collection-size">${collection.size}</div>
         <div class="collection-mod-count">${collection.modCount} модов</div>
@@ -389,10 +372,6 @@ function showCollectionInfo(collectionId) {
                     <div class="info-title-section">
                         <h3 class="info-title">${collection.title}</h3>
                         <div class="info-subtitle">${collection.code} • ${collection.modCount} модов</div>
-                    </div>
-                    <div class="info-badges">
-                        ${collection.isNew ? '<span class="info-badge new">Новый</span>' : ''}
-                        ${collection.isFeatured ? '<span class="info-badge featured">Рекомендуемый</span>' : ''}
                     </div>
                 </div>
                 <button class="info-close">&times;</button>

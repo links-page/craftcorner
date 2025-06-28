@@ -1,159 +1,313 @@
 /* Theme Variables and Color Schemes */
 
 :root {
-    /* Cool color palette */
-    --primary-color: #4d648d;
-    --secondary-color: #283655;
-    --accent-color: #d0e1f9;
-    --dark-color: #1e1f26;
+    /* Elegant Minecraft-inspired color palette */
+    --primary-color: #4a7c59; /* Soft grass green */
+    --secondary-color: #8b7355; /* Warm dirt brown */
+    --accent-color: #ffffff; /* White text on dark backgrounds */
+    --accent-secondary: #d4af37; /* Muted gold for highlights */
 
-    --bg-color: #d0e1f9;
-    --card-bg: #ffffff;
-    --text-color: #1e1f26;
-    --text-muted: #283655;
-    --border-color: #c4d5f0;
-    --bg-secondary: #e8f2ff;
-    --header-bg: rgba(208, 225, 249, 0.95);
-    --footer-bg: #e8f2ff;
-    --shadow: 0 2px 8px rgba(30, 31, 38, 0.1);
-    --shadow-lg: 0 8px 32px rgba(30, 31, 38, 0.15);
-    --success-color: #00b894;
-    --error-color: #d63031;
-    --warning-color: #fdcb6e;
+    /* Background colors */
+    --bg-color: #f8f6f1; /* Soft cream background */
+    --bg-secondary: #f0ede6; /* Slightly darker cream */
+    --card-bg: #ffffff; /* White cards */
+    --header-bg: #4a7c59; /* Soft green header */
+    --footer-bg: #3a3a3a; /* Dark gray footer */
+
+    /* Text colors */
+    --text-color: #2d2d2d; /* Dark gray text */
+    --text-muted: #6b6b6b; /* Medium gray for secondary text */
+    --text-light: #ffffff; /* White text */
+
+    /* Border and shadow colors */
+    --border-color: #d4c4a8; /* Soft brown borders */
+    --shadow: 0 2px 8px rgba(139, 115, 85, 0.08);
+    --shadow-lg: 0 4px 16px rgba(139, 115, 85, 0.12);
+
+    /* Soft Minecraft block colors for accents */
+    --stone-color: #9a9a9a;
+    --wood-color: #8b7355;
+    --coal-color: #4a4a4a;
+    --iron-color: #b8b8b8;
+    --gold-color: #d4af37;
+    --diamond-color: #7bc8e8;
+    --emerald-color: #6bbf6b;
+    --redstone-color: #e85c5c;
+    --lapis-color: #6b9bd4;
+    --obsidian-color: #2a2a3a;
+    --netherrack-color: #8b6b4a;
+    --endstone-color: #f0f0f0;
+
+    /* UI colors */
+    --ui-border: #4a4a4a;
+    --ui-background: rgba(0, 0, 0, 0.7);
+    --ui-highlight: #f0f0a0;
 }
 
 .theme-dark {
-    --bg-color: #1e1f26;
-    --card-bg: #283655;
-    --text-color: #d0e1f9;
-    --text-muted: #a0b4d0;
-    --border-color: #4d648d;
-    --bg-secondary: #2a2b32;
-    --header-bg: rgba(30, 31, 38, 0.95);
-    --footer-bg: #2a2b32;
-    --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --primary-color: #3d6b4a; /* Darker soft green for night */
+    --secondary-color: #6b5a42; /* Darker warm brown */
+    --accent-color: #ffffff;
+    --accent-secondary: #b8942a;
+
+    --bg-color: #1a1a1a; /* Very dark background */
+    --bg-secondary: #2d2d2d; /* Dark gray secondary */
+    --card-bg: #3a3a3a; /* Dark card background */
+    --header-bg: #3d6b4a; /* Dark green header */
+    --footer-bg: #2d2d2d;
+
+    --text-color: #e0e0e0; /* Light gray text */
+    --text-muted: #a0a0a0; /* Medium gray */
+    --text-light: #ffffff;
+
+    --border-color: #4a4a4a; /* Dark borders */
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.3);
+
+    /* Dark theme block colors */
+    --stone-color: #7a7a7a;
+    --wood-color: #6b5a42;
+    --coal-color: #2a2a2a;
+    --iron-color: #9a9a9a;
+    --gold-color: #b8942a;
+    --diamond-color: #6ba8c8;
+    --emerald-color: #5ba85b;
+    --redstone-color: #c84a4a;
+    --lapis-color: #5a8bb4;
+    --obsidian-color: #1a1a2a;
+    --netherrack-color: #6b4a2a;
+    --endstone-color: #d0d0d0;
 }
 
-/* Dark theme specific improvements */
+/* Theme-specific overrides */
 .theme-dark .filter-select {
-    background-color: #283655;
-    border-color: #4d648d;
-    color: #d0e1f9;
+    background: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
 }
 
 .theme-dark .filter-select:hover {
-    background-color: #2a2b32;
-    border-color: #4d648d;
+    border-color: var(--accent-secondary);
 }
 
 .theme-dark .filter-select:focus {
-    border-color: #4d648d;
-    box-shadow: 0 0 0 3px rgba(77, 100, 141, 0.2);
+    border-color: var(--accent-secondary);
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
 }
 
 .theme-dark .filter-select option {
-    background-color: #283655;
-    color: #d0e1f9;
+    background: var(--card-bg);
+    color: var(--text-color);
 }
 
 .theme-dark .search-box input {
-    background-color: #283655;
-    border-color: #4d648d;
-    color: #d0e1f9;
+    background: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
 }
 
 .theme-dark .search-box input:focus {
-    border-color: #4d648d;
-    box-shadow: 0 0 0 3px rgba(77, 100, 141, 0.2);
+    border-color: var(--accent-secondary);
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
 }
 
 .theme-dark .search-box input::placeholder {
-    color: #a0b4d0;
+    color: var(--text-muted);
 }
 
 .theme-dark .search-box i {
-    color: #a0b4d0;
+    color: var(--text-muted);
 }
 
-/* Light theme specific improvements */
 .theme-light .filter-select {
-    background-color: #ffffff;
-    border-color: #c4d5f0;
-    color: #1e1f26;
+    background: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
 }
 
 .theme-light .filter-select:hover {
-    background-color: #e8f2ff;
-    border-color: #4d648d;
+    border-color: var(--primary-color);
 }
 
 .theme-light .filter-select:focus {
-    border-color: #4d648d;
-    box-shadow: 0 0 0 3px rgba(77, 100, 141, 0.1);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(74, 124, 89, 0.3);
 }
 
 .theme-light .filter-select option {
-    background-color: #ffffff;
-    color: #1e1f26;
+    background: var(--card-bg);
+    color: var(--text-color);
 }
 
 .theme-light .search-box input {
-    background-color: #ffffff;
-    border-color: #c4d5f0;
-    color: #1e1f26;
+    background: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
 }
 
 .theme-light .search-box input:focus {
-    border-color: #4d648d;
-    box-shadow: 0 0 0 3px rgba(77, 100, 141, 0.1);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(74, 124, 89, 0.3);
 }
 
 .theme-light .search-box input::placeholder {
-    color: #283655;
+    color: var(--text-muted);
 }
 
 .theme-light .search-box i {
-    color: #283655;
+    color: var(--text-muted);
 }
 
-/* Theme switcher */
+/* Theme Switcher */
 .theme-btn {
-    background: var(--card-bg);
-    color: var(--text-color);
-    border: 1px solid var(--border-color);
-    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--accent-color);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
+    padding: 0.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
+    font-size: 1rem;
 }
 
 .theme-btn:hover {
-    background: var(--primary-color);
-    color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--accent-secondary);
+    transform: translateY(-1px);
+    /* Subtle hover glow */
+    text-shadow: 0 0 2px var(--accent-secondary);
 }
 
 .theme-btn.active {
-    background: var(--primary-color);
-    color: var(--accent-color);
+    background: var(--accent-secondary);
+    color: var(--text-color);
+    border-color: var(--accent-secondary);
+    /* Subtle active glow */
+    text-shadow: 0 0 2px var(--text-color);
+    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
 }
 
-/* Basic animations */
+/* Elegant Animations */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes pulse-glow {
     0%, 100% {
-        box-shadow: 0 3px 8px rgba(0, 184, 148, 0.4);
+        box-shadow: 0 2px 6px rgba(76, 175, 80, 0.3);
+        text-shadow: 0 0 2px var(--accent-color);
     }
     50% {
-        box-shadow: 0 3px 12px rgba(0, 184, 148, 0.6);
+        box-shadow: 0 4px 12px rgba(76, 175, 80, 0.5);
+        text-shadow: 0 0 4px var(--accent-color);
     }
+}
+
+@keyframes gentle-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes soft-pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes gentle-ripple {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+/* Subtle Interactive Elements */
+.minecraft-interactive {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.minecraft-interactive::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.minecraft-interactive:hover::before {
+    left: 100%;
+}
+
+.minecraft-interactive:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Elegant Loading Spinner */
+.minecraft-loading {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--border-color);
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: minecraft-spin 1s linear infinite;
+}
+
+@keyframes minecraft-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Subtle Tooltips */
+.minecraft-tooltip {
+    position: relative;
+    cursor: help;
+}
+
+.minecraft-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--ui-background);
+    color: var(--accent-color);
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    border: 1px solid var(--ui-border);
+}
+
+.minecraft-tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
 }

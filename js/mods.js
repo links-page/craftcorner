@@ -13,8 +13,7 @@ const modsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/ic2',
         tags: ['Технологии', 'Автоматизация', 'Энергия'],
-        requirements: ['Forge', 'Java 17+'],
-        isNew: true
+        requirements: ['Forge', 'Java 17+']
     },
     {
         id: 2,
@@ -27,8 +26,7 @@ const modsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/thaumcraft',
         tags: ['Магия', 'Заклинания', 'Исследования'],
-        requirements: ['Forge', 'Java 17+'],
-        isNew: false
+        requirements: ['Forge', 'Java 17+']
     },
     {
         id: 3,
@@ -41,8 +39,7 @@ const modsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/bop',
         tags: ['Природа', 'Биомы', 'Растения'],
-        requirements: ['Forge', 'Java 17+'],
-        isNew: false
+        requirements: ['Forge', 'Java 17+']
     },
     {
         id: 4,
@@ -55,8 +52,7 @@ const modsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/ae2',
         tags: ['Технологии', 'Хранение', 'Автоматизация'],
-        requirements: ['Forge', 'Java 17+'],
-        isNew: false
+        requirements: ['Forge', 'Java 17+']
     },
     {
         id: 5,
@@ -69,8 +65,7 @@ const modsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/botania',
         tags: ['Магия', 'Природа', 'Цветы'],
-        requirements: ['Forge', 'Java 17+'],
-        isNew: true
+        requirements: ['Forge', 'Java 17+']
     },
     {
         id: 6,
@@ -83,8 +78,7 @@ const modsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/chisel',
         tags: ['Декор', 'Блоки', 'Строительство'],
-        requirements: ['Forge', 'Java 17+'],
-        isNew: false
+        requirements: ['Forge', 'Java 17+']
     },
     {
         id: 7,
@@ -97,8 +91,7 @@ const modsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/journeymap',
         tags: ['Карта', 'Навигация', 'Утилиты'],
-        requirements: ['Forge', 'Java 17+'],
-        isNew: false
+        requirements: ['Forge', 'Java 17+']
     },
     {
         id: 8,
@@ -111,8 +104,7 @@ const modsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/tinkers',
         tags: ['Инструменты', 'Крафтинг', 'Материалы'],
-        requirements: ['Forge', 'Java 17+'],
-        isNew: false
+        requirements: ['Forge', 'Java 17+']
     }
 ];
 
@@ -238,11 +230,7 @@ function createModCard(mod) {
     const card = document.createElement('div');
     card.className = 'mod-card fade-in';
 
-    // Add special classes
-    if (mod.isNew) card.classList.add('new');
-
     card.innerHTML = `
-        ${mod.isNew ? '<div class="new-badge">Новый</div>' : ''}
         <div class="mod-code">${mod.code}</div>
 
         <div class="mod-image">

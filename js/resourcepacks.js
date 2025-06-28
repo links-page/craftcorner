@@ -15,8 +15,7 @@ const packsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/faithful',
         tags: ['Классический', '32x', 'Ваннила'],
-        features: ['Все блоки', 'Все предметы', 'Интерфейс'],
-        isNew: false
+        features: ['Все блоки', 'Все предметы', 'Интерфейс']
     },
     {
         id: 2,
@@ -31,8 +30,7 @@ const packsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/sphax',
         tags: ['Мультяшный', '128x', 'Яркий'],
-        features: ['Все блоки', 'Все предметы', 'Интерфейс', 'Анимации'],
-        isNew: false
+        features: ['Все блоки', 'Все предметы', 'Интерфейс', 'Анимации']
     },
     {
         id: 3,
@@ -47,8 +45,7 @@ const packsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/realistico',
         tags: ['Реалистичный', '256x'],
-        features: ['Все блоки', 'PBR текстуры', 'Нормал мапы'],
-        isNew: true
+        features: ['Все блоки', 'PBR текстуры', 'Нормал мапы']
     },
     {
         id: 4,
@@ -63,8 +60,7 @@ const packsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/chroma',
         tags: ['Фэнтези', '64x', 'Средневековье'],
-        features: ['Все блоки', 'Все предметы', 'Интерфейс'],
-        isNew: false
+        features: ['Все блоки', 'Все предметы', 'Интерфейс']
     },
     {
         id: 5,
@@ -79,8 +75,7 @@ const packsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/modern',
         tags: ['Современный', '64x', 'Минимализм'],
-        features: ['Все блоки', 'Интерфейс', 'Четкие линии'],
-        isNew: true
+        features: ['Все блоки', 'Интерфейс', 'Четкие линии']
     },
     {
         id: 6,
@@ -95,8 +90,7 @@ const packsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/medieval',
         tags: ['Средневековье', '64x', 'Исторический'],
-        features: ['Все блоки', 'Все предметы', 'Интерфейс'],
-        isNew: false
+        features: ['Все блоки', 'Все предметы', 'Интерфейс']
     },
     {
         id: 7,
@@ -111,8 +105,7 @@ const packsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/soartex',
         tags: ['Плавный', '64x', 'Мягкий'],
-        features: ['Все блоки', 'Все предметы', 'Интерфейс'],
-        isNew: false
+        features: ['Все блоки', 'Все предметы', 'Интерфейс']
     },
     {
         id: 8,
@@ -127,8 +120,7 @@ const packsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/dokucraft',
         tags: ['Фэнтези', '32x', 'Классический'],
-        features: ['Все блоки', 'Все предметы', 'Интерфейс'],
-        isNew: false
+        features: ['Все блоки', 'Все предметы', 'Интерфейс']
     }
 ];
 
@@ -255,12 +247,10 @@ function createPackCard(pack) {
     card.className = 'pack-card fade-in';
 
     // Add special classes
-    if (pack.isNew) card.classList.add('new');
     if (pack.resolution === '256x') card.classList.add('high-res');
     if (pack.tags.includes('PBR')) card.classList.add('pbr');
 
     card.innerHTML = `
-        ${pack.isNew ? '<div class="new-badge">Новый</div>' : ''}
         <div class="pack-code">${pack.code}</div>
         <div class="pack-resolution">${pack.resolution}</div>
         <div class="pack-size">${pack.size}</div>
