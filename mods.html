@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моды - MineSite</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/themes.css">
+    <link rel="stylesheet" href="styles/mods.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="theme-light">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-cube"></i>
+                    <span>MineSite</span>
+                </div>
+
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Главная
+                    </a>
+                    <a href="mods.html" class="nav-link active">
+                        <i class="fas fa-puzzle-piece"></i>
+                        Моды
+                    </a>
+                    <a href="resourcepacks.html" class="nav-link">
+                        <i class="fas fa-palette"></i>
+                        Ресурс паки
+                    </a>
+                    <a href="collections.html" class="nav-link">
+                        <i class="fas fa-boxes"></i>
+                        Сборки
+                    </a>
+                </nav>
+
+                <div class="header-controls">
+                    <div class="theme-switcher">
+                        <button class="theme-btn" data-theme="light">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <button class="theme-btn" data-theme="dark">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="theme-btn" data-theme="blue">
+                            <i class="fas fa-water"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Моды для Minecraft</h1>
+            <p class="page-subtitle">Найдите и скачайте лучшие модификации для вашей игры</p>
+        </div>
+    </section>
+
+    <!-- Filters and Search -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-content">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="modSearchInput" placeholder="Поиск модов...">
+                </div>
+
+                <div class="filters">
+                    <select id="versionFilter" class="filter-select">
+                        <option value="">Все версии</option>
+                        <option value="1.20.1">1.20.1</option>
+                        <option value="1.19.2">1.19.2</option>
+                        <option value="1.18.2">1.18.2</option>
+                        <option value="1.16.5">1.16.5</option>
+                    </select>
+
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="">Все категории</option>
+                        <option value="technology">Технологии</option>
+                        <option value="magic">Магия</option>
+                        <option value="adventure">Приключения</option>
+                        <option value="decoration">Декор</option>
+                        <option value="utility">Утилиты</option>
+                    </select>
+
+                    <select id="sortFilter" class="filter-select">
+                        <option value="popular">По популярности</option>
+                        <option value="newest">По дате</option>
+                        <option value="name">По названию</option>
+                        <option value="downloads">По скачиваниям</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mods Grid -->
+    <section class="mods-section">
+        <div class="container">
+            <div class="mods-grid" id="modsGrid">
+                <!-- Моды будут загружены через JavaScript -->
+            </div>
+
+            <div class="load-more">
+                <button id="loadMoreBtn" class="load-more-btn">
+                    <i class="fas fa-plus"></i>
+                    Загрузить еще
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MineSite</h3>
+                    <p>Лучший сайт для скачивания модов и ресурс паков Minecraft</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ссылки</h4>
+                    <a href="mods.html">Моды</a>
+                    <a href="resourcepacks.html">Ресурс паки</a>
+                    <a href="collections.html">Сборки</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Правила</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MineSite. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/mods.js"></script>
+    <script src="js/themes.js"></script>
+</body>
+</html>
