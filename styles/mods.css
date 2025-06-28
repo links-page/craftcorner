@@ -29,7 +29,7 @@
 }
 
 .mod-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
 }
 
@@ -181,15 +181,15 @@
 }
 
 .favorite-btn:hover {
-    color: #ef4444;
-    border-color: #ef4444;
-    transform: scale(1.1);
+    color: #e17055;
+    border-color: #e17055;
+    transform: scale(1.05);
 }
 
 .favorite-btn.active {
-    color: #ef4444;
-    border-color: #ef4444;
-    background: rgba(239, 68, 68, 0.1);
+    color: #e17055;
+    border-color: #e17055;
+    background: rgba(225, 112, 85, 0.1);
 }
 
 /* Premium Badge */
@@ -197,7 +197,7 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    background: linear-gradient(135deg, #fdcb6e, #e17055);
     color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
@@ -212,7 +212,7 @@
     position: absolute;
     top: 1rem;
     left: 1rem;
-    background: linear-gradient(135deg, #10b981, #059669);
+    background: linear-gradient(135deg, #00b894, #00cec9);
     color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
@@ -367,7 +367,7 @@
 
 .search-box input:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 0 0 3px rgba(0, 136, 204, 0.1);
     outline: none;
 }
 
@@ -391,7 +391,7 @@
 
 .filter-select:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 0 0 3px rgba(0, 136, 204, 0.1);
     outline: none;
 }
 
@@ -463,8 +463,8 @@
     animation: slideIn 0.5s ease-out;
 }
 
-.mod-card.bounce {
-    animation: bounce 0.6s ease;
+.mod-card.scale {
+    animation: scale 0.3s ease;
 }
 
 /* Hover Effects */
@@ -501,32 +501,32 @@
 
 /* Success Animation */
 .download-btn.success {
-    background: linear-gradient(135deg, #10b981, #059669);
-    animation: bounce 0.6s ease;
+    background: linear-gradient(135deg, #00b894, #00cec9);
+    animation: scale 0.3s ease;
 }
 
 /* Error Animation */
 .download-btn.error {
-    background: linear-gradient(135deg, #ef4444, #dc2626);
+    background: linear-gradient(135deg, #e17055, #d63031);
     animation: shake 0.5s ease-in-out;
 }
 
 /* Premium Card Effects */
 .mod-card.premium {
-    border: 2px solid #fbbf24;
-    box-shadow: 0 0 20px rgba(251, 191, 36, 0.2);
+    border: 2px solid #fdcb6e;
+    box-shadow: 0 0 20px rgba(253, 203, 110, 0.2);
 }
 
 .mod-card.premium:hover {
-    box-shadow: 0 0 30px rgba(251, 191, 36, 0.4);
+    box-shadow: 0 0 30px rgba(253, 203, 110, 0.4);
 }
 
 /* New Card Effects */
 .mod-card.new {
-    border: 2px solid #10b981;
-    box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+    border: 2px solid #00b894;
+    box-shadow: 0 0 20px rgba(0, 184, 148, 0.2);
 }
 
 .mod-card.new:hover {
-    box-shadow: 0 0 30px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 0 30px rgba(0, 184, 148, 0.4);
 }

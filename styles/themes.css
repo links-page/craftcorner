@@ -1,179 +1,212 @@
 /* CSS Variables for Themes */
 
-/* Light Theme (Default) */
+/* Light Theme (Default) - Telegram Style */
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #8b5cf6;
+    --primary-color: #0088cc;
+    --secondary-color: #00a8ff;
     --bg-color: #ffffff;
-    --bg-secondary: #f8fafc;
+    --bg-secondary: #f8f9fa;
     --card-bg: #ffffff;
     --header-bg: rgba(255, 255, 255, 0.95);
-    --footer-bg: #1e293b;
-    --text-color: #1e293b;
-    --text-muted: #64748b;
-    --border-color: #e2e8f0;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --footer-bg: #f8f9fa;
+    --text-color: #212529;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.15);
+    --search-bg: #ffffff;
+    --search-border: #dee2e6;
+    --search-text: #212529;
 }
 
-/* Dark Theme */
+/* Dark Theme - Telegram Style */
 .theme-dark {
-    --primary-color: #8b5cf6;
-    --secondary-color: #a855f7;
-    --bg-color: #0f172a;
-    --bg-secondary: #1e293b;
-    --card-bg: #334155;
-    --header-bg: rgba(15, 23, 42, 0.95);
-    --footer-bg: #020617;
-    --text-color: #f1f5f9;
-    --text-muted: #94a3b8;
-    --border-color: #475569;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    --primary-color: #0088cc;
+    --secondary-color: #00a8ff;
+    --bg-color: #17212b;
+    --bg-secondary: #242f3d;
+    --card-bg: #242f3d;
+    --header-bg: rgba(23, 33, 43, 0.95);
+    --footer-bg: #17212b;
+    --text-color: #ffffff;
+    --text-muted: #a8b4c0;
+    --border-color: #4a5c6b;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --search-bg: #242f3d;
+    --search-border: #4a5c6b;
+    --search-text: #ffffff;
 }
 
-/* Blue Theme */
+/* Blue Theme - Telegram Style */
 .theme-blue {
-    --primary-color: #3b82f6;
-    --secondary-color: #1d4ed8;
-    --bg-color: #f0f9ff;
-    --bg-secondary: #e0f2fe;
+    --primary-color: #0088cc;
+    --secondary-color: #00a8ff;
+    --bg-color: #e3f2fd;
+    --bg-secondary: #bbdefb;
     --card-bg: #ffffff;
-    --header-bg: rgba(240, 249, 255, 0.95);
-    --footer-bg: #1e40af;
-    --text-color: #1e3a8a;
-    --text-muted: #475569;
-    --border-color: #bfdbfe;
-    --shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(59, 130, 246, 0.1);
+    --header-bg: rgba(227, 242, 253, 0.95);
+    --footer-bg: #1976d2;
+    --text-color: #1565c0;
+    --text-muted: #546e7a;
+    --border-color: #90caf9;
+    --shadow: 0 2px 8px rgba(0, 136, 204, 0.15);
+    --shadow-lg: 0 4px 16px rgba(0, 136, 204, 0.2);
+    --search-bg: #ffffff;
+    --search-border: #90caf9;
+    --search-text: #1565c0;
 }
 
-/* Green Theme */
+/* Green Theme - Telegram Style */
 .theme-green {
-    --primary-color: #10b981;
-    --secondary-color: #059669;
-    --bg-color: #f0fdf4;
-    --bg-secondary: #dcfce7;
+    --primary-color: #00b894;
+    --secondary-color: #00cec9;
+    --bg-color: #e8f5e8;
+    --bg-secondary: #c8e6c9;
     --card-bg: #ffffff;
-    --header-bg: rgba(240, 253, 244, 0.95);
-    --footer-bg: #065f46;
-    --text-color: #064e3b;
-    --text-muted: #374151;
-    --border-color: #bbf7d0;
-    --shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(16, 185, 129, 0.1);
+    --header-bg: rgba(232, 245, 232, 0.95);
+    --footer-bg: #2e7d32;
+    --text-color: #1b5e20;
+    --text-muted: #546e7a;
+    --border-color: #a5d6a7;
+    --shadow: 0 2px 8px rgba(0, 184, 148, 0.15);
+    --shadow-lg: 0 4px 16px rgba(0, 184, 148, 0.2);
+    --search-bg: #ffffff;
+    --search-border: #a5d6a7;
+    --search-text: #1b5e20;
 }
 
-/* Purple Theme */
+/* Purple Theme - Telegram Style */
 .theme-purple {
-    --primary-color: #8b5cf6;
-    --secondary-color: #7c3aed;
-    --bg-color: #faf5ff;
-    --bg-secondary: #f3e8ff;
+    --primary-color: #6c5ce7;
+    --secondary-color: #a29bfe;
+    --bg-color: #f3e5f5;
+    --bg-secondary: #e1bee7;
     --card-bg: #ffffff;
-    --header-bg: rgba(250, 245, 255, 0.95);
-    --footer-bg: #581c87;
-    --text-color: #4c1d95;
-    --text-muted: #6b7280;
-    --border-color: #ddd6fe;
-    --shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(139, 92, 246, 0.1);
+    --header-bg: rgba(243, 229, 245, 0.95);
+    --footer-bg: #4a148c;
+    --text-color: #4a148c;
+    --text-muted: #6c757d;
+    --border-color: #ce93d8;
+    --shadow: 0 2px 8px rgba(108, 92, 231, 0.15);
+    --shadow-lg: 0 4px 16px rgba(108, 92, 231, 0.2);
+    --search-bg: #ffffff;
+    --search-border: #ce93d8;
+    --search-text: #4a148c;
 }
 
-/* Orange Theme */
+/* Orange Theme - Telegram Style */
 .theme-orange {
-    --primary-color: #f97316;
-    --secondary-color: #ea580c;
-    --bg-color: #fff7ed;
-    --bg-secondary: #fed7aa;
+    --primary-color: #fdcb6e;
+    --secondary-color: #e17055;
+    --bg-color: #fff3e0;
+    --bg-secondary: #ffe0b2;
     --card-bg: #ffffff;
-    --header-bg: rgba(255, 247, 237, 0.95);
-    --footer-bg: #9a3412;
-    --text-color: #7c2d12;
-    --text-muted: #57534e;
-    --border-color: #fed7aa;
-    --shadow: 0 4px 6px -1px rgba(249, 115, 22, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(249, 115, 22, 0.1);
+    --header-bg: rgba(255, 243, 224, 0.95);
+    --footer-bg: #e65100;
+    --text-color: #bf360c;
+    --text-muted: #6c757d;
+    --border-color: #ffcc02;
+    --shadow: 0 2px 8px rgba(253, 203, 110, 0.15);
+    --shadow-lg: 0 4px 16px rgba(253, 203, 110, 0.2);
+    --search-bg: #ffffff;
+    --search-border: #ffcc02;
+    --search-text: #bf360c;
 }
 
-/* Red Theme */
+/* Red Theme - Telegram Style */
 .theme-red {
-    --primary-color: #ef4444;
-    --secondary-color: #dc2626;
-    --bg-color: #fef2f2;
-    --bg-secondary: #fee2e2;
+    --primary-color: #e17055;
+    --secondary-color: #d63031;
+    --bg-color: #ffebee;
+    --bg-secondary: #ffcdd2;
     --card-bg: #ffffff;
-    --header-bg: rgba(254, 242, 242, 0.95);
-    --footer-bg: #991b1b;
-    --text-color: #7f1d1d;
-    --text-muted: #6b7280;
-    --border-color: #fecaca;
-    --shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(239, 68, 68, 0.1);
+    --header-bg: rgba(255, 235, 238, 0.95);
+    --footer-bg: #c62828;
+    --text-color: #b71c1c;
+    --text-muted: #6c757d;
+    --border-color: #ef9a9a;
+    --shadow: 0 2px 8px rgba(225, 112, 85, 0.15);
+    --shadow-lg: 0 4px 16px rgba(225, 112, 85, 0.2);
+    --search-bg: #ffffff;
+    --search-border: #ef9a9a;
+    --search-text: #b71c1c;
 }
 
-/* Pink Theme */
+/* Pink Theme - Telegram Style */
 .theme-pink {
-    --primary-color: #ec4899;
-    --secondary-color: #db2777;
-    --bg-color: #fdf2f8;
-    --bg-secondary: #fce7f3;
+    --primary-color: #fd79a8;
+    --secondary-color: #fdcb6e;
+    --bg-color: #fce4ec;
+    --bg-secondary: #f8bbd9;
     --card-bg: #ffffff;
-    --header-bg: rgba(253, 242, 248, 0.95);
-    --footer-bg: #9d174d;
-    --text-color: #831843;
-    --text-muted: #6b7280;
-    --border-color: #fbcfe8;
-    --shadow: 0 4px 6px -1px rgba(236, 72, 153, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(236, 72, 153, 0.1);
+    --header-bg: rgba(252, 228, 236, 0.95);
+    --footer-bg: #ad1457;
+    --text-color: #880e4f;
+    --text-muted: #6c757d;
+    --border-color: #f48fb1;
+    --shadow: 0 2px 8px rgba(253, 121, 168, 0.15);
+    --shadow-lg: 0 4px 16px rgba(253, 121, 168, 0.2);
+    --search-bg: #ffffff;
+    --search-border: #f48fb1;
+    --search-text: #880e4f;
 }
 
-/* Yellow Theme */
+/* Yellow Theme - Telegram Style */
 .theme-yellow {
-    --primary-color: #eab308;
-    --secondary-color: #ca8a04;
-    --bg-color: #fefce8;
-    --bg-secondary: #fef3c7;
+    --primary-color: #fdcb6e;
+    --secondary-color: #e17055;
+    --bg-color: #fffde7;
+    --bg-secondary: #fff9c4;
     --card-bg: #ffffff;
-    --header-bg: rgba(254, 252, 232, 0.95);
-    --footer-bg: #a16207;
-    --text-color: #713f12;
-    --text-muted: #6b7280;
-    --border-color: #fde68a;
-    --shadow: 0 4px 6px -1px rgba(234, 179, 8, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(234, 179, 8, 0.1);
+    --header-bg: rgba(255, 253, 231, 0.95);
+    --footer-bg: #f57f17;
+    --text-color: #e65100;
+    --text-muted: #6c757d;
+    --border-color: #fff59d;
+    --shadow: 0 2px 8px rgba(253, 203, 110, 0.15);
+    --shadow-lg: 0 4px 16px rgba(253, 203, 110, 0.2);
+    --search-bg: #ffffff;
+    --search-border: #fff59d;
+    --search-text: #e65100;
 }
 
-/* Teal Theme */
+/* Teal Theme - Telegram Style */
 .theme-teal {
-    --primary-color: #14b8a6;
-    --secondary-color: #0d9488;
-    --bg-color: #f0fdfa;
-    --bg-secondary: #ccfbf1;
+    --primary-color: #00b894;
+    --secondary-color: #00cec9;
+    --bg-color: #e0f2f1;
+    --bg-secondary: #b2dfdb;
     --card-bg: #ffffff;
-    --header-bg: rgba(240, 253, 250, 0.95);
-    --footer-bg: #134e4a;
-    --text-color: #042f2e;
-    --text-muted: #374151;
-    --border-color: #99f6e4;
-    --shadow: 0 4px 6px -1px rgba(20, 184, 166, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(20, 184, 166, 0.1);
+    --header-bg: rgba(224, 242, 241, 0.95);
+    --footer-bg: #00695c;
+    --text-color: #004d40;
+    --text-muted: #546e7a;
+    --border-color: #80cbc4;
+    --shadow: 0 2px 8px rgba(0, 184, 148, 0.15);
+    --shadow-lg: 0 4px 16px rgba(0, 184, 148, 0.2);
+    --search-bg: #ffffff;
+    --search-border: #80cbc4;
+    --search-text: #004d40;
 }
 
-/* Indigo Theme */
+/* Indigo Theme - Telegram Style */
 .theme-indigo {
-    --primary-color: #6366f1;
-    --secondary-color: #4f46e5;
-    --bg-color: #eef2ff;
-    --bg-secondary: #e0e7ff;
+    --primary-color: #6c5ce7;
+    --secondary-color: #a29bfe;
+    --bg-color: #e8eaf6;
+    --bg-secondary: #c5cae9;
     --card-bg: #ffffff;
-    --header-bg: rgba(238, 242, 255, 0.95);
-    --footer-bg: #3730a3;
-    --text-color: #312e81;
-    --text-muted: #6b7280;
-    --border-color: #c7d2fe;
-    --shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(99, 102, 241, 0.1);
+    --header-bg: rgba(232, 234, 246, 0.95);
+    --footer-bg: #283593;
+    --text-color: #1a237e;
+    --text-muted: #6c757d;
+    --border-color: #9fa8da;
+    --shadow: 0 2px 8px rgba(108, 92, 231, 0.15);
+    --shadow-lg: 0 4px 16px rgba(108, 92, 231, 0.2);
+    --search-bg: #ffffff;
+    --search-border: #9fa8da;
+    --search-text: #1a237e;
 }
 
 /* Theme Transition */
@@ -185,7 +218,7 @@ body {
 .theme-btn.active {
     background: var(--primary-color);
     color: white;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Card Hover Effects */
@@ -194,54 +227,48 @@ body {
 .pack-card:hover,
 .collection-card:hover {
     box-shadow: var(--shadow-lg);
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 
 /* Button Hover Effects */
 .search-btn:hover,
-.load-more-btn:hover,
-.download-btn:hover {
-    box-shadow: var(--shadow-lg);
+.download-btn:hover,
+.load-more-btn:hover {
+    background: var(--secondary-color);
     transform: translateY(-2px);
 }
 
-/* Input Focus Effects */
+/* Search Input Focus */
 .search-input:focus,
-.filter-select:focus {
+.search-box input:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 0 0 3px rgba(0, 136, 204, 0.1);
 }
 
-/* Gradient Backgrounds */
+/* Search Section Gradient */
 .search-section,
 .page-header {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
 
-/* Category Icon Gradients */
+/* Category Icon */
 .category-icon {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
 
-/* Download Button Gradients */
+/* Download Button */
 .download-btn {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
 
-/* Stats Number Animation */
+/* Stat Number Animation */
 .stat-number {
-    animation: countUp 2s ease-out;
+    color: var(--primary-color);
 }
 
 @keyframes countUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Loading Animation */
@@ -249,32 +276,30 @@ body {
     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 3px solid var(--border-color);
+    border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
-    border-top-color: var(--primary-color);
+    border-top-color: #fff;
     animation: spin 1s ease-in-out infinite;
 }
 
 @keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+    to { transform: rotate(360deg); }
 }
 
-/* Pulse Animation for New Items */
+/* Pulse Animation */
 .pulse {
     animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
+        box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.7);
     }
     70% {
-        box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+        box-shadow: 0 0 0 10px rgba(0, 136, 204, 0);
     }
     100% {
-        box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+        box-shadow: 0 0 0 0 rgba(0, 136, 204, 0);
     }
 }
 
@@ -310,122 +335,91 @@ body {
     }
 }
 
-/* Bounce Animation for Buttons */
+/* Bounce Animation - Improved */
 .bounce {
-    animation: bounce 0.6s ease;
+    animation: bounce 0.4s ease;
 }
 
 @keyframes bounce {
-    0%, 20%, 60%, 100% {
-        transform: translateY(0);
+    0%, 20%, 53%, 80%, 100% {
+        transform: translate3d(0, 0, 0);
     }
-    40% {
-        transform: translateY(-10px);
+    40%, 43% {
+        transform: translate3d(0, -6px, 0);
     }
-    80% {
-        transform: translateY(-5px);
+    70% {
+        transform: translate3d(0, -3px, 0);
+    }
+    90% {
+        transform: translate3d(0, -1px, 0);
     }
 }
 
-/* Shake Animation for Errors */
+/* Shake Animation */
 .shake {
     animation: shake 0.5s ease-in-out;
 }
 
 @keyframes shake {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(-5px);
-    }
-    75% {
-        transform: translateX(5px);
-    }
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
 }
 
-/* Scale Animation for Icons */
+/* Scale Animation */
 .scale {
     animation: scale 0.3s ease;
 }
 
 @keyframes scale {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
-/* Glow Effect for Premium Items */
+/* Glow Animation */
 .glow {
-    box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
     animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-    from {
-        box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
-    }
-    to {
-        box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
-    }
+    from { box-shadow: 0 0 5px var(--primary-color); }
+    to { box-shadow: 0 0 20px var(--primary-color), 0 0 30px var(--primary-color); }
 }
 
-/* Floating Animation */
+/* Float Animation */
 .float {
     animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
 }
 
-/* Rotate Animation */
+/* Rotate Animation - Removed rotation on click */
 .rotate {
-    animation: rotate 2s linear infinite;
+    transition: transform 0.3s ease;
 }
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.rotate:hover {
+    transform: rotate(5deg);
 }
 
 /* Typing Animation */
 .typing {
-    overflow: hidden;
     border-right: 2px solid var(--primary-color);
     white-space: nowrap;
+    overflow: hidden;
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 @keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: var(--primary-color);
-    }
+    from, to { border-color: transparent; }
+    50% { border-color: var(--primary-color); }
 }

@@ -59,9 +59,9 @@ document.addEventListener('click', function(e) {
             document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
-            // Add animation
-            btn.classList.add('bounce');
-            setTimeout(() => btn.classList.remove('bounce'), 600);
+            // Add improved animation
+            btn.classList.add('scale');
+            setTimeout(() => btn.classList.remove('scale'), 300);
         }
     }
 });
@@ -94,14 +94,14 @@ function updateDownloadStats() {
 
     if (totalElement) {
         totalElement.textContent = totalDownloads.toLocaleString();
-        totalElement.classList.add('bounce');
-        setTimeout(() => totalElement.classList.remove('bounce'), 600);
+        totalElement.classList.add('scale');
+        setTimeout(() => totalElement.classList.remove('scale'), 300);
     }
 
     if (todayElement) {
         todayElement.textContent = todayDownloads.toLocaleString();
-        todayElement.classList.add('bounce');
-        setTimeout(() => todayElement.classList.remove('bounce'), 600);
+        todayElement.classList.add('scale');
+        setTimeout(() => todayElement.classList.remove('scale'), 300);
     }
 }
 
@@ -168,12 +168,12 @@ function toggleFavorite(itemId, type) {
     localStorage.setItem('favorites', JSON.stringify(favorites));
     updateFavoritesDisplay();
 
-    // Update button state
+    // Update button state with improved animation
     const btn = document.querySelector(`[data-favorite="${key}"]`);
     if (btn) {
         btn.classList.toggle('active');
-        btn.classList.add('bounce');
-        setTimeout(() => btn.classList.remove('bounce'), 600);
+        btn.classList.add('scale');
+        setTimeout(() => btn.classList.remove('scale'), 300);
     }
 }
 

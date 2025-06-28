@@ -310,7 +310,6 @@ function createCollectionCard(collection) {
     if (collection.isNew) card.classList.add('new');
     if (collection.isPremium) card.classList.add('premium');
     if (collection.isFeatured) card.classList.add('featured');
-    if (collection.mods.length > 15) card.classList.add('large');
 
     card.innerHTML = `
         ${collection.isNew ? '<div class="new-badge">Новый</div>' : ''}
@@ -324,54 +323,56 @@ function createCollectionCard(collection) {
             <i class="fas fa-boxes" style="display: none;"></i>
         </div>
 
-        <h3 class="collection-title">${collection.title}</h3>
-        <p class="collection-description">${collection.description}</p>
+        <div class="collection-content">
+            <h3 class="collection-title">${collection.title}</h3>
+            <p class="collection-description">${collection.description}</p>
 
-        <div class="collection-meta">
-            <span class="collection-version">${collection.version}</span>
-            <span class="collection-type">${getTypeName(collection.type)}</span>
-        </div>
-
-        <div class="collection-mods">
-            <h4>Основные моды:</h4>
-            <div class="mod-list">
-                ${collection.mods.slice(0, 4).map(mod => `<span class="mod-item">${mod}</span>`).join('')}
-                ${collection.mods.length > 4 ? `<span class="mod-item">+${collection.mods.length - 4} еще</span>` : ''}
+            <div class="collection-meta">
+                <span class="collection-version">${collection.version}</span>
+                <span class="collection-type">${getTypeName(collection.type)}</span>
             </div>
-        </div>
 
-        <div class="collection-stats">
-            <span class="collection-stat">
-                <i class="fas fa-download"></i>
-                ${collection.downloads.toLocaleString()}
-            </span>
-            <span class="collection-stat">
-                <i class="fas fa-star"></i>
-                ${collection.rating}
-            </span>
-        </div>
-
-        <div class="collection-requirements">
-            <h4>Системные требования:</h4>
-            ${collection.requirements.map(req => `
-                <div class="requirement-item">
-                    <i class="fas fa-check"></i>
-                    ${req}
+            <div class="collection-mods">
+                <h4>Основные моды:</h4>
+                <div class="mod-list">
+                    ${collection.mods.slice(0, 4).map(mod => `<span class="mod-item">${mod}</span>`).join('')}
+                    ${collection.mods.length > 4 ? `<span class="mod-item">+${collection.mods.length - 4} еще</span>` : ''}
                 </div>
-            `).join('')}
-        </div>
+            </div>
 
-        <div class="collection-actions">
-            <button class="download-btn" onclick="handleDownload(${collection.id}, 'collection', '${collection.downloadUrl}', '${collection.affiliateUrl}')">
-                <i class="fas fa-download"></i>
-                Скачать
-            </button>
-            <button class="info-btn" onclick="showCollectionInfo(${collection.id})">
-                <i class="fas fa-info"></i>
-            </button>
-            <button class="favorite-btn" data-favorite="collection_${collection.id}" onclick="toggleFavorite(${collection.id}, 'collection')">
-                <i class="fas fa-heart"></i>
-            </button>
+            <div class="collection-stats">
+                <span class="collection-stat">
+                    <i class="fas fa-download"></i>
+                    ${collection.downloads.toLocaleString()}
+                </span>
+                <span class="collection-stat">
+                    <i class="fas fa-star"></i>
+                    ${collection.rating}
+                </span>
+            </div>
+
+            <div class="collection-requirements">
+                <h4>Системные требования:</h4>
+                ${collection.requirements.map(req => `
+                    <div class="requirement-item">
+                        <i class="fas fa-check"></i>
+                        ${req}
+                    </div>
+                `).join('')}
+            </div>
+
+            <div class="collection-actions">
+                <button class="download-btn" onclick="handleDownload(${collection.id}, 'collection', '${collection.downloadUrl}', '${collection.affiliateUrl}')">
+                    <i class="fas fa-download"></i>
+                    Скачать
+                </button>
+                <button class="info-btn" onclick="showCollectionInfo(${collection.id})">
+                    <i class="fas fa-info"></i>
+                </button>
+                <button class="favorite-btn" data-favorite="collection_${collection.id}" onclick="toggleFavorite(${collection.id}, 'collection')">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
         </div>
     `;
 
