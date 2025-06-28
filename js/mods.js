@@ -8,15 +8,12 @@ const modsData = [
         description: 'Добавляет множество технологических блоков и предметов для автоматизации производства',
         version: '1.20.1',
         category: 'technology',
-        downloads: 15420,
-        rating: 4.8,
-        image: 'https://via.placeholder.com/300x200/6366f1/ffffff?text=IC2',
+        image: 'https://via.placeholder.com/300x200/2563eb/ffffff?text=IC2',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/ic2',
         tags: ['Технологии', 'Автоматизация', 'Энергия'],
         requirements: ['Forge', 'Java 17+'],
-        isNew: true,
-        isPremium: false
+        isNew: true
     },
     {
         id: 2,
@@ -24,15 +21,12 @@ const modsData = [
         description: 'Магический мод с системой заклинаний, исследования и магических устройств',
         version: '1.19.2',
         category: 'magic',
-        downloads: 12340,
-        rating: 4.9,
-        image: 'https://via.placeholder.com/300x200/8b5cf6/ffffff?text=Thaumcraft',
+        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Thaumcraft',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/thaumcraft',
         tags: ['Магия', 'Заклинания', 'Исследования'],
         requirements: ['Forge', 'Java 17+'],
-        isNew: false,
-        isPremium: true
+        isNew: false
     },
     {
         id: 3,
@@ -40,15 +34,12 @@ const modsData = [
         description: 'Добавляет множество новых биомов, растений и природных объектов',
         version: '1.20.1',
         category: 'adventure',
-        downloads: 9870,
-        rating: 4.7,
-        image: 'https://via.placeholder.com/300x200/10b981/ffffff?text=BOP',
+        image: 'https://via.placeholder.com/300x200/1d4ed8/ffffff?text=BOP',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/bop',
         tags: ['Природа', 'Биомы', 'Растения'],
         requirements: ['Forge', 'Java 17+'],
-        isNew: false,
-        isPremium: false
+        isNew: false
     },
     {
         id: 4,
@@ -56,15 +47,12 @@ const modsData = [
         description: 'Система цифрового хранения и автоматизации с использованием энергии',
         version: '1.20.1',
         category: 'technology',
-        downloads: 11230,
-        rating: 4.8,
-        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=AE2',
+        image: 'https://via.placeholder.com/300x200/2563eb/ffffff?text=AE2',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/ae2',
         tags: ['Технологии', 'Хранение', 'Автоматизация'],
         requirements: ['Forge', 'Java 17+'],
-        isNew: false,
-        isPremium: false
+        isNew: false
     },
     {
         id: 5,
@@ -72,15 +60,12 @@ const modsData = [
         description: 'Магический мод, основанный на природной магии и цветах',
         version: '1.19.2',
         category: 'magic',
-        downloads: 8760,
-        rating: 4.6,
-        image: 'https://via.placeholder.com/300x200/ec4899/ffffff?text=Botania',
+        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Botania',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/botania',
         tags: ['Магия', 'Природа', 'Цветы'],
         requirements: ['Forge', 'Java 17+'],
-        isNew: true,
-        isPremium: false
+        isNew: true
     },
     {
         id: 6,
@@ -88,15 +73,12 @@ const modsData = [
         description: 'Добавляет множество декоративных блоков и инструменты для их создания',
         version: '1.20.1',
         category: 'decoration',
-        downloads: 6540,
-        rating: 4.5,
-        image: 'https://via.placeholder.com/300x200/f97316/ffffff?text=Chisel',
+        image: 'https://via.placeholder.com/300x200/1d4ed8/ffffff?text=Chisel',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/chisel',
         tags: ['Декор', 'Блоки', 'Строительство'],
         requirements: ['Forge', 'Java 17+'],
-        isNew: false,
-        isPremium: false
+        isNew: false
     },
     {
         id: 7,
@@ -104,15 +86,12 @@ const modsData = [
         description: 'Карта мира в реальном времени с множеством полезных функций',
         version: '1.20.1',
         category: 'utility',
-        downloads: 14560,
-        rating: 4.9,
-        image: 'https://via.placeholder.com/300x200/14b8a6/ffffff?text=JourneyMap',
+        image: 'https://via.placeholder.com/300x200/2563eb/ffffff?text=JourneyMap',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/journeymap',
         tags: ['Карта', 'Навигация', 'Утилиты'],
         requirements: ['Forge', 'Java 17+'],
-        isNew: false,
-        isPremium: false
+        isNew: false
     },
     {
         id: 8,
@@ -120,15 +99,12 @@ const modsData = [
         description: 'Система создания инструментов с множеством материалов и улучшений',
         version: '1.19.2',
         category: 'technology',
-        downloads: 13240,
-        rating: 4.7,
-        image: 'https://via.placeholder.com/300x200/6366f1/ffffff?text=Tinkers',
+        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Tinkers',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/tinkers',
         tags: ['Инструменты', 'Крафтинг', 'Материалы'],
         requirements: ['Forge', 'Java 17+'],
-        isNew: false,
-        isPremium: true
+        isNew: false
     }
 ];
 
@@ -234,7 +210,7 @@ function applyFilters() {
 function sortMods() {
     switch (currentFilters.sort) {
         case 'popular':
-            filteredMods.sort((a, b) => b.downloads - a.downloads);
+            filteredMods.sort((a, b) => b.isNew - a.isNew);
             break;
         case 'newest':
             filteredMods.sort((a, b) => b.isNew - a.isNew);
@@ -243,10 +219,10 @@ function sortMods() {
             filteredMods.sort((a, b) => a.title.localeCompare(b.title));
             break;
         case 'downloads':
-            filteredMods.sort((a, b) => b.downloads - a.downloads);
+            filteredMods.sort((a, b) => b.isNew - a.isNew);
             break;
         case 'rating':
-            filteredMods.sort((a, b) => b.rating - a.rating);
+            filteredMods.sort((a, b) => b.isNew - a.isNew);
             break;
     }
 }
@@ -284,11 +260,9 @@ function createModCard(mod) {
 
     // Add special classes
     if (mod.isNew) card.classList.add('new');
-    if (mod.isPremium) card.classList.add('premium');
 
     card.innerHTML = `
         ${mod.isNew ? '<div class="new-badge">Новый</div>' : ''}
-        ${mod.isPremium ? '<div class="premium-badge">Premium</div>' : ''}
 
         <div class="mod-image">
             <img src="${mod.image}" alt="${mod.title}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -305,17 +279,6 @@ function createModCard(mod) {
 
         <div class="mod-tags">
             ${mod.tags.map(tag => `<span class="mod-tag">${tag}</span>`).join('')}
-        </div>
-
-        <div class="mod-stats">
-            <span class="mod-stat">
-                <i class="fas fa-download"></i>
-                ${mod.downloads.toLocaleString()}
-            </span>
-            <span class="mod-stat">
-                <i class="fas fa-star"></i>
-                ${mod.rating}
-            </span>
         </div>
 
         <div class="mod-requirements">
@@ -407,11 +370,6 @@ function handleModDownload(modId, downloadUrl, affiliateUrl) {
     const mod = modsData.find(m => m.id === modId);
     if (!mod) return;
 
-    // Update statistics
-    if (window.MineSite && window.MineSite.updateDownloadStats) {
-        window.MineSite.updateDownloadStats();
-    }
-
     // Show loading state
     const btn = event.target.closest('.download-btn');
     if (btn) {
@@ -487,14 +445,6 @@ function showModPreview(modId) {
                     <div class="info-item">
                         <div class="info-label">Категория</div>
                         <div class="info-value">${getCategoryName(mod.category)}</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-label">Скачиваний</div>
-                        <div class="info-value">${mod.downloads.toLocaleString()}</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-label">Рейтинг</div>
-                        <div class="info-value">${mod.rating}/5.0</div>
                     </div>
                 </div>
                 <div class="preview-description">

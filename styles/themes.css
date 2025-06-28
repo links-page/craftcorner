@@ -1,224 +1,125 @@
-/* CSS Variables for Themes */
+/* Theme Variables - Clean Minimal Design */
 
-/* Light Theme (Default) - Telegram Style */
 :root {
-    --primary-color: #0088cc;
-    --secondary-color: #00a8ff;
+    /* Light Theme (Default) */
+    --primary-color: #2563eb;
+    --secondary-color: #3b82f6;
+    --accent-color: #1d4ed8;
+
     --bg-color: #ffffff;
-    --bg-secondary: #f8f9fa;
+    --bg-secondary: #f8fafc;
     --card-bg: #ffffff;
     --header-bg: rgba(255, 255, 255, 0.95);
-    --footer-bg: #f8f9fa;
-    --text-color: #212529;
-    --text-muted: #6c757d;
-    --border-color: #dee2e6;
-    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.15);
-    --search-bg: #ffffff;
-    --search-border: #dee2e6;
-    --search-text: #212529;
+    --footer-bg: #f1f5f9;
+
+    --text-color: #1e293b;
+    --text-muted: #64748b;
+    --text-light: #94a3b8;
+
+    --border-color: #e2e8f0;
+    --border-light: #f1f5f9;
+
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    --search-bg: rgba(255, 255, 255, 0.95);
+    --search-border: rgba(255, 255, 255, 0.3);
+    --search-text: #1e293b;
+
+    --success-color: #059669;
+    --error-color: #dc2626;
+    --warning-color: #d97706;
 }
 
-/* Dark Theme - Telegram Style */
+/* Dark Theme */
 .theme-dark {
-    --primary-color: #0088cc;
-    --secondary-color: #00a8ff;
-    --bg-color: #17212b;
-    --bg-secondary: #242f3d;
-    --card-bg: #242f3d;
-    --header-bg: rgba(23, 33, 43, 0.95);
-    --footer-bg: #17212b;
-    --text-color: #ffffff;
-    --text-muted: #a8b4c0;
-    --border-color: #4a5c6b;
-    --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
-    --search-bg: #242f3d;
-    --search-border: #4a5c6b;
-    --search-text: #ffffff;
+    --primary-color: #3b82f6;
+    --secondary-color: #60a5fa;
+    --accent-color: #2563eb;
+
+    --bg-color: #0f172a;
+    --bg-secondary: #1e293b;
+    --card-bg: #1e293b;
+    --header-bg: rgba(15, 23, 42, 0.95);
+    --footer-bg: #0f172a;
+
+    --text-color: #f1f5f9;
+    --text-muted: #94a3b8;
+    --text-light: #64748b;
+
+    --border-color: #334155;
+    --border-light: #1e293b;
+
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
+
+    --search-bg: rgba(30, 41, 59, 0.95);
+    --search-border: rgba(255, 255, 255, 0.1);
+    --search-text: #f1f5f9;
+
+    --success-color: #10b981;
+    --error-color: #ef4444;
+    --warning-color: #f59e0b;
 }
 
-/* Blue Theme - Telegram Style */
-.theme-blue {
-    --primary-color: #0088cc;
-    --secondary-color: #00a8ff;
-    --bg-color: #e3f2fd;
-    --bg-secondary: #bbdefb;
-    --card-bg: #ffffff;
-    --header-bg: rgba(227, 242, 253, 0.95);
-    --footer-bg: #1976d2;
-    --text-color: #1565c0;
-    --text-muted: #546e7a;
-    --border-color: #90caf9;
-    --shadow: 0 2px 8px rgba(0, 136, 204, 0.15);
-    --shadow-lg: 0 4px 16px rgba(0, 136, 204, 0.2);
-    --search-bg: #ffffff;
-    --search-border: #90caf9;
-    --search-text: #1565c0;
+/* Theme Switcher Styles */
+.theme-switcher {
+    display: flex;
+    gap: 0.5rem;
 }
 
-/* Green Theme - Telegram Style */
-.theme-green {
-    --primary-color: #00b894;
-    --secondary-color: #00cec9;
-    --bg-color: #e8f5e8;
-    --bg-secondary: #c8e6c9;
-    --card-bg: #ffffff;
-    --header-bg: rgba(232, 245, 232, 0.95);
-    --footer-bg: #2e7d32;
-    --text-color: #1b5e20;
-    --text-muted: #546e7a;
-    --border-color: #a5d6a7;
-    --shadow: 0 2px 8px rgba(0, 184, 148, 0.15);
-    --shadow-lg: 0 4px 16px rgba(0, 184, 148, 0.2);
-    --search-bg: #ffffff;
-    --search-border: #a5d6a7;
-    --search-text: #1b5e20;
+.theme-btn {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Purple Theme - Telegram Style */
-.theme-purple {
-    --primary-color: #6c5ce7;
-    --secondary-color: #a29bfe;
-    --bg-color: #f3e5f5;
-    --bg-secondary: #e1bee7;
-    --card-bg: #ffffff;
-    --header-bg: rgba(243, 229, 245, 0.95);
-    --footer-bg: #4a148c;
-    --text-color: #4a148c;
-    --text-muted: #6c757d;
-    --border-color: #ce93d8;
-    --shadow: 0 2px 8px rgba(108, 92, 231, 0.15);
-    --shadow-lg: 0 4px 16px rgba(108, 92, 231, 0.2);
-    --search-bg: #ffffff;
-    --search-border: #ce93d8;
-    --search-text: #4a148c;
+.theme-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
 }
 
-/* Orange Theme - Telegram Style */
-.theme-orange {
-    --primary-color: #fdcb6e;
-    --secondary-color: #e17055;
-    --bg-color: #fff3e0;
-    --bg-secondary: #ffe0b2;
-    --card-bg: #ffffff;
-    --header-bg: rgba(255, 243, 224, 0.95);
-    --footer-bg: #e65100;
-    --text-color: #bf360c;
-    --text-muted: #6c757d;
-    --border-color: #ffcc02;
-    --shadow: 0 2px 8px rgba(253, 203, 110, 0.15);
-    --shadow-lg: 0 4px 16px rgba(253, 203, 110, 0.2);
-    --search-bg: #ffffff;
-    --search-border: #ffcc02;
-    --search-text: #bf360c;
+.theme-btn.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
 }
 
-/* Red Theme - Telegram Style */
-.theme-red {
-    --primary-color: #e17055;
-    --secondary-color: #d63031;
-    --bg-color: #ffebee;
-    --bg-secondary: #ffcdd2;
-    --card-bg: #ffffff;
-    --header-bg: rgba(255, 235, 238, 0.95);
-    --footer-bg: #c62828;
-    --text-color: #b71c1c;
-    --text-muted: #6c757d;
-    --border-color: #ef9a9a;
-    --shadow: 0 2px 8px rgba(225, 112, 85, 0.15);
-    --shadow-lg: 0 4px 16px rgba(225, 112, 85, 0.2);
-    --search-bg: #ffffff;
-    --search-border: #ef9a9a;
-    --search-text: #b71c1c;
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.3s ease;
 }
 
-/* Pink Theme - Telegram Style */
-.theme-pink {
-    --primary-color: #fd79a8;
-    --secondary-color: #fdcb6e;
-    --bg-color: #fce4ec;
-    --bg-secondary: #f8bbd9;
-    --card-bg: #ffffff;
-    --header-bg: rgba(252, 228, 236, 0.95);
-    --footer-bg: #ad1457;
-    --text-color: #880e4f;
-    --text-muted: #6c757d;
-    --border-color: #f48fb1;
-    --shadow: 0 2px 8px rgba(253, 121, 168, 0.15);
-    --shadow-lg: 0 4px 16px rgba(253, 121, 168, 0.2);
-    --search-bg: #ffffff;
-    --search-border: #f48fb1;
-    --search-text: #880e4f;
+.scale {
+    animation: scale 0.3s ease;
 }
 
-/* Yellow Theme - Telegram Style */
-.theme-yellow {
-    --primary-color: #fdcb6e;
-    --secondary-color: #e17055;
-    --bg-color: #fffde7;
-    --bg-secondary: #fff9c4;
-    --card-bg: #ffffff;
-    --header-bg: rgba(255, 253, 231, 0.95);
-    --footer-bg: #f57f17;
-    --text-color: #e65100;
-    --text-muted: #6c757d;
-    --border-color: #fff59d;
-    --shadow: 0 2px 8px rgba(253, 203, 110, 0.15);
-    --shadow-lg: 0 4px 16px rgba(253, 203, 110, 0.2);
-    --search-bg: #ffffff;
-    --search-border: #fff59d;
-    --search-text: #e65100;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-/* Teal Theme - Telegram Style */
-.theme-teal {
-    --primary-color: #00b894;
-    --secondary-color: #00cec9;
-    --bg-color: #e0f2f1;
-    --bg-secondary: #b2dfdb;
-    --card-bg: #ffffff;
-    --header-bg: rgba(224, 242, 241, 0.95);
-    --footer-bg: #00695c;
-    --text-color: #004d40;
-    --text-muted: #546e7a;
-    --border-color: #80cbc4;
-    --shadow: 0 2px 8px rgba(0, 184, 148, 0.15);
-    --shadow-lg: 0 4px 16px rgba(0, 184, 148, 0.2);
-    --search-bg: #ffffff;
-    --search-border: #80cbc4;
-    --search-text: #004d40;
-}
-
-/* Indigo Theme - Telegram Style */
-.theme-indigo {
-    --primary-color: #6c5ce7;
-    --secondary-color: #a29bfe;
-    --bg-color: #e8eaf6;
-    --bg-secondary: #c5cae9;
-    --card-bg: #ffffff;
-    --header-bg: rgba(232, 234, 246, 0.95);
-    --footer-bg: #283593;
-    --text-color: #1a237e;
-    --text-muted: #6c757d;
-    --border-color: #9fa8da;
-    --shadow: 0 2px 8px rgba(108, 92, 231, 0.15);
-    --shadow-lg: 0 4px 16px rgba(108, 92, 231, 0.2);
-    --search-bg: #ffffff;
-    --search-border: #9fa8da;
-    --search-text: #1a237e;
+@keyframes scale {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
 /* Theme Transition */
 body {
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Theme Switcher Active State */
-.theme-btn.active {
-    background: var(--primary-color);
-    color: white;
-    transform: scale(1.05);
 }
 
 /* Card Hover Effects */
@@ -364,37 +265,6 @@ body {
     0%, 100% { transform: translateX(0); }
     10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
     20%, 40%, 60%, 80% { transform: translateX(5px); }
-}
-
-/* Scale Animation */
-.scale {
-    animation: scale 0.3s ease;
-}
-
-@keyframes scale {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
-/* Glow Animation */
-.glow {
-    animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-    from { box-shadow: 0 0 5px var(--primary-color); }
-    to { box-shadow: 0 0 20px var(--primary-color), 0 0 30px var(--primary-color); }
-}
-
-/* Float Animation */
-.float {
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
 }
 
 /* Rotate Animation - Removed rotation on click */

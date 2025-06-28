@@ -117,25 +117,6 @@
     border: 1px solid var(--border-color);
 }
 
-.pack-stats {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-}
-
-.pack-stat {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-}
-
-.pack-stat i {
-    font-size: 0.9rem;
-}
-
 .pack-actions {
     display: flex;
     gap: 0.75rem;
@@ -168,9 +149,9 @@
 }
 
 .preview-btn {
-    background: var(--bg-secondary);
-    color: var(--text-color);
+    background: var(--card-bg);
     border: 1px solid var(--border-color);
+    color: var(--text-color);
     padding: 0.75rem;
     border-radius: 8px;
     cursor: pointer;
@@ -181,8 +162,9 @@
 }
 
 .preview-btn:hover {
-    background: var(--border-color);
-    transform: translateY(-2px);
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
 }
 
 .favorite-btn {
@@ -329,7 +311,7 @@
 }
 
 .preview-modal.active .preview-content {
-    animation: slideUp 0.3s ease;
+    transform: scale(1);
 }
 
 .preview-header {
@@ -378,11 +360,11 @@
 .preview-image {
     border-radius: 8px;
     overflow: hidden;
-    transition: transform 0.3s ease;
 }
 
 .preview-image:hover {
     transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .preview-image img {
@@ -393,15 +375,13 @@
 
 .preview-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
     margin-bottom: 1.5rem;
 }
 
 .info-item {
-    background: var(--bg-secondary);
-    padding: 1rem;
-    border-radius: 8px;
+    text-align: center;
 }
 
 .info-label {
@@ -411,7 +391,7 @@
 }
 
 .info-value {
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-color);
 }
 
@@ -435,10 +415,6 @@
     }
 
     .pack-meta {
-        gap: 0.5rem;
-    }
-
-    .pack-stats {
         gap: 0.5rem;
     }
 
@@ -539,16 +515,6 @@
     animation: shake 0.5s ease-in-out;
 }
 
-/* Premium Pack Effects */
-.pack-card.premium {
-    border: 2px solid #fdcb6e;
-    box-shadow: 0 0 20px rgba(253, 203, 110, 0.2);
-}
-
-.pack-card.premium:hover {
-    box-shadow: 0 0 30px rgba(253, 203, 110, 0.4);
-}
-
 /* New Pack Effects */
 .pack-card.new {
     border: 2px solid #00b894;
@@ -571,10 +537,10 @@
 
 /* PBR Pack Effects */
 .pack-card.pbr {
-    border: 2px solid #fd79a8;
-    box-shadow: 0 0 20px rgba(253, 121, 168, 0.2);
+    border: 2px solid #00cec9;
+    box-shadow: 0 0 20px rgba(0, 206, 201, 0.2);
 }
 
 .pack-card.pbr:hover {
-    box-shadow: 0 0 30px rgba(253, 121, 168, 0.4);
+    box-shadow: 0 0 30px rgba(0, 206, 201, 0.4);
 }

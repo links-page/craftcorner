@@ -2,14 +2,11 @@
 
 // Global variables
 let currentTheme = localStorage.getItem('theme') || 'light';
-let totalDownloads = parseInt(localStorage.getItem('totalDownloads')) || 479;
-let todayDownloads = parseInt(localStorage.getItem('todayDownloads')) || 23;
 let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
     initializeTheme();
-    initializeStats();
     initializeSearch();
     initializeFavorites();
     loadFeaturedContent();
@@ -65,45 +62,6 @@ document.addEventListener('click', function(e) {
         }
     }
 });
-
-// Statistics management
-function initializeStats() {
-    const totalElement = document.getElementById('totalDownloads');
-    const todayElement = document.getElementById('todayDownloads');
-
-    if (totalElement) {
-        totalElement.textContent = totalDownloads.toLocaleString();
-    }
-
-    if (todayElement) {
-        todayElement.textContent = todayDownloads.toLocaleString();
-    }
-}
-
-// Update download statistics
-function updateDownloadStats() {
-    totalDownloads++;
-    todayDownloads++;
-
-    localStorage.setItem('totalDownloads', totalDownloads);
-    localStorage.setItem('todayDownloads', todayDownloads);
-
-    // Update display with animation
-    const totalElement = document.getElementById('totalDownloads');
-    const todayElement = document.getElementById('todayDownloads');
-
-    if (totalElement) {
-        totalElement.textContent = totalDownloads.toLocaleString();
-        totalElement.classList.add('scale');
-        setTimeout(() => totalElement.classList.remove('scale'), 300);
-    }
-
-    if (todayElement) {
-        todayElement.textContent = todayDownloads.toLocaleString();
-        todayElement.classList.add('scale');
-        setTimeout(() => todayElement.classList.remove('scale'), 300);
-    }
-}
 
 // Search functionality
 function initializeSearch() {
@@ -190,9 +148,6 @@ function updateFavoritesDisplay() {
 
 // Download functionality with monetization
 function handleDownload(itemId, type, downloadUrl, affiliateUrl) {
-    // Update statistics
-    updateDownloadStats();
-
     // Show loading state
     const btn = event.target.closest('.download-btn');
     if (btn) {
@@ -290,8 +245,7 @@ function loadFeaturedContent() {
             description: 'Добавляет множество технологических блоков и предметов для автоматизации',
             version: '1.20.1',
             category: 'Технологии',
-            downloads: 15420,
-            image: 'https://via.placeholder.com/300x200/6366f1/ffffff?text=IC2',
+            image: 'https://via.placeholder.com/300x200/2563eb/ffffff?text=IC2',
             downloadUrl: '#',
             affiliateUrl: 'https://example.com/affiliate/ic2'
         },
@@ -301,8 +255,7 @@ function loadFeaturedContent() {
             description: 'Магический мод с системой заклинаний и исследования',
             version: '1.19.2',
             category: 'Магия',
-            downloads: 12340,
-            image: 'https://via.placeholder.com/300x200/8b5cf6/ffffff?text=Thaumcraft',
+            image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Thaumcraft',
             downloadUrl: '#',
             affiliateUrl: 'https://example.com/affiliate/thaumcraft'
         },
@@ -312,8 +265,7 @@ function loadFeaturedContent() {
             description: 'Добавляет множество новых биомов и растений',
             version: '1.20.1',
             category: 'Природа',
-            downloads: 9870,
-            image: 'https://via.placeholder.com/300x200/10b981/ffffff?text=BOP',
+            image: 'https://via.placeholder.com/300x200/1d4ed8/ffffff?text=BOP',
             downloadUrl: '#',
             affiliateUrl: 'https://example.com/affiliate/bop'
         }
@@ -339,12 +291,6 @@ function createModCard(mod) {
         <div class="mod-meta">
             <span class="mod-version">${mod.version}</span>
             <span class="mod-category">${mod.category}</span>
-        </div>
-        <div class="mod-stats">
-            <span class="mod-stat">
-                <i class="fas fa-download"></i>
-                ${mod.downloads.toLocaleString()}
-            </span>
         </div>
         <div class="mod-actions">
             <button class="download-btn" onclick="handleDownload(${mod.id}, 'mod', '${mod.downloadUrl}', '${mod.affiliateUrl}')">
@@ -494,6 +440,5 @@ window.MineSite = {
     toggleFavorite,
     showNotification,
     copyToClipboard,
-    shareItem,
-    updateDownloadStats
+    shareItem
 };

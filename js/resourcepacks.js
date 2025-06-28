@@ -8,17 +8,14 @@ const packsData = [
         description: 'Классический ресурс пак с улучшенным разрешением 32x32',
         version: '1.20.1',
         style: 'realistic',
-        downloads: 25430,
-        rating: 4.9,
         size: '45 MB',
         resolution: '32x',
-        image: 'https://via.placeholder.com/300x200/6366f1/ffffff?text=Faithful',
+        image: 'https://via.placeholder.com/300x200/2563eb/ffffff?text=Faithful',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/faithful',
         tags: ['Классический', '32x', 'Ваннила'],
         features: ['Все блоки', 'Все предметы', 'Интерфейс'],
-        isNew: false,
-        isPremium: false
+        isNew: false
     },
     {
         id: 2,
@@ -26,17 +23,14 @@ const packsData = [
         description: 'Мультяшный стиль с яркими цветами и детализированными текстурами',
         version: '1.20.1',
         style: 'cartoon',
-        downloads: 18760,
-        rating: 4.8,
         size: '128 MB',
         resolution: '128x',
-        image: 'https://via.placeholder.com/300x200/8b5cf6/ffffff?text=Sphax',
+        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Sphax',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/sphax',
         tags: ['Мультяшный', '128x', 'Яркий'],
         features: ['Все блоки', 'Все предметы', 'Интерфейс', 'Анимации'],
-        isNew: false,
-        isPremium: true
+        isNew: false
     },
     {
         id: 3,
@@ -44,17 +38,14 @@ const packsData = [
         description: 'Фотореалистичные текстуры для максимальной реалистичности',
         version: '1.19.2',
         style: 'realistic',
-        downloads: 9870,
-        rating: 4.7,
         size: '256 MB',
         resolution: '256x',
-        image: 'https://via.placeholder.com/300x200/10b981/ffffff?text=Realistico',
+        image: 'https://via.placeholder.com/300x200/1d4ed8/ffffff?text=Realistico',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/realistico',
         tags: ['Реалистичный', '256x', 'PBR'],
         features: ['Все блоки', 'PBR текстуры', 'Нормал мапы'],
-        isNew: true,
-        isPremium: false
+        isNew: true
     },
     {
         id: 4,
@@ -62,17 +53,14 @@ const packsData = [
         description: 'Средневековый фэнтези стиль с богатыми деталями',
         version: '1.20.1',
         style: 'fantasy',
-        downloads: 12340,
-        rating: 4.6,
         size: '89 MB',
         resolution: '64x',
-        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Chroma',
+        image: 'https://via.placeholder.com/300x200/2563eb/ffffff?text=Chroma',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/chroma',
         tags: ['Фэнтези', '64x', 'Средневековье'],
         features: ['Все блоки', 'Все предметы', 'Интерфейс'],
-        isNew: false,
-        isPremium: false
+        isNew: false
     },
     {
         id: 5,
@@ -80,17 +68,14 @@ const packsData = [
         description: 'Современный минималистичный дизайн с четкими линиями',
         version: '1.20.1',
         style: 'modern',
-        downloads: 6540,
-        rating: 4.5,
         size: '67 MB',
         resolution: '64x',
-        image: 'https://via.placeholder.com/300x200/ec4899/ffffff?text=Modern',
+        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Modern',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/modern',
         tags: ['Современный', '64x', 'Минимализм'],
         features: ['Все блоки', 'Интерфейс', 'Четкие линии'],
-        isNew: true,
-        isPremium: false
+        isNew: true
     },
     {
         id: 6,
@@ -98,17 +83,14 @@ const packsData = [
         description: 'Аутентичные средневековые текстуры для исторических серверов',
         version: '1.19.2',
         style: 'medieval',
-        downloads: 5430,
-        rating: 4.4,
         size: '78 MB',
         resolution: '64x',
-        image: 'https://via.placeholder.com/300x200/f97316/ffffff?text=Medieval',
+        image: 'https://via.placeholder.com/300x200/1d4ed8/ffffff?text=Medieval',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/medieval',
         tags: ['Средневековье', '64x', 'Исторический'],
         features: ['Все блоки', 'Все предметы', 'Интерфейс'],
-        isNew: false,
-        isPremium: false
+        isNew: false
     },
     {
         id: 7,
@@ -116,17 +98,14 @@ const packsData = [
         description: 'Плавные и мягкие текстуры с приятными цветами',
         version: '1.20.1',
         style: 'realistic',
-        downloads: 8760,
-        rating: 4.6,
         size: '92 MB',
         resolution: '64x',
-        image: 'https://via.placeholder.com/300x200/14b8a6/ffffff?text=Soartex',
+        image: 'https://via.placeholder.com/300x200/2563eb/ffffff?text=Soartex',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/soartex',
         tags: ['Плавный', '64x', 'Мягкий'],
         features: ['Все блоки', 'Все предметы', 'Интерфейс'],
-        isNew: false,
-        isPremium: false
+        isNew: false
     },
     {
         id: 8,
@@ -134,17 +113,14 @@ const packsData = [
         description: 'Классический фэнтези стиль с богатой историей',
         version: '1.19.2',
         style: 'fantasy',
-        downloads: 7650,
-        rating: 4.5,
         size: '56 MB',
         resolution: '32x',
-        image: 'https://via.placeholder.com/300x200/6366f1/ffffff?text=Dokucraft',
+        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Dokucraft',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/dokucraft',
         tags: ['Фэнтези', '32x', 'Классический'],
         features: ['Все блоки', 'Все предметы', 'Интерфейс'],
-        isNew: false,
-        isPremium: true
+        isNew: false
     }
 ];
 
@@ -250,7 +226,7 @@ function applyFilters() {
 function sortPacks() {
     switch (currentFilters.sort) {
         case 'popular':
-            filteredPacks.sort((a, b) => b.downloads - a.downloads);
+            filteredPacks.sort((a, b) => b.isNew - a.isNew);
             break;
         case 'newest':
             filteredPacks.sort((a, b) => b.isNew - a.isNew);
@@ -259,10 +235,10 @@ function sortPacks() {
             filteredPacks.sort((a, b) => a.title.localeCompare(b.title));
             break;
         case 'downloads':
-            filteredPacks.sort((a, b) => b.downloads - a.downloads);
+            filteredPacks.sort((a, b) => b.isNew - a.isNew);
             break;
         case 'rating':
-            filteredPacks.sort((a, b) => b.rating - a.rating);
+            filteredPacks.sort((a, b) => b.isNew - a.isNew);
             break;
     }
 }
@@ -300,13 +276,11 @@ function createPackCard(pack) {
 
     // Add special classes
     if (pack.isNew) card.classList.add('new');
-    if (pack.isPremium) card.classList.add('premium');
     if (pack.resolution === '256x') card.classList.add('high-res');
     if (pack.tags.includes('PBR')) card.classList.add('pbr');
 
     card.innerHTML = `
         ${pack.isNew ? '<div class="new-badge">Новый</div>' : ''}
-        ${pack.isPremium ? '<div class="premium-badge">Premium</div>' : ''}
         <div class="pack-resolution">${pack.resolution}</div>
         <div class="pack-size">${pack.size}</div>
 
@@ -325,17 +299,6 @@ function createPackCard(pack) {
 
         <div class="pack-tags">
             ${pack.tags.map(tag => `<span class="pack-tag">${tag}</span>`).join('')}
-        </div>
-
-        <div class="pack-stats">
-            <span class="pack-stat">
-                <i class="fas fa-download"></i>
-                ${pack.downloads.toLocaleString()}
-            </span>
-            <span class="pack-stat">
-                <i class="fas fa-star"></i>
-                ${pack.rating}
-            </span>
         </div>
 
         <div class="pack-features">
@@ -444,10 +407,10 @@ function showPackPreview(packId) {
                         <img src="${pack.image}" alt="${pack.title}">
                     </div>
                     <div class="preview-image">
-                        <img src="https://via.placeholder.com/200x150/6366f1/ffffff?text=Preview+1" alt="Preview 1">
+                        <img src="https://via.placeholder.com/200x150/2563eb/ffffff?text=Preview+1" alt="Preview 1">
                     </div>
                     <div class="preview-image">
-                        <img src="https://via.placeholder.com/200x150/8b5cf6/ffffff?text=Preview+2" alt="Preview 2">
+                        <img src="https://via.placeholder.com/200x150/3b82f6/ffffff?text=Preview+2" alt="Preview 2">
                     </div>
                 </div>
                 <div class="preview-info">

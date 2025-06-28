@@ -4,161 +4,135 @@
 const collectionsData = [
     {
         id: 1,
-        title: 'Tech Revolution',
-        description: 'Полный набор технологических модов для автоматизации и прогресса',
+        title: 'All the Mods 9',
+        description: 'Полный пак модов для Minecraft 1.20.1 с более чем 400 модами',
         version: '1.20.1',
-        type: 'tech',
-        downloads: 8760,
-        rating: 4.8,
+        type: 'kitchen',
         size: '2.1 GB',
-        modCount: 15,
-        image: 'https://via.placeholder.com/300x200/6366f1/ffffff?text=Tech+Revolution',
+        modCount: 450,
+        image: 'https://via.placeholder.com/400x200/2563eb/ffffff?text=ATM9',
         downloadUrl: '#',
-        affiliateUrl: 'https://example.com/affiliate/tech-revolution',
-        mods: ['Industrial Craft 2', 'Applied Energistics 2', 'Thermal Expansion', 'Ender IO'],
+        affiliateUrl: 'https://example.com/affiliate/atm9',
+        mods: ['Industrial Craft 2', 'Thaumcraft', 'Applied Energistics 2', 'Botania', 'Tinkers Construct'],
         requirements: ['Forge', 'Java 17+', '8GB RAM'],
-        isNew: false,
-        isPremium: true,
+        installation: [
+            'Скачайте и установите Forge для версии 1.20.1',
+            'Скачайте сборку и распакуйте в папку mods',
+            'Запустите игру с профилем Forge'
+        ],
+        isNew: true,
         isFeatured: true
     },
     {
         id: 2,
-        title: 'Magic Academy',
-        description: 'Сборка магических модов для изучения заклинаний и магии',
+        title: 'FTB Skies',
+        description: 'Уникальная сборка с системой островов и прогрессии',
         version: '1.19.2',
-        type: 'magic',
-        downloads: 6540,
-        rating: 4.7,
+        type: 'adventure',
         size: '1.8 GB',
-        modCount: 12,
-        image: 'https://via.placeholder.com/300x200/8b5cf6/ffffff?text=Magic+Academy',
+        modCount: 380,
+        image: 'https://via.placeholder.com/400x200/3b82f6/ffffff?text=FTB+Skies',
         downloadUrl: '#',
-        affiliateUrl: 'https://example.com/affiliate/magic-academy',
-        mods: ['Thaumcraft', 'Botania', 'Blood Magic', 'Astral Sorcery'],
+        affiliateUrl: 'https://example.com/affiliate/ftbskies',
+        mods: ['Create', 'Mekanism', 'Thermal Series', 'Mystical Agriculture', 'Refined Storage'],
         requirements: ['Forge', 'Java 17+', '6GB RAM'],
-        isNew: true,
-        isPremium: false,
-        isFeatured: false
+        installation: [
+            'Установите Forge для версии 1.19.2',
+            'Скачайте сборку и запустите установщик',
+            'Следуйте инструкциям установщика'
+        ],
+        isNew: false,
+        isFeatured: true
     },
     {
         id: 3,
-        title: 'Adventure Pack',
-        description: 'Приключенческая сборка с новыми измерениями и биомами',
-        version: '1.20.1',
-        type: 'adventure',
-        downloads: 5430,
-        rating: 4.6,
+        title: 'Create: Above and Beyond',
+        description: 'Сборка, полностью основанная на модах Create и автоматизации',
+        version: '1.18.2',
+        type: 'tech',
         size: '1.5 GB',
-        modCount: 10,
-        image: 'https://via.placeholder.com/300x200/10b981/ffffff?text=Adventure+Pack',
+        modCount: 320,
+        image: 'https://via.placeholder.com/400x200/1d4ed8/ffffff?text=Create+CAB',
         downloadUrl: '#',
-        affiliateUrl: 'https://example.com/affiliate/adventure-pack',
-        mods: ['Biomes O\' Plenty', 'Twilight Forest', 'The Betweenlands', 'AbyssalCraft'],
+        affiliateUrl: 'https://example.com/affiliate/createcab',
+        mods: ['Create', 'Applied Energistics 2', 'Refined Storage', 'Thermal Series', 'Mekanism'],
         requirements: ['Forge', 'Java 17+', '6GB RAM'],
+        installation: [
+            'Установите Forge для версии 1.18.2',
+            'Скачайте и распакуйте сборку',
+            'Скопируйте файлы в папку .minecraft'
+        ],
         isNew: false,
-        isPremium: false,
         isFeatured: false
     },
     {
         id: 4,
-        title: 'Kitchen Sink',
-        description: 'Классическая сборка "все включено" с популярными модами',
+        title: 'Enigmatica 9',
+        description: 'Сбалансированная сборка с квестами и прогрессией',
         version: '1.20.1',
         type: 'kitchen',
-        downloads: 12340,
-        rating: 4.9,
-        size: '3.2 GB',
-        modCount: 25,
-        image: 'https://via.placeholder.com/300x200/3b82f6/ffffff?text=Kitchen+Sink',
+        size: '2.3 GB',
+        modCount: 480,
+        image: 'https://via.placeholder.com/400x200/2563eb/ffffff?text=Enigmatica+9',
         downloadUrl: '#',
-        affiliateUrl: 'https://example.com/affiliate/kitchen-sink',
-        mods: ['Industrial Craft 2', 'Thaumcraft', 'Biomes O\' Plenty', 'Applied Energistics 2'],
+        affiliateUrl: 'https://example.com/affiliate/enigmatica9',
+        mods: ['Industrial Craft 2', 'Thaumcraft', 'Botania', 'Mystical Agriculture', 'Applied Energistics 2'],
         requirements: ['Forge', 'Java 17+', '8GB RAM'],
-        isNew: false,
-        isPremium: true,
-        isFeatured: true
+        installation: [
+            'Скачайте Forge для версии 1.20.1',
+            'Установите сборку через лаунчер',
+            'Настройте параметры запуска'
+        ],
+        isNew: true,
+        isFeatured: false
     },
     {
         id: 5,
-        title: 'Building Paradise',
-        description: 'Сборка для строителей с декоративными модами и инструментами',
-        version: '1.19.2',
-        type: 'building',
-        downloads: 4320,
-        rating: 4.5,
-        size: '1.2 GB',
-        modCount: 8,
-        image: 'https://via.placeholder.com/300x200/ec4899/ffffff?text=Building+Paradise',
+        title: 'StoneBlock 3',
+        description: 'Сборка в стиле SkyBlock, но под землей',
+        version: '1.18.2',
+        type: 'adventure',
+        size: '1.7 GB',
+        modCount: 350,
+        image: 'https://via.placeholder.com/400x200/3b82f6/ffffff?text=StoneBlock+3',
         downloadUrl: '#',
-        affiliateUrl: 'https://example.com/affiliate/building-paradise',
-        mods: ['Chisel', 'Carpenter\'s Blocks', 'Bibliocraft', 'Decocraft'],
-        requirements: ['Forge', 'Java 17+', '4GB RAM'],
-        isNew: true,
-        isPremium: false,
+        affiliateUrl: 'https://example.com/affiliate/stoneblock3',
+        mods: ['Mystical Agriculture', 'Applied Energistics 2', 'Thermal Series', 'Mekanism', 'Refined Storage'],
+        requirements: ['Forge', 'Java 17+', '6GB RAM'],
+        installation: [
+            'Установите Forge для версии 1.18.2',
+            'Скачайте сборку и запустите',
+            'Создайте новый мир с настройками сборки'
+        ],
+        isNew: false,
         isFeatured: false
     },
     {
         id: 6,
-        title: 'Lightweight Pack',
-        description: 'Оптимизированная сборка для слабых компьютеров',
+        title: 'Valhelsia 5',
+        description: 'Современная сборка с акцентом на строительство и декор',
         version: '1.20.1',
-        type: 'utility',
-        downloads: 7650,
-        rating: 4.4,
-        size: '800 MB',
-        modCount: 6,
-        image: 'https://via.placeholder.com/300x200/f97316/ffffff?text=Lightweight',
+        type: 'building',
+        size: '1.9 GB',
+        modCount: 420,
+        image: 'https://via.placeholder.com/400x200/1d4ed8/ffffff?text=Valhelsia+5',
         downloadUrl: '#',
-        affiliateUrl: 'https://example.com/affiliate/lightweight',
-        mods: ['JourneyMap', 'JEI', 'Optifine', 'FastLeafDecay'],
-        requirements: ['Forge', 'Java 17+', '4GB RAM'],
+        affiliateUrl: 'https://example.com/affiliate/valhelsia5',
+        mods: ['Create', 'Chisel', 'Decocraft', 'Bibliocraft', 'Architects Palette'],
+        requirements: ['Forge', 'Java 17+', '6GB RAM'],
+        installation: [
+            'Скачайте Forge для версии 1.20.1',
+            'Установите сборку через лаунчер',
+            'Настройте параметры запуска'
+        ],
         isNew: false,
-        isPremium: false,
         isFeatured: false
-    },
-    {
-        id: 7,
-        title: 'Expert Mode',
-        description: 'Сложная сборка с измененными рецептами и балансом',
-        version: '1.19.2',
-        type: 'tech',
-        downloads: 3210,
-        rating: 4.8,
-        size: '2.8 GB',
-        modCount: 20,
-        image: 'https://via.placeholder.com/300x200/14b8a6/ffffff?text=Expert+Mode',
-        downloadUrl: '#',
-        affiliateUrl: 'https://example.com/affiliate/expert-mode',
-        mods: ['Industrial Craft 2', 'GregTech', 'Applied Energistics 2', 'Thermal Expansion'],
-        requirements: ['Forge', 'Java 17+', '8GB RAM'],
-        isNew: false,
-        isPremium: true,
-        isFeatured: false
-    },
-    {
-        id: 8,
-        title: 'Vanilla+',
-        description: 'Минималистичная сборка, дополняющая ванильную игру',
-        version: '1.20.1',
-        type: 'utility',
-        downloads: 9870,
-        rating: 4.7,
-        size: '600 MB',
-        modCount: 5,
-        image: 'https://via.placeholder.com/300x200/6366f1/ffffff?text=Vanilla+',
-        downloadUrl: '#',
-        affiliateUrl: 'https://example.com/affiliate/vanilla-plus',
-        mods: ['Quark', 'Autumnity', 'Upgrade Aquatic', 'Buzzier Bees'],
-        requirements: ['Forge', 'Java 17+', '4GB RAM'],
-        isNew: false,
-        isPremium: false,
-        isFeatured: true
     }
 ];
 
 // Current page state
 let currentPage = 1;
-let itemsPerPage = 8;
+let itemsPerPage = 6;
 let filteredCollections = [...collectionsData];
 let currentFilters = {
     search: '',
@@ -258,7 +232,7 @@ function applyFilters() {
 function sortCollections() {
     switch (currentFilters.sort) {
         case 'popular':
-            filteredCollections.sort((a, b) => b.downloads - a.downloads);
+            filteredCollections.sort((a, b) => b.isFeatured - a.isFeatured || b.isNew - a.isNew);
             break;
         case 'newest':
             filteredCollections.sort((a, b) => b.isNew - a.isNew);
@@ -267,10 +241,7 @@ function sortCollections() {
             filteredCollections.sort((a, b) => a.title.localeCompare(b.title));
             break;
         case 'downloads':
-            filteredCollections.sort((a, b) => b.downloads - a.downloads);
-            break;
-        case 'rating':
-            filteredCollections.sort((a, b) => b.rating - a.rating);
+            filteredCollections.sort((a, b) => b.isFeatured - a.isFeatured || b.isNew - a.isNew);
             break;
     }
 }
@@ -308,12 +279,10 @@ function createCollectionCard(collection) {
 
     // Add special classes
     if (collection.isNew) card.classList.add('new');
-    if (collection.isPremium) card.classList.add('premium');
     if (collection.isFeatured) card.classList.add('featured');
 
     card.innerHTML = `
         ${collection.isNew ? '<div class="new-badge">Новый</div>' : ''}
-        ${collection.isPremium ? '<div class="premium-badge">Premium</div>' : ''}
         ${collection.isFeatured ? '<div class="featured-badge">Рекомендуемый</div>' : ''}
         <div class="collection-size">${collection.size}</div>
         <div class="collection-mod-count">${collection.modCount} модов</div>
@@ -335,24 +304,13 @@ function createCollectionCard(collection) {
             <div class="collection-mods">
                 <h4>Основные моды:</h4>
                 <div class="mod-list">
-                    ${collection.mods.slice(0, 4).map(mod => `<span class="mod-item">${mod}</span>`).join('')}
-                    ${collection.mods.length > 4 ? `<span class="mod-item">+${collection.mods.length - 4} еще</span>` : ''}
+                    ${collection.mods.slice(0, 5).map(mod => `<span class="mod-item">${mod}</span>`).join('')}
+                    ${collection.mods.length > 5 ? `<span class="mod-item">+${collection.mods.length - 5} еще</span>` : ''}
                 </div>
             </div>
 
-            <div class="collection-stats">
-                <span class="collection-stat">
-                    <i class="fas fa-download"></i>
-                    ${collection.downloads.toLocaleString()}
-                </span>
-                <span class="collection-stat">
-                    <i class="fas fa-star"></i>
-                    ${collection.rating}
-                </span>
-            </div>
-
             <div class="collection-requirements">
-                <h4>Системные требования:</h4>
+                <h4>Требования:</h4>
                 ${collection.requirements.map(req => `
                     <div class="requirement-item">
                         <i class="fas fa-check"></i>
@@ -381,12 +339,11 @@ function createCollectionCard(collection) {
 
 function getTypeName(type) {
     const types = {
-        'tech': 'Технологические',
-        'magic': 'Магические',
-        'adventure': 'Приключенческие',
-        'kitchen': 'Кухонные',
-        'building': 'Строительные',
-        'utility': 'Утилиты'
+        'kitchen': 'Кухонная раковина',
+        'tech': 'Технологическая',
+        'adventure': 'Приключенческая',
+        'building': 'Строительная',
+        'magic': 'Магическая'
     };
     return types[type] || type;
 }
@@ -455,12 +412,12 @@ function showCollectionInfo(collectionId) {
             </div>
             <div class="info-body">
                 <div class="info-description">
-                    <h4>Описание:</h4>
+                    <h4>Описание</h4>
                     <p>${collection.description}</p>
                 </div>
 
                 <div class="info-mods">
-                    <h3>Список модов (${collection.modCount}):</h3>
+                    <h3>Моды в сборке (${collection.modCount})</h3>
                     <div class="mod-grid">
                         ${collection.mods.map(mod => `
                             <div class="mod-item-detailed">
@@ -472,23 +429,13 @@ function showCollectionInfo(collectionId) {
                 </div>
 
                 <div class="info-installation">
-                    <h3>Инструкция по установке:</h3>
-                    <div class="installation-step">
-                        <div class="step-number">1</div>
-                        <div class="step-text">Скачайте и установите Minecraft ${collection.version}</div>
-                    </div>
-                    <div class="installation-step">
-                        <div class="step-number">2</div>
-                        <div class="step-text">Установите Forge для версии ${collection.version}</div>
-                    </div>
-                    <div class="installation-step">
-                        <div class="step-number">3</div>
-                        <div class="step-text">Скачайте и распакуйте сборку в папку .minecraft/mods</div>
-                    </div>
-                    <div class="installation-step">
-                        <div class="step-number">4</div>
-                        <div class="step-text">Запустите игру и выберите профиль Forge</div>
-                    </div>
+                    <h3>Инструкция по установке</h3>
+                    ${collection.installation.map((step, index) => `
+                        <div class="installation-step">
+                            <div class="step-number">${index + 1}</div>
+                            <div class="step-text">${step}</div>
+                        </div>
+                    `).join('')}
                 </div>
 
                 <div class="info-actions">

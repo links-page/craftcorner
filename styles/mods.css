@@ -117,25 +117,6 @@
     border: 1px solid var(--border-color);
 }
 
-.mod-stats {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-}
-
-.mod-stat {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-}
-
-.mod-stat i {
-    font-size: 0.9rem;
-}
-
 .mod-actions {
     display: flex;
     gap: 0.75rem;
@@ -190,21 +171,6 @@
     color: #e17055;
     border-color: #e17055;
     background: rgba(225, 112, 85, 0.1);
-}
-
-/* Premium Badge */
-.premium-badge {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: linear-gradient(135deg, #fdcb6e, #e17055);
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    z-index: 10;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* New Badge */
@@ -367,7 +333,7 @@
 
 .search-box input:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(0, 136, 204, 0.1);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
     outline: none;
 }
 
@@ -391,7 +357,7 @@
 
 .filter-select:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(0, 136, 204, 0.1);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
     outline: none;
 }
 
@@ -420,10 +386,6 @@
     }
 
     .mod-meta {
-        gap: 0.5rem;
-    }
-
-    .mod-stats {
         gap: 0.5rem;
     }
 }
@@ -509,16 +471,6 @@
 .download-btn.error {
     background: linear-gradient(135deg, #e17055, #d63031);
     animation: shake 0.5s ease-in-out;
-}
-
-/* Premium Card Effects */
-.mod-card.premium {
-    border: 2px solid #fdcb6e;
-    box-shadow: 0 0 20px rgba(253, 203, 110, 0.2);
-}
-
-.mod-card.premium:hover {
-    box-shadow: 0 0 30px rgba(253, 203, 110, 0.4);
 }
 
 /* New Card Effects */
