@@ -64,22 +64,25 @@ const collectionsData = [
     },
     {
         id: 4,
-        code: 'ENIGMATICA9',
-        title: 'Enigmatica 9',
-        description: 'Сбалансированная сборка с квестами и прогрессией',
+        code: 'IMRT',
+        title: 'Immortal 1.4',
+        description: 'уникальная сборка с проработанным сюжетом, наполненная тайнами и элементами RPG. Действия игры разворачиваются в Новом мире, куда попадает Избранный, чтобы раскрыть его тайны и найти способ обрести Бессмертие.',
         version: '1.20.1',
-        type: 'kitchen',
-        size: '2.3 GB',
-        modCount: 480,
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkVuaWdtYXRpY2EgOTwvdGV4dD48L3N2Zz4=',
-        downloadUrl: '#',
-        affiliateUrl: 'https://example.com/affiliate/enigmatica9',
-        mods: ['Industrial Craft 2', 'Thaumcraft', 'Botania', 'Mystical Agriculture', 'Applied Energistics 2'],
-        requirements: ['Forge', 'Java 17+', '8GB RAM'],
+        type: 'adventure',
+        size: '0.6 GB',
+        modCount: 153,
+        image: 'https://ru-minecraft.ru/uploads/posts/2024-09/1726759561_maxresdefault.jpg',
+        downloadUrl: 'https://vexfile.com/download/xarfTqmcvu',
+        affiliateUrl: 'https://vexfile.com/download/xarfTqmcvu',
+        mods: ["L_Ender 's Cataclysm", 'STRAYED FATES: Forsaken', "Mowzie’s Mobs", 'Create', 'Dungeons and Taverns'],
+        requirements: ['Forge', '4GB RAM', '1.20.1'],
         installation: [
-            'Скачайте Forge для версии 1.20.1',
-            'Установите сборку через лаунчер',
-            'Настройте параметры запуска'
+            'Скачайте файл и распакуйте его. (достаньте папки из архива)',
+            'Крайне рекомендуется удалить все свои моды, а также очистить папки .minecraft/config',
+            'Установите forge-1.20.1-47.2.30',
+            'Скопируйте все содержимое архива (папки mods, scripts, config итд ) в .minecraft',
+            'В лаунчере запускайте версию forge-1.20.1-47.2.30',
+            'Также крайне рекомендуется прочесть все инструкции в текстовых документах скачанного архива'
         ]
     },
     {
@@ -102,7 +105,7 @@ const collectionsData = [
             'Крайне рекомендуется удалить все свои моды, а также очистить папки .minecraft/config и .minecraft/scripts',
             'Установите fabric-loader-0.14.25 для 1.20.1',
             'Скопируйте все содержимое архива (папки mods, scripts, config итд ) в .minecraft',
-            'В лаунчере запускай версию fabric-loader-0.14.25-1.20.1'
+            'В лаунчере запускайте версию fabric-loader-0.14.25-1.20.1'
         ]
     },
     {
@@ -118,7 +121,7 @@ const collectionsData = [
         downloadUrl: 'https://vexfile.com/download/BO9dD5A4YV',
         affiliateUrl: 'https://vexfile.com/download/BO9dD5A4YV',
         mods: ['Create', 'Solo Leveling: Reawakening', 'DungeonsArise', 'Quark', "L_Ender 's Cataclysm"],
-        requirements: ['Forge', '8GB RAM', '1.20.1'],
+        requirements: ['Forge', '6GB RAM', '1.20.1'],
         installation: [
             'Скачайте Forge для версии 1.20.1',
             'Скачай сборку по ссылке ниже',
