@@ -104,21 +104,21 @@ const collectionsData = [
     },
     {
         id: 6,
-        code: 'VALHELSIA5',
-        title: 'Valhelsia 5',
-        description: 'Современная сборка с акцентом на строительство и декор',
+        code: 'SOLO',
+        title: 'Solo Leveling: Reawakening',
+        description: 'Комбинированная сборка соло левелинга и эпических боев! Драконы, магия c комбинацией эпической боевкой, данжи и т.д! Проработан баланс, чуточка хардкора и конечно же прокачка!',
         version: '1.20.1',
-        type: 'building',
-        size: '1.9 GB',
-        modCount: 420,
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlZhbGhlbHNpYSA1PC90ZXh0Pjwvc3ZnPg==',
+        type: 'adventure',
+        size: '0.67 GB',
+        modCount: 113,
+        image: 'https://minecraft-inside.ru/uploads/files/2025-06/186026_685cf0581ea8c.png',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/valhelsia5',
-        mods: ['Create', 'Chisel', 'Decocraft', 'Bibliocraft', 'Architects Palette'],
-        requirements: ['Forge', 'Java 17+', '6GB RAM'],
+        mods: ['Create', 'Solo Leveling: Reawakening', 'DungeonsArise', 'Quark', "L_Ender 's Cataclysm"],
+        requirements: ['Forge', '8GB RAM', '1.20.1'],
         installation: [
             'Скачайте Forge для версии 1.20.1',
-            'Установите сборку через лаунчер',
+            'Скачай сборку по ссылке ниже',
             'Настройте параметры запуска'
         ]
     }
