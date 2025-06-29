@@ -722,7 +722,7 @@ function loadMods() {
 
     // Create mod cards
     modsToShow.forEach(mod => {
-        const modCard = createModCard(mod);
+        const modCard = createModCard(mod, modsCurrentFilters.version);
         modsGrid.appendChild(modCard);
     });
 
@@ -730,9 +730,19 @@ function loadMods() {
     updateLoadMoreButton();
 }
 
-function createModCard(mod) {
+function createModCard(mod, selectedVersion = null) {
     const card = document.createElement('div');
     card.className = 'mod-card fade-in';
+
+    // Determine which version to display
+    let displayVersion = mod.versions[0].version;
+    if (selectedVersion) {
+        // If a specific version is selected, use it
+        displayVersion = selectedVersion;
+    } else if (modsCurrentFilters.version) {
+        // If version filter is active, use the filtered version
+        displayVersion = modsCurrentFilters.version;
+    }
 
     card.innerHTML = `
         <div class="mod-code">${mod.code}</div>
@@ -746,7 +756,7 @@ function createModCard(mod) {
         <p class="mod-description">${mod.description}</p>
 
         <div class="mod-meta">
-            <span class="mod-version">${mod.versions[0].version}</span>
+            <span class="mod-version">${displayVersion}</span>
             <span class="mod-category">${getCategoryName(mod.category)}</span>
         </div>
 
@@ -815,7 +825,7 @@ function loadMoreMods() {
     // Add new mods with animation
     modsToShow.forEach((mod, index) => {
         setTimeout(() => {
-            const modCard = createModCard(mod);
+            const modCard = createModCard(mod, modsCurrentFilters.version);
             modsGrid.appendChild(modCard);
         }, index * 100);
     });
@@ -985,6 +995,12 @@ function showModPreview(modId) {
     const mod = modsData.find(m => m.id === modId);
     if (!mod) return;
 
+    // Determine which version to display
+    let displayVersion = mod.versions[0].version;
+    if (modsCurrentFilters.version) {
+        displayVersion = modsCurrentFilters.version;
+    }
+
     // Create modal
     const modal = document.createElement('div');
     modal.className = 'preview-modal active';
@@ -1001,7 +1017,7 @@ function showModPreview(modId) {
                 <div class="preview-info">
                     <div class="info-item">
                         <div class="info-label">Версия</div>
-                        <div class="info-value">${mod.versions[0].version}</div>
+                        <div class="info-value">${displayVersion}</div>
                     </div>
                     <div class="info-item">
                         <div class="info-label">Категория</div>
@@ -1042,6 +1058,12 @@ function showModInfo(modId) {
     const mod = modsData.find(m => m.id === modId);
     if (!mod) return;
 
+    // Determine which version to display
+    let displayVersion = mod.versions[0].version;
+    if (modsCurrentFilters.version) {
+        displayVersion = modsCurrentFilters.version;
+    }
+
     // Create modal
     const modal = document.createElement('div');
     modal.className = 'info-modal active';
@@ -1057,7 +1079,7 @@ function showModInfo(modId) {
                     <p>${mod.description}</p>
                 </div>
                 <div class="info-meta">
-                    <div><b>Версия:</b> ${mod.versions[0].version}</div>
+                    <div><b>Версия:</b> ${displayVersion}</div>
                     <div><b>Категория:</b> ${getCategoryName(mod.category)}</div>
                     <div><b>Код:</b> ${mod.code}</div>
                 </div>
