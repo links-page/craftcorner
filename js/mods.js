@@ -218,7 +218,7 @@ const modsData = [
         title: 'Thaumcraft',
         description: 'Магический мод с системой заклинаний, исследования и магических устройств',
         category: 'magic',
-        image: '',
+        image: 'https://minecraft-inside.ru/uploads/files/2018-01/Thaumcraft.jpg',
         affiliateUrl: 'https://vexfile.com/download/QXoXo5WfdW',
         tags: ['Магия', 'Заклинания', 'Исследования'],
         requirements: ['Forge'],
@@ -320,7 +320,7 @@ const modsData = [
         description: 'Магический мод, основанный на природной магии и цветах',
         category: 'magic',
         image: 'https://minecraft-inside.ru/uploads/files/2023-02/9729_63ee465dcc92d.jpg',
-        affiliateUrl: 'https://example.com/affiliate/botania',
+        affiliateUrl: 'https://vexfile.com/download/oGNBMohfnO',
         tags: ['Магия', 'Природа', 'Цветы'],
         requirements: ['Forge'],
         installationInstructions: [
@@ -355,7 +355,7 @@ const modsData = [
         description: 'Добавляет множество декоративных блоков и инструменты для их создания',
         category: 'decoration',
         image: 'https://ru-minecraft.ru/uploads/posts/2013-08/1375515220_full.jpg',
-        affiliateUrl: 'https://example.com/affiliate/chisel',
+        affiliateUrl: 'https://vexfile.com/download/hw4AaFY6EB',
         tags: ['Декор', 'Блоки', 'Строительство'],
         requirements: ['Forge'],
         installationInstructions: [
@@ -381,10 +381,10 @@ const modsData = [
         title: 'JourneyMap',
         description: 'Карта мира в реальном времени с множеством полезных функций',
         category: 'utility',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkpvdXJuZXlNYXA8L3RleHQ+PC9zdmc+',
-        affiliateUrl: 'https://example.com/affiliate/journeymap',
+        image: 'https://www.9minecraft.net/wp-content/uploads/2024/11/JourneyMap-Mod.jpg',
+        affiliateUrl: 'https://vexfile.com/download/zBhcrNz1gj',
         tags: ['Карта', 'Навигация', 'Утилиты'],
-        requirements: ['Forge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
             'Скачай мод',
@@ -393,16 +393,28 @@ const modsData = [
         ],
         versions: [
             {
+                version: '1.21.6',
+                downloadUrl: 'https://vexfile.com/download/zBhcrNz1gj'
+            },
+            {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/journeymap-1.20.1.jar'
+                downloadUrl: 'https://vexfile.com/download/siVaU5VRqv'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/journeymap-1.19.2.jar'
+                downloadUrl: 'https://vexfile.com/download/vwrQ6RD1Pj'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/journeymap-1.18.2.jar'
+                downloadUrl: 'https://vexfile.com/download/n7VseiLlHG'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://vexfile.com/download/ivKyOjPV3r'
+            },
+            {
+                version: '1.12.2',
+                downloadUrl: 'https://vexfile.com/download/F58VXuGz30'
             }
         ]
     },
@@ -412,10 +424,10 @@ const modsData = [
         title: 'Tinkers Construct',
         description: 'Система создания инструментов с множеством материалов и улучшений',
         category: 'technology',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlRpbmtlcnM8L3RleHQ+PC9zdmc+',
-        affiliateUrl: 'https://example.com/affiliate/tinkers',
+        image: 'https://minecraft-inside.ru/uploads/files/2021-05/10312_60b09a427561d.jpg',
+        affiliateUrl: 'https://vexfile.com/download/Iso3mdWwCo',
         tags: ['Инструменты', 'Крафтинг', 'Материалы'],
-        requirements: ['Forge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
             'Скачай мод',
@@ -424,12 +436,20 @@ const modsData = [
         ],
         versions: [
             {
+                version: '1.20.1',
+                downloadUrl: 'https://vexfile.com/download/Iso3mdWwCo'
+            },
+            {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/tinkers-1.19.2.jar'
+                downloadUrl: 'https://vexfile.com/download/FfNbiUjerl'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/tinkers-1.18.2.jar'
+                downloadUrl: 'https://vexfile.com/download/XCZmLZd3Cu'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://vexfile.com/download/k9CwL7ok1Z'
             }
         ]
     },
@@ -439,35 +459,48 @@ const modsData = [
         title: 'Minecraft Forge',
         description: 'Необходимый загрузчик модов для Minecraft. Без него большинство модов не будут работать.',
         category: 'utility',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY2YjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkZvcmdlPC90ZXh0Pjwvc3ZnPg==',
-        affiliateUrl: 'https://example.com/affiliate/forge',
+        image: 'https://www.minecraft-france.fr/wp-content/uploads/2019/12/minecraft-forge.jpg',
+        affiliateUrl: 'https://vexfile.com/download/2TQch49IWl',
         tags: ['Загрузчик', 'Необходимый', 'Основной'],
         requirements: ['Java 8+'],
         installationInstructions: [
             'Установи Java',
-            'В лаунчере запусти и закрой майнкрафт нужной версии',
-            'Скачай файл, по ссылке расположенной ниже',
-            'Запусти файл',
-            '(Если файл открывается как архив, то кликни по нему правой кнопкой мыши и выбери "Открыть с помощью" -> "Java")',
-            'Нажми "Оk"',
+            'В лаунчере запустите и закройте майнкрафт нужной версии',
+            'Скачайте файл по ссылке, расположенной ниже',
+            'Разархивируйте файл в удобное место, либо просто откройте zip для доступа к jar файлу',
+            'Запустите файл',
+            '(Если файл открывается как архив, то кликните по нему правой кнопкой мыши и выбери "Открыть с помощью" -> "Java")',
+            'Нажмите "Оk"',
             'Готово'
         ],
         versions: [
             {
+                version: '1.21.6',
+                downloadUrl: 'https://vexfile.com/download/2TQch49IWl'
+            },
+            {
+                version: '1.21.1',
+                downloadUrl: 'https://vexfile.com/download/9eq3qBQUZv'
+            },
+            {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/forge-1.20.1-installer.jar'
+                downloadUrl: 'https://vexfile.com/download/1dche8ni0g'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/forge-1.19.2-installer.jar'
+                downloadUrl: 'https://vexfile.com/download/AOhRgEPLPJ'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/forge-1.18.2-installer.jar'
+                downloadUrl: 'https://vexfile.com/download/3Bq0yOh281'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/forge-1.16.5-installer.jar'
+                downloadUrl: 'https://vexfile.com/download/hhSgOnIeo0'
+            },
+            {
+                version: '1.12.2',
+                downloadUrl: 'https://vexfile.com/download/nquoLQlUh0'
             }
         ]
     },
@@ -477,42 +510,37 @@ const modsData = [
         title: 'LS Cataclysm',
         description: 'Мод добавляющий множество новых существ, боссов и приключений в мир Minecraft',
         category: 'adventure',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIjOGIyNGY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxTIENhdGFjbHlzbTwvdGV4dD48L3N2Zz4=',
-        affiliateUrl: 'https://example.com/affiliate/lscataclysm',
+        image: 'https://minecraft-inside.ru/uploads/files/2023-10/152690_651a911d507d2.png',
+        affiliateUrl: 'https://vexfile.com/download/tAxCnayHlm',
         tags: ['Приключения', 'Боссы', 'Существа', 'Новый контент'],
-        requirements: ['Forge', 'Java 17+', 'Curios API'],
+        requirements: ['Forge', 'Curios API'],
         installationInstructions: [
-            'Скачай и установи Minecraft Forge / NeoForge',
-            'Скачай и установи Curios API',
-            'Для 1.19.2, 1.20.1 и выше:',
-            'Скачай архив',
-            'Распакуй в .minecraft\\mods',
-            'Для остальных:',
-            'Скачай и установи Citadel',
-            'Скачай мод',
-            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Скачайте и установи Minecraft Forge',
+            'Скачайте и установите Curios API',
+            'Скачайте архив',
+            'Распакуйте в .minecraft\\mods',
             'Готово'
         ],
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/lscataclysm-1.20.1.zip'
+                downloadUrl: 'https://vexfile.com/download/tAxCnayHlm'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/lscataclysm-1.19.2.zip'
+                downloadUrl: 'https://vexfile.com/download/QL6QtNhrGx'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/lscataclysm-1.18.2.jar'
+                downloadUrl: 'https://vexfile.com/download/85ovn292x6'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/lscataclysm-1.16.5.jar'
+                downloadUrl: 'https://vexfile.com/download/xja1L31sSq'
             }
         ]
     },
-    {
+    { // УБРАТЬ
         id: 11,
         code: 'CITADEL',
         title: 'Citadel',
@@ -521,7 +549,7 @@ const modsData = [
         image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkNpdGFkZWw8L3RleHQ+PC9zdmc+',
         affiliateUrl: 'https://example.com/affiliate/citadel',
         tags: ['Библиотека', 'Необходимый', 'Зависимость'],
-        requirements: ['Forge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
             'Скачай и установи Minecraft Forge / NeoForge',
             'Скачай мод',
@@ -541,32 +569,32 @@ const modsData = [
         title: 'Aquamirae',
         description: 'Кладбище кораблей с ужасными глубоководными существами. Мод изменит генерацию глубокого ледяного океана, наполнит биом новыми структурами, мобами и предметами, а так же скрасит всё это музыкальным сопровождением, эмбиентом и лором.',
         category: 'adventure',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMDA2NmNjIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkFxdWFtaXJhZTwvdGV4dD48L3N2Zz4=',
-        affiliateUrl: 'https://example.com/affiliate/aquamirae',
+        image: 'https://minecraft-inside.ru/uploads/files/2023-11/151115_654dd66121bfc.png',
+        affiliateUrl: 'https://vexfile.com/download/1uzQOHrQiL',
         tags: ['Приключения', 'Океан', 'Существа', 'Структуры', 'Музыка'],
-        requirements: ['Forge/Fabric/Quilt', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
-            'Скачай и установи Minecraft Forge / Fabric / Quilt',
-            'Скачай мод',
-            'Распакуй в .minecraft\\mods',
+            'Скачайте и установите Minecraft Forge',
+            'Скачайте мод',
+            'Распакуйте в .minecraft\\mods',
             'Готово'
         ],
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/aquamirae-1.20.1.jar'
+                downloadUrl: 'https://vexfile.com/download/1uzQOHrQiL'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/aquamirae-1.19.2.jar'
+                downloadUrl: 'https://vexfile.com/download/w8ODNlyC2t'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/aquamirae-1.18.2.jar'
+                downloadUrl: 'https://vexfile.com/download/fZKdyFjrYq'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/aquamirae-1.16.5.jar'
+                downloadUrl: 'https://vexfile.com/download/cWxv5MxR8y'
             }
         ]
     },
@@ -576,33 +604,36 @@ const modsData = [
         title: 'Industrial Foregoing',
         description: 'Перед вами переработанная и улучшенная версия модификации MineFactory Reloaded, которая добавит в игру широкий спектр инструментов для автоматического сбора ресурсов.',
         category: 'technology',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY2YjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkluZHVzdHJpYWwgRm9yZWdvaW5nPC90ZXh0Pjwvc3ZnPg==',
-        affiliateUrl: 'https://example.com/affiliate/industrialforegoing',
+        image: 'https://i.tlauncher.org/images/1522253843_industrial-foregoing-mod-for-minecraft-04.jpg',
+        affiliateUrl: 'https://vexfile.com/download/HsdamHRyrc',
         tags: ['Технологии', 'Автоматизация', 'Ресурсы', 'Промышленность'],
-        requirements: ['Forge/NeoForge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
-            'Скачай и установи Minecraft Forge / NeoForge',
-            'Для 1.12.2 и ниже: Установи Forgelin',
-            'Скачай архив',
-            'Распакуй его в .minecraft\\mods',
+            'Скачайте и установите Minecraft Forge',
+            'Скачайте архив',
+            'Распакуйте его в .minecraft\\mods',
             'Готово'
         ],
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.20.1.jar'
+                downloadUrl: 'https://vexfile.com/download/HsdamHRyrc'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.19.2.jar'
+                downloadUrl: 'https://vexfile.com/download/wWE3y1L8zy'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.18.2.jar'
+                downloadUrl: 'https://vexfile.com/download/Cr7tXQWXFx'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.16.5.jar'
+                downloadUrl: 'https://vexfile.com/download/IhZCsvtc5u'
+            },
+            {
+                version: '1.12.2',
+                downloadUrl: 'https://vexfile.com/download/oAfVRhjHhS'
             }
         ]
     },
