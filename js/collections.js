@@ -191,8 +191,31 @@ const collectionsData = [
             'Скачай сборку по ссылке ниже',
             'Настройте параметры запуска'
         ]
+    },
+    {
+        id: 10,
+        code: 'LAST',
+        title: 'Последний Шанс',
+        description: 'Endless Rise - сборка в которой Вы окунётесь в развитие. Вам предстоит пройти множество эпох, чтобы дойти до полёта в Космос! Вы начнёте с примитивных механик, создавая различные рабочие столы под разные предметы и борясь за своё выживание, а дойдёте до полёта в Космос, подчиняя себе всю Вселенную! Путешествуйте по мирам, изучайте артефакты, стройте различные механизмы и автокрафты. Все моды Endless Rise связаны между собой новыми крафтами и квестами, а также кастомными предметами',
+        version: '1.20.1',
+        type: 'adventure',
+        size: '0.38 GB',
+        modCount: 113,
+        image: 'https://ru-minecraft.ru/uploads/posts/2022-07/1657265001_fhyumrw8dyvsfaslhtvjxdvx2xqsi94d0-hmoz_elfrwtwh-1-aacl0rlv4qsmhb4lgvgtftj5wuvgorvsh_krge.jpg',
+        downloadUrl: 'https://vexfile.com/download/BO9dD5A4YV',
+        affiliateUrl: 'https://vexfile.com/download/BO9dD5A4YV',
+        mods: ['Create', 'Solo Leveling: Reawakening', 'DungeonsArise', 'Quark', "L_Ender 's Cataclysm"],
+        requirements: ['Forge', '6GB RAM', '1.20.1'],
+        installation: [
+            'Скачайте файл и распакуйте его (достаньте папки и файлы из архива)',
+            'Крайне рекомендуется очистить содержимое папки .minecraft',
+            'Установите 1.16.5-36.2.34 версию Minecraft Forge (установщик есть в архиве)',
+            'Скопируйте всё содержимое архива в .minecraft',
+            'Не устанавливай Optifine, он уже есть в папке mods',
+            'Запустите лаунчер и выделите игре 6+Gb оперативной памяти',
+            'В лаунчере выберите версию forge-1.16.5-36.2.34'
+        ]
     }
-
 ];
 
 // Current page state
