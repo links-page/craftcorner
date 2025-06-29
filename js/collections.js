@@ -4,62 +4,66 @@
 const collectionsData = [
     {
         id: 1,
-        code: 'ATM9',
-        title: 'All the Mods 9',
-        description: 'Полный пак модов для Minecraft 1.20.1 с более чем 400 модами',
+        code: 'LOST',
+        title: 'Lost Souls',
+        description: 'Здесь ты можешь получить доступ к эксклюзивной сборке Lost Souls на версии 1.20.1! Это сборка, где фэнтези и магия переплетаются с ваниллой-плюс, а также есть моды как с Forge, так и с Fabric.Полный перевод на русский.Отличная оптимизация — сборка летает даже на слабых ПК!',
         version: '1.20.1',
-        type: 'kitchen',
-        size: '2.1 GB',
+        type: 'adventure',
+        size: '1.6 GB',
         modCount: 450,
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkFUTTk8L3RleHQ+PC9zdmc+',
+        image: 'https://nztcdn.com/files/4f5f1c55-c40d-48dc-bbb3-cfe6c8a0d9ce.webp',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/atm9',
         mods: ['Industrial Craft 2', 'Thaumcraft', 'Applied Energistics 2', 'Botania', 'Tinkers Construct'],
         requirements: ['Forge', 'Java 17+', '8GB RAM'],
         installation: [
-            'Скачайте и установите Forge для версии 1.20.1',
-            'Скачайте сборку и распакуйте в папку mods',
-            'Запустите игру с профилем Forge'
+            'Скачиваем 1.20.1',
+            'Устанавливаем Forge 47.3.0',
+            'Полностью прогружаем игру ( Заходим в игру чтобы потом все файлы перекинуть )',
+            'Перекидываем файлы .minecraft из папки в корень игры, с заменой если нужно'
         ]
     },
     {
         id: 2,
-        code: 'FTBSKIES',
-        title: 'FTB Skies',
-        description: 'Уникальная сборка с системой островов и прогрессии',
+        code: 'EDNM',
+        title: 'Edenium',
+        description: 'Edenium - сборка с большим количеством квестов, системой прокачки и интересными механиками. Вы можете выбрать класс за который будете играть и сражаться с огромным количеством монстров. А система квестов поможет вам полностью разобраться в модах, а также узнать о лоре сборки...',
         version: '1.19.2',
         type: 'adventure',
-        size: '1.8 GB',
+        size: '0.85 GB',
         modCount: 380,
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkZUQiBTa2llczwvdGV4dD48L3N2Zz4=',
+        image: 'https://minecraft-inside.ru/uploads/files/2024-05/6658e32bb2f40.png',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/ftbskies',
         mods: ['Create', 'Mekanism', 'Thermal Series', 'Mystical Agriculture', 'Refined Storage'],
         requirements: ['Forge', 'Java 17+', '6GB RAM'],
         installation: [
-            'Установите Forge для версии 1.19.2',
-            'Скачайте сборку и запустите установщик',
-            'Следуйте инструкциям установщика'
+            'Скачайте и установите Minecraft Forge',
+            'Скачайте сборку',
+            'Распакуй файл в .minecraft'
         ]
     },
     {
         id: 3,
-        code: 'CAB',
-        title: 'Create: Above and Beyond',
+        code: 'PROM',
+        title: 'Prominence II RPG: Hasturian Era - огромная сборка',
         description: 'Сборка, полностью основанная на модах Create и автоматизации',
-        version: '1.18.2',
+        version: '1.20.1',
         type: 'tech',
         size: '1.5 GB',
         modCount: 320,
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkNyZWF0ZSBDQUI8L3RleHQ+PC9zdmc+',
+        image: 'https://ru-minecraft.ru/uploads/posts/2024-11/medium/1732575691_promlogo-54.jpg',
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/createcab',
         mods: ['Create', 'Applied Energistics 2', 'Refined Storage', 'Thermal Series', 'Mekanism'],
         requirements: ['Forge', 'Java 17+', '6GB RAM'],
         installation: [
-            'Установите Forge для версии 1.18.2',
-            'Скачайте и распакуйте сборку',
-            'Скопируйте файлы в папку .minecraft'
+            'Скачайте файл и распакуйте его. (достаньте папки из архива)',
+            'Крайне рекомендуется удалить все свои моды, а также очистить папки .minecraft/config',
+            'Установите fabric-1.20.1-0.16.5 (можно попробовать новее)',
+            'Скопируйте все содержимое архива (папки mods, scripts, config итд ) в .minecraft',
+            'Запустите лаунчер и выдели игре 9.5+Gb оперативной памяти.',
+            'В лаунчере запустите версию fabric-1.20.1-0.16.5'
         ]
     },
     {
@@ -127,7 +131,68 @@ const collectionsData = [
             'Скачай сборку по ссылке ниже',
             'Настройте параметры запуска'
         ]
+    },
+{
+        id: 7,
+        code: 'ECLP',
+        title: 'Затмение',
+        description: 'Тёмные силы прорастают из всех закоулков и сознаний людей. Мир на грани уничтожения. И только вы можете изменить уготованную судьбу! Техно-магическая сборка "Затмение" позволяет насладиться уникальными игровыми механиками, изучить просторы открывающегося мира и покорить космос.',
+        version: '1.16.5',
+        type: 'adventure',
+        size: '0.9 GB',
+        modCount: 113,
+        image: 'https://minecraft-inside.ru/uploads/files/2022-12/63935b0b81a31.jpg',
+        downloadUrl: 'https://vexfile.com/download/BO9dD5A4YV',
+        affiliateUrl: 'https://vexfile.com/download/BO9dD5A4YV',
+        mods: ['Create', 'Solo Leveling: Reawakening', 'DungeonsArise', 'Quark', "L_Ender 's Cataclysm"],
+        requirements: ['Forge', '6GB RAM', '1.20.1'],
+        installation: [
+            'Скачайте Forge для версии 1.20.1',
+            'Скачай сборку по ссылке ниже',
+            'Настройте параметры запуска'
+        ]
+    },
+    {
+        id: 8,
+        code: 'ENDR',
+        title: 'Endless Rise',
+        description: 'Endless Rise - сборка в которой Вы окунётесь в развитие. Вам предстоит пройти множество эпох, чтобы дойти до полёта в Космос! Вы начнёте с примитивных механик, создавая различные рабочие столы под разные предметы и борясь за своё выживание, а дойдёте до полёта в Космос, подчиняя себе всю Вселенную! Путешествуйте по мирам, изучайте артефакты, стройте различные механизмы и автокрафты. Все моды Endless Rise связаны между собой новыми крафтами и квестами, а также кастомными предметами',
+        version: '1.16.5',
+        type: 'adventure',
+        size: '0.38 GB',
+        modCount: 113,
+        image: 'https://minecraft-inside.ru/uploads/files/2024-07/154410_6699388506116.png',
+        downloadUrl: 'https://vexfile.com/download/BO9dD5A4YV',
+        affiliateUrl: 'https://vexfile.com/download/BO9dD5A4YV',
+        mods: ['Create', 'Solo Leveling: Reawakening', 'DungeonsArise', 'Quark', "L_Ender 's Cataclysm"],
+        requirements: ['Forge', '6GB RAM', '1.20.1'],
+        installation: [
+            'Скачайте Forge для версии 1.20.1',
+            'Скачай сборку по ссылке ниже',
+            'Настройте параметры запуска'
+        ]
+    },
+    {
+        id: 9,
+        code: 'LAST',
+        title: 'Последний Шанс',
+        description: 'Endless Rise - сборка в которой Вы окунётесь в развитие. Вам предстоит пройти множество эпох, чтобы дойти до полёта в Космос! Вы начнёте с примитивных механик, создавая различные рабочие столы под разные предметы и борясь за своё выживание, а дойдёте до полёта в Космос, подчиняя себе всю Вселенную! Путешествуйте по мирам, изучайте артефакты, стройте различные механизмы и автокрафты. Все моды Endless Rise связаны между собой новыми крафтами и квестами, а также кастомными предметами',
+        version: '1.20.1',
+        type: 'adventure',
+        size: '0.38 GB',
+        modCount: 113,
+        image: 'https://minecraft-inside.ru/uploads/files/2025-06/684b372b47bd9.png',
+        downloadUrl: 'https://vexfile.com/download/BO9dD5A4YV',
+        affiliateUrl: 'https://vexfile.com/download/BO9dD5A4YV',
+        mods: ['Create', 'Solo Leveling: Reawakening', 'DungeonsArise', 'Quark', "L_Ender 's Cataclysm"],
+        requirements: ['Forge', '6GB RAM', '1.20.1'],
+        installation: [
+            'Скачайте Forge для версии 1.20.1',
+            'Скачай сборку по ссылке ниже',
+            'Настройте параметры запуска'
+        ]
     }
+
 ];
 
 // Current page state
