@@ -643,7 +643,7 @@ const modsData = [
         title: 'BetterEnd',
         description: 'Этот мод добавляет новые биомы в Энд, а также модифицирует существующие. В каждом биоме своя атмосфера, ресурсы и мобы.',
         category: 'adventure',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNjY2NmZmIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkJldHRlckVuZDwvdGV4dD48L3N2Zz4=',
+        image: 'https://minecraft-inside.ru/uploads/files/2024-05/140524_663f54d23b915.jpg',
         affiliateUrl: 'https://example.com/affiliate/betterend',
         tags: ['Приключения', 'Энд', 'Биомы', 'Ресурсы', 'Мобы'],
         requirements: ['Forge/Fabric', 'Java 17+'],
@@ -679,13 +679,12 @@ const modsData = [
         title: 'When Dungeons Arise',
         description: 'WDA вобрал в себя большое количество структур, которые будут рандомно генерироваться в мире во время ваших путешествий. Авторы отошли от создания ванильных небольших структур и дали волю фантазии, поэтому эти структуры настолько большие, что вы попросту можете потеряться.',
         category: 'adventure',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjOGIyNGY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPldoZW4gRHVuZ2VvbnMgQXJpc2U8L3RleHQ+PC9zdmc+',
-        affiliateUrl: 'https://example.com/affiliate/wda',
+        image: 'https://minecraft-inside.ru/uploads/files/2021-07/143334_60f530da8df15.png',
+        affiliateUrl: 'https://vexfile.com/download/6nS1jjPHVJ',
         tags: ['Приключения', 'Структуры', 'Подземелья', 'Исследования'],
-        requirements: ['Forge/NeoForge/Fabric/Quilt', 'Java 17+'],
+        requirements: ['Forge', 'Java 17+'],
         installationInstructions: [
-            'Скачай и установи Minecraft Forge / NeoForge / Fabric / Quilt',
-            'Для fabric: Установи Cloth Config API',
+            'Скачай и установи Minecraft Forge',
             'Скачай мод',
             'Не распаковывая, скопируй в .minecraft\\mods',
             'Готово'
@@ -693,19 +692,19 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/wda-1.20.1.jar'
+                downloadUrl: 'https://vexfile.com/download/6nS1jjPHVJ'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/wda-1.19.2.jar'
+                downloadUrl: 'https://vexfile.com/download/iAnEyHflGV'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/wda-1.18.2.jar'
+                downloadUrl: 'https://vexfile.com/download/mNEsVDFhYj'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/wda-1.16.5.jar'
+                downloadUrl: 'https://vexfile.com/download/kgX5dGnNzu'
             }
         ]
     },
@@ -715,8 +714,8 @@ const modsData = [
         title: 'Quark',
         description: 'Отличный модульный мод, состоящий из большого множества изменений и улучшений игровой механики ванильного майнкрафт. К примеру, появятся новые блоки и декорации, анимация эмоций игрока, на ступеньках можно будет сидеть, раздатчики смогут сажать семена, в океанах начнут спавнится Стражи и многие, многие другие изменения.',
         category: 'utility',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY2YjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlF1YXJrPC90ZXh0Pjwvc3ZnPg==',
-        affiliateUrl: 'https://example.com/affiliate/quark',
+        image: 'https://minecraft-inside.ru/uploads/files/2023-10/34647_652a39687dce1.png',
+        affiliateUrl: 'https://vexfile.com/download/LgF4PwOfLD',
         tags: ['Утилиты', 'Улучшения', 'Блоки', 'Механики', 'Декорации'],
         requirements: ['Forge', 'Java 17+'],
         installationInstructions: [
@@ -728,15 +727,19 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/quark-1.20.1.jar'
+                downloadUrl: 'https://vexfile.com/download/LgF4PwOfLD'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/quark-1.19.2.jar'
+                downloadUrl: 'https://vexfile.com/download/rujIkCwshq'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://vexfile.com/download/Z5PIhxyXn2'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/quark-1.16.5.jar'
+                downloadUrl: 'https://vexfile.com/download/ysQkSuptot'
             }
         ]
     },
@@ -746,12 +749,12 @@ const modsData = [
         title: 'Create',
         description: 'Create предлагает множество инструментов и блоков для создания и декорации построек, а так же автоматизации. Новые элементы дадут игроку на выбор больше вариантов дизайна, обработка предметов будет происходить не в одном блоке, для этого потребуется много "акторов", работающих вместе.',
         category: 'technology',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY2YjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkNyZWF0ZTwvdGV4dD48L3N2Zz4=',
-        affiliateUrl: 'https://example.com/affiliate/create',
+        image: 'https://minecraft-inside.ru/uploads/files/2023-02/102865_63e48edbaf8f4.png',
+        affiliateUrl: 'https://vexfile.com/download/g4y8dtthvj',
         tags: ['Технологии', 'Автоматизация', 'Дизайн', 'Строительство', 'Механики'],
         requirements: ['Forge/NeoForge/Fabric/Quilt', 'Java 17+'],
         installationInstructions: [
-            'Скачай и установи Minecraft Forge / NeoForge / Fabric / Quilt',
+            'Скачай и установи Minecraft Forge',
             'Скачай мод',
             'Для forge 1.16.5 - 1.18.1: Распакуй в .minecraft\\mods',
             'Для остальных: Не распаковывая, скопируй в .minecraft\\mods',
@@ -760,19 +763,19 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/create-1.20.1.jar'
+                downloadUrl: 'https://vexfile.com/download/g4y8dtthvj'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/create-1.19.2.jar'
+                downloadUrl: 'https://vexfile.com/download/MSwQa2iV1i'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/create-1.18.2.jar'
+                downloadUrl: 'https://vexfile.com/download/RMGWoH9nr8'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/create-1.16.5.jar'
+                downloadUrl: 'https://vexfile.com/download/3yge9fcKf0'
             }
         ]
     },
@@ -782,8 +785,8 @@ const modsData = [
         title: 'Ice and Fire',
         description: 'Грандиозный мод, после установки которого в игровом мире поселятся драконы. Они будут делиться на 2 вида: огненные и ледяные. Огненные будут бродить по всему обитаемому миру, а ледяные, напротив, обитают только в самых холодных местах, известных человеку и могут заморозить свою жертву до смерти.',
         category: 'adventure',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY2YjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkljZSBhbmQgRmlyZTwvdGV4dD48L3N2Zz4=',
-        affiliateUrl: 'https://example.com/affiliate/iceandfire',
+        image: 'https://minecraft-inside.ru/uploads/files/2022-07/50406_62c486bf17da9.png',
+        affiliateUrl: 'https://vexfile.com/download/gSB5kMtYqD',
         tags: ['Приключения', 'Драконы', 'Существа', 'Боссы', 'Элементы'],
         requirements: ['Forge', 'Java 17+'],
         installationInstructions: [
@@ -796,15 +799,19 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/ice-and-fire-1.20.1.jar'
+                downloadUrl: 'https://vexfile.com/download/gSB5kMtYqD'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/ice-and-fire-1.19.2.jar'
+                downloadUrl: 'https://vexfile.com/download/Hp0uCGT6Kn'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://vexfile.com/download/s3MyNiNvza'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/ice-and-fire-1.16.5.jar'
+                downloadUrl: 'https://vexfile.com/download/EVN7uyn2f1'
             }
         ]
     },
@@ -814,37 +821,36 @@ const modsData = [
         title: 'The Twilight Forest',
         description: 'Глобальная модификация добавляющая новое измерение "Сумеречный лес" - темный, заколдованный мир, почти весь покрытый лесом, в котором витает дух приключений и опасности. Здесь вам встретятся множество новых структур, мобов и боссов. Новые версии мода могут быть несовместимы с OptiFine.',
         category: 'adventure',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjOGIyNGY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlR3aWxpZ2h0IEZvcmVzdDwvdGV4dD48L3N2Zz4=',
-        affiliateUrl: 'https://example.com/affiliate/twilightforest',
+        image: 'https://minecraft-inside.ru/uploads/files/2023-02/9549_63ef25c63f91e.jpg',
+        affiliateUrl: 'https://vexfile.com/download/AhjK0RWv2s',
         tags: ['Приключения', 'Измерение', 'Лес', 'Боссы', 'Структуры'],
-        requirements: ['Forge/NeoForge/Fabric', 'Java 17+'],
+        requirements: ['Forge', 'Java 17+'],
         installationInstructions: [
-            'Скачай и установи Minecraft Forge / NeoForge / Fabric',
-            'Скачай мод',
-            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Скачайте и установите Minecraft Forge ,
+            'Скачайте мод',
+            'Не распаковывая, скопируйте в .minecraft\\mods',
             'Готово'
         ],
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/twilight-forest-1.20.1.jar'
+                downloadUrl: 'https://vexfile.com/download/AhjK0RWv2s'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/twilight-forest-1.19.2.jar'
+                downloadUrl: 'https://vexfile.com/download/8yLVbZTdcK'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/twilight-forest-1.18.2.jar'
+                downloadUrl: 'https://vexfile.com/download/8S0S7Q9iDr'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/twilight-forest-1.16.5.jar'
+                downloadUrl: 'https://vexfile.com/download/1MfQnt8ZUf'
             }
         ]
     }
 ];
-
 // Current page state
 let modsCurrentPage = 1;
 let modsItemsPerPage = 8;
