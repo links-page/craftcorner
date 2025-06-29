@@ -1,110 +1,729 @@
 // Mods page JavaScript
 
-// Sample mods data
+// Sample mods data with multiple Minecraft versions support
 const modsData = [
     {
         id: 1,
         code: 'IC2',
         title: 'Industrial Craft 2',
         description: 'Добавляет множество технологических блоков и предметов для автоматизации производства',
-        version: '1.20.1',
         category: 'technology',
         image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPklDMjwvdGV4dD48L3N2Zz4=',
-        downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/ic2',
         tags: ['Технологии', 'Автоматизация', 'Энергия'],
-        requirements: ['Forge', 'Java 17+']
+        requirements: ['Forge', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge',
+            'Скачай мод',
+            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/ic2-1.20.1.jar',
+                fileSize: '2.4 MB',
+                releaseDate: '2024-01-15'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/ic2-1.19.2.jar',
+                fileSize: '2.3 MB',
+                releaseDate: '2023-08-20'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/ic2-1.18.2.jar',
+                fileSize: '2.2 MB',
+                releaseDate: '2023-03-10'
+            }
+        ]
     },
     {
         id: 2,
         code: 'THAUM',
         title: 'Thaumcraft',
         description: 'Магический мод с системой заклинаний, исследования и магических устройств',
-        version: '1.19.2',
         category: 'magic',
         image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlRoYXVtY3JhZnQ8L3RleHQ+PC9zdmc+',
-        downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/thaumcraft',
         tags: ['Магия', 'Заклинания', 'Исследования'],
-        requirements: ['Forge', 'Java 17+']
+        requirements: ['Forge', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge',
+            'Скачай мод',
+            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/thaumcraft-1.19.2.jar',
+                fileSize: '3.1 MB',
+                releaseDate: '2023-09-05'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/thaumcraft-1.18.2.jar',
+                fileSize: '3.0 MB',
+                releaseDate: '2023-04-12'
+            }
+        ]
     },
     {
         id: 3,
         code: 'BOP',
         title: 'Biomes O\' Plenty',
         description: 'Добавляет множество новых биомов, растений и природных объектов',
-        version: '1.20.1',
         category: 'adventure',
         image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkJPUDwvdGV4dD48L3N2Zz4=',
-        downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/bop',
         tags: ['Природа', 'Биомы', 'Растения'],
-        requirements: ['Forge', 'Java 17+']
+        requirements: ['Forge', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge',
+            'Скачай мод',
+            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/bop-1.20.1.jar',
+                fileSize: '4.2 MB',
+                releaseDate: '2024-02-01'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/bop-1.19.2.jar',
+                fileSize: '4.1 MB',
+                releaseDate: '2023-10-15'
+            }
+        ]
     },
     {
         id: 4,
         code: 'AE2',
         title: 'Applied Energistics 2',
         description: 'Система цифрового хранения и автоматизации с использованием энергии',
-        version: '1.20.1',
         category: 'technology',
         image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkFFMjwvdGV4dD48L3N2Zz4=',
-        downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/ae2',
         tags: ['Технологии', 'Хранение', 'Автоматизация'],
-        requirements: ['Forge', 'Java 17+']
+        requirements: ['Forge', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge',
+            'Скачай мод',
+            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/ae2-1.20.1.jar',
+                fileSize: '5.8 MB',
+                releaseDate: '2024-01-20'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/ae2-1.19.2.jar',
+                fileSize: '5.7 MB',
+                releaseDate: '2023-08-30'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/ae2-1.18.2.jar',
+                fileSize: '5.6 MB',
+                releaseDate: '2023-05-15'
+            }
+        ]
     },
     {
         id: 5,
         code: 'BOTANIA',
         title: 'Botania',
         description: 'Магический мод, основанный на природной магии и цветах',
-        version: '1.19.2',
         category: 'magic',
         image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkJvdGFuaWE8L3RleHQ+PC9zdmc+',
-        downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/botania',
         tags: ['Магия', 'Природа', 'Цветы'],
-        requirements: ['Forge', 'Java 17+']
+        requirements: ['Forge', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge',
+            'Скачай мод',
+            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/botania-1.19.2.jar',
+                fileSize: '3.5 MB',
+                releaseDate: '2023-09-10'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/botania-1.18.2.jar',
+                fileSize: '3.4 MB',
+                releaseDate: '2023-04-20'
+            }
+        ]
     },
     {
         id: 6,
         code: 'CHISEL',
         title: 'Chisel',
         description: 'Добавляет множество декоративных блоков и инструменты для их создания',
-        version: '1.20.1',
         category: 'decoration',
         image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkNoaXNlbDwvdGV4dD48L3N2Zz4=',
-        downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/chisel',
         tags: ['Декор', 'Блоки', 'Строительство'],
-        requirements: ['Forge', 'Java 17+']
+        requirements: ['Forge', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge',
+            'Скачай мод',
+            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/chisel-1.20.1.jar',
+                fileSize: '1.8 MB',
+                releaseDate: '2024-01-25'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/chisel-1.19.2.jar',
+                fileSize: '1.7 MB',
+                releaseDate: '2023-08-25'
+            }
+        ]
     },
     {
         id: 7,
         code: 'JOURNEYMAP',
         title: 'JourneyMap',
         description: 'Карта мира в реальном времени с множеством полезных функций',
-        version: '1.20.1',
         category: 'utility',
         image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkpvdXJuZXlNYXA8L3RleHQ+PC9zdmc+',
-        downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/journeymap',
         tags: ['Карта', 'Навигация', 'Утилиты'],
-        requirements: ['Forge', 'Java 17+']
+        requirements: ['Forge', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge',
+            'Скачай мод',
+            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/journeymap-1.20.1.jar',
+                fileSize: '2.1 MB',
+                releaseDate: '2024-02-05'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/journeymap-1.19.2.jar',
+                fileSize: '2.0 MB',
+                releaseDate: '2023-09-15'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/journeymap-1.18.2.jar',
+                fileSize: '1.9 MB',
+                releaseDate: '2023-06-20'
+            }
+        ]
     },
     {
         id: 8,
         code: 'TINKERS',
         title: 'Tinkers Construct',
         description: 'Система создания инструментов с множеством материалов и улучшений',
-        version: '1.19.2',
         category: 'technology',
         image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlRpbmtlcnM8L3RleHQ+PC9zdmc+',
-        downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/tinkers',
         tags: ['Инструменты', 'Крафтинг', 'Материалы'],
-        requirements: ['Forge', 'Java 17+']
+        requirements: ['Forge', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge',
+            'Скачай мод',
+            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/tinkers-1.19.2.jar',
+                fileSize: '4.5 MB',
+                releaseDate: '2023-09-20'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/tinkers-1.18.2.jar',
+                fileSize: '4.4 MB',
+                releaseDate: '2023-05-25'
+            }
+        ]
+    },
+    {
+        id: 9,
+        code: 'FORGE',
+        title: 'Minecraft Forge',
+        description: 'Необходимый загрузчик модов для Minecraft. Без него большинство модов не будут работать.',
+        category: 'utility',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY2YjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkZvcmdlPC90ZXh0Pjwvc3ZnPg==',
+        affiliateUrl: 'https://example.com/affiliate/forge',
+        tags: ['Загрузчик', 'Необходимый', 'Основной'],
+        requirements: ['Java 8+'],
+        installationInstructions: [
+            'Установи Java',
+            'В лаунчере запусти и закрой майнкрафт нужной версии',
+            'Скачай файл, по ссылке расположенной ниже',
+            'Запусти файл',
+            '(Если файл открывается как архив, то кликни по нему правой кнопкой мыши и выбери "Открыть с помощью" -> "Java")',
+            'Нажми "Оk"',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/forge-1.20.1-installer.jar',
+                fileSize: '3.2 MB',
+                releaseDate: '2024-01-10'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/forge-1.19.2-installer.jar',
+                fileSize: '3.1 MB',
+                releaseDate: '2023-08-15'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/forge-1.18.2-installer.jar',
+                fileSize: '3.0 MB',
+                releaseDate: '2023-03-20'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://example.com/downloads/forge-1.16.5-installer.jar',
+                fileSize: '2.9 MB',
+                releaseDate: '2022-12-10'
+            }
+        ]
+    },
+    {
+        id: 10,
+        code: 'LSCATACLYSM',
+        title: 'LS Cataclysm',
+        description: 'Мод добавляющий множество новых существ, боссов и приключений в мир Minecraft',
+        category: 'adventure',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIjOGIyNGY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxTIENhdGFjbHlzbTwvdGV4dD48L3N2Zz4=',
+        affiliateUrl: 'https://example.com/affiliate/lscataclysm',
+        tags: ['Приключения', 'Боссы', 'Существа', 'Новый контент'],
+        requirements: ['Forge', 'Java 17+', 'Curios API'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge / NeoForge',
+            'Скачай и установи Curios API',
+            'Для 1.19.2, 1.20.1 и выше:',
+            'Скачай архив',
+            'Распакуй в .minecraft\\mods',
+            'Для остальных:',
+            'Скачай и установи Citadel',
+            'Скачай мод',
+            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/lscataclysm-1.20.1.zip',
+                fileSize: '15.2 MB',
+                releaseDate: '2024-02-01'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/lscataclysm-1.19.2.zip',
+                fileSize: '14.8 MB',
+                releaseDate: '2023-09-15'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/lscataclysm-1.18.2.jar',
+                fileSize: '14.5 MB',
+                releaseDate: '2023-04-20'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://example.com/downloads/lscataclysm-1.16.5.jar',
+                fileSize: '14.0 MB',
+                releaseDate: '2022-12-15'
+            }
+        ]
+    },
+    {
+        id: 11,
+        code: 'CITADEL',
+        title: 'Citadel',
+        description: 'Библиотека для модов, необходимая для работы многих модификаций',
+        category: 'utility',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkNpdGFkZWw8L3RleHQ+PC9zdmc+',
+        affiliateUrl: 'https://example.com/affiliate/citadel',
+        tags: ['Библиотека', 'Необходимый', 'Зависимость'],
+        requirements: ['Forge', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge / NeoForge',
+            'Скачай мод',
+            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://example.com/downloads/citadel-1.16.5.jar',
+                fileSize: '1.8 MB',
+                releaseDate: '2022-11-20'
+            }
+        ]
+    },
+    {
+        id: 12,
+        code: 'AQUA',
+        title: 'Aquamirae',
+        description: 'Кладбище кораблей с ужасными глубоководными существами. Мод изменит генерацию глубокого ледяного океана, наполнит биом новыми структурами, мобами и предметами, а так же скрасит всё это музыкальным сопровождением, эмбиентом и лором.',
+        category: 'adventure',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMDA2NmNjIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkFxdWFtaXJhZTwvdGV4dD48L3N2Zz4=',
+        affiliateUrl: 'https://example.com/affiliate/aquamirae',
+        tags: ['Приключения', 'Океан', 'Существа', 'Структуры', 'Музыка'],
+        requirements: ['Forge/Fabric/Quilt', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge / Fabric / Quilt',
+            'Скачай мод',
+            'Распакуй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/aquamirae-1.20.1.jar',
+                fileSize: '8.5 MB',
+                releaseDate: '2024-01-20'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/aquamirae-1.19.2.jar',
+                fileSize: '8.3 MB',
+                releaseDate: '2023-09-10'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/aquamirae-1.18.2.jar',
+                fileSize: '8.1 MB',
+                releaseDate: '2023-04-15'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://example.com/downloads/aquamirae-1.16.5.jar',
+                fileSize: '7.9 MB',
+                releaseDate: '2022-12-20'
+            }
+        ]
+    },
+    {
+        id: 13,
+        code: 'INDF',
+        title: 'Industrial Foregoing',
+        description: 'Перед вами переработанная и улучшенная версия модификации MineFactory Reloaded, которая добавит в игру широкий спектр инструментов для автоматического сбора ресурсов.',
+        category: 'technology',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY2YjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkluZHVzdHJpYWwgRm9yZWdvaW5nPC90ZXh0Pjwvc3ZnPg==',
+        affiliateUrl: 'https://example.com/affiliate/industrialforegoing',
+        tags: ['Технологии', 'Автоматизация', 'Ресурсы', 'Промышленность'],
+        requirements: ['Forge/NeoForge', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge / NeoForge',
+            'Для 1.12.2 и ниже: Установи Forgelin',
+            'Скачай архив',
+            'Распакуй его в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.20.1.jar',
+                fileSize: '12.5 MB',
+                releaseDate: '2024-01-25'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.19.2.jar',
+                fileSize: '12.3 MB',
+                releaseDate: '2023-08-30'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.18.2.jar',
+                fileSize: '12.1 MB',
+                releaseDate: '2023-05-20'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.16.5.jar',
+                fileSize: '11.9 MB',
+                releaseDate: '2022-12-25'
+            }
+        ]
+    },
+    {
+        id: 14,
+        code: 'BEND',
+        title: 'BetterEnd',
+        description: 'Этот мод добавляет новые биомы в Энд, а также модифицирует существующие. В каждом биоме своя атмосфера, ресурсы и мобы.',
+        category: 'adventure',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNjY2NmZmIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkJldHRlckVuZDwvdGV4dD48L3N2Zz4=',
+        affiliateUrl: 'https://example.com/affiliate/betterend',
+        tags: ['Приключения', 'Энд', 'Биомы', 'Ресурсы', 'Мобы'],
+        requirements: ['Forge/Fabric', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge / Fabric',
+            'Скачай мод',
+            'Для fabric: Распакуй в .minecraft\\mods',
+            'Для forge: Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/betterend-1.20.1.jar',
+                fileSize: '15.2 MB',
+                releaseDate: '2024-02-01'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/betterend-1.19.2.jar',
+                fileSize: '15.0 MB',
+                releaseDate: '2023-09-15'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/betterend-1.18.2.jar',
+                fileSize: '14.8 MB',
+                releaseDate: '2023-04-25'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://example.com/downloads/betterend-1.16.5.jar',
+                fileSize: '14.5 MB',
+                releaseDate: '2022-12-30'
+            }
+        ]
+    },
+    {
+        id: 15,
+        code: 'WDA',
+        title: 'When Dungeons Arise',
+        description: 'WDA вобрал в себя большое количество структур, которые будут рандомно генерироваться в мире во время ваших путешествий. Авторы отошли от создания ванильных небольших структур и дали волю фантазии, поэтому эти структуры настолько большие, что вы попросту можете потеряться.',
+        category: 'adventure',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjOGIyNGY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPldoZW4gRHVuZ2VvbnMgQXJpc2U8L3RleHQ+PC9zdmc+',
+        affiliateUrl: 'https://example.com/affiliate/wda',
+        tags: ['Приключения', 'Структуры', 'Подземелья', 'Исследования'],
+        requirements: ['Forge/NeoForge/Fabric/Quilt', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge / NeoForge / Fabric / Quilt',
+            'Для fabric: Установи Cloth Config API',
+            'Скачай мод',
+            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/wda-1.20.1.jar',
+                fileSize: '6.8 MB',
+                releaseDate: '2024-01-30'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/wda-1.19.2.jar',
+                fileSize: '6.6 MB',
+                releaseDate: '2023-09-20'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/wda-1.18.2.jar',
+                fileSize: '6.4 MB',
+                releaseDate: '2023-05-10'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://example.com/downloads/wda-1.16.5.jar',
+                fileSize: '6.2 MB',
+                releaseDate: '2022-12-15'
+            }
+        ]
+    },
+    {
+        id: 16,
+        code: 'QURK',
+        title: 'Quark',
+        description: 'Отличный модульный мод, состоящий из большого множества изменений и улучшений игровой механики ванильного майнкрафт. К примеру, появятся новые блоки и декорации, анимация эмоций игрока, на ступеньках можно будет сидеть, раздатчики смогут сажать семена, в океанах начнут спавнится Стражи и многие, многие другие изменения.',
+        category: 'utility',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY2YjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlF1YXJrPC90ZXh0Pjwvc3ZnPg==',
+        affiliateUrl: 'https://example.com/affiliate/quark',
+        tags: ['Утилиты', 'Улучшения', 'Блоки', 'Механики', 'Декорации'],
+        requirements: ['Forge', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge',
+            'Скачай мод',
+            'Для 1.10.2 и выше: Распакуй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/quark-1.20.1.jar',
+                fileSize: '4.2 MB',
+                releaseDate: '2024-01-15'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/quark-1.19.2.jar',
+                fileSize: '4.1 MB',
+                releaseDate: '2023-08-25'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://example.com/downloads/quark-1.16.5.jar',
+                fileSize: '4.0 MB',
+                releaseDate: '2022-12-10'
+            }
+        ]
+    },
+    {
+        id: 17,
+        code: 'CRTE',
+        title: 'Create',
+        description: 'Create предлагает множество инструментов и блоков для создания и декорации построек, а так же автоматизации. Новые элементы дадут игроку на выбор больше вариантов дизайна, обработка предметов будет происходить не в одном блоке, для этого потребуется много "акторов", работающих вместе.',
+        category: 'technology',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY2YjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkNyZWF0ZTwvdGV4dD48L3N2Zz4=',
+        affiliateUrl: 'https://example.com/affiliate/create',
+        tags: ['Технологии', 'Автоматизация', 'Дизайн', 'Строительство', 'Механики'],
+        requirements: ['Forge/NeoForge/Fabric/Quilt', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge / NeoForge / Fabric / Quilt',
+            'Скачай мод',
+            'Для forge 1.16.5 - 1.18.1: Распакуй в .minecraft\\mods',
+            'Для остальных: Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/create-1.20.1.jar',
+                fileSize: '18.5 MB',
+                releaseDate: '2024-02-05'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/create-1.19.2.jar',
+                fileSize: '18.3 MB',
+                releaseDate: '2023-09-25'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/create-1.18.2.jar',
+                fileSize: '18.1 MB',
+                releaseDate: '2023-05-15'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://example.com/downloads/create-1.16.5.jar',
+                fileSize: '17.9 MB',
+                releaseDate: '2022-12-20'
+            }
+        ]
+    },
+    {
+        id: 18,
+        code: 'IAFR',
+        title: 'Ice and Fire',
+        description: 'Грандиозный мод, после установки которого в игровом мире поселятся драконы. Они будут делиться на 2 вида: огненные и ледяные. Огненные будут бродить по всему обитаемому миру, а ледяные, напротив, обитают только в самых холодных местах, известных человеку и могут заморозить свою жертву до смерти.',
+        category: 'adventure',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY2YjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkljZSBhbmQgRmlyZTwvdGV4dD48L3N2Zz4=',
+        affiliateUrl: 'https://example.com/affiliate/iceandfire',
+        tags: ['Приключения', 'Драконы', 'Существа', 'Боссы', 'Элементы'],
+        requirements: ['Forge', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge',
+            'Для 1.15.2 и выше:',
+            'Скачай архив',
+            'Распакуй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/ice-and-fire-1.20.1.jar',
+                fileSize: '22.5 MB',
+                releaseDate: '2024-01-30'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/ice-and-fire-1.19.2.jar',
+                fileSize: '22.3 MB',
+                releaseDate: '2023-09-20'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://example.com/downloads/ice-and-fire-1.16.5.jar',
+                fileSize: '22.0 MB',
+                releaseDate: '2022-12-25'
+            }
+        ]
+    },
+    {
+        id: 19,
+        code: 'TWF',
+        title: 'The Twilight Forest',
+        description: 'Глобальная модификация добавляющая новое измерение "Сумеречный лес" - темный, заколдованный мир, почти весь покрытый лесом, в котором витает дух приключений и опасности. Здесь вам встретятся множество новых структур, мобов и боссов. Новые версии мода могут быть несовместимы с OptiFine.',
+        category: 'adventure',
+        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjOGIyNGY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlR3aWxpZ2h0IEZvcmVzdDwvdGV4dD48L3N2Zz4=',
+        affiliateUrl: 'https://example.com/affiliate/twilightforest',
+        tags: ['Приключения', 'Измерение', 'Лес', 'Боссы', 'Структуры'],
+        requirements: ['Forge/NeoForge/Fabric', 'Java 17+'],
+        installationInstructions: [
+            'Скачай и установи Minecraft Forge / NeoForge / Fabric',
+            'Скачай мод',
+            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Готово'
+        ],
+        versions: [
+            {
+                version: '1.20.1',
+                downloadUrl: 'https://example.com/downloads/twilight-forest-1.20.1.jar',
+                fileSize: '25.8 MB',
+                releaseDate: '2024-02-01'
+            },
+            {
+                version: '1.19.2',
+                downloadUrl: 'https://example.com/downloads/twilight-forest-1.19.2.jar',
+                fileSize: '25.6 MB',
+                releaseDate: '2023-09-30'
+            },
+            {
+                version: '1.18.2',
+                downloadUrl: 'https://example.com/downloads/twilight-forest-1.18.2.jar',
+                fileSize: '25.4 MB',
+                releaseDate: '2023-05-25'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://example.com/downloads/twilight-forest-1.16.5.jar',
+                fileSize: '25.2 MB',
+                releaseDate: '2022-12-30'
+            }
+        ]
     }
 ];
 
@@ -139,6 +758,7 @@ function initializeModsPage() {
 
     if (versionFilter) {
         versionFilter.addEventListener('change', handleFilterChange);
+        populateVersionFilter(); // Populate version filter dynamically
     }
 
     if (categoryFilter) {
@@ -182,7 +802,7 @@ function applyFilters() {
         }
 
         // Version filter
-        if (modsCurrentFilters.version && mod.version !== modsCurrentFilters.version) {
+        if (modsCurrentFilters.version && !mod.versions.some(v => v.version === modsCurrentFilters.version)) {
             return false;
         }
 
@@ -242,7 +862,7 @@ function createModCard(mod) {
         <p class="mod-description">${mod.description}</p>
 
         <div class="mod-meta">
-            <span class="mod-version">${mod.version}</span>
+            <span class="mod-version">${mod.versions[0].version}</span>
             <span class="mod-category">${getCategoryName(mod.category)}</span>
         </div>
 
@@ -261,7 +881,7 @@ function createModCard(mod) {
         </div>
 
         <div class="mod-actions">
-            <button class="download-btn" onclick="handleDownload(${mod.id}, 'mod', '${mod.downloadUrl}', '${mod.affiliateUrl}')">
+            <button class="download-btn" onclick="handleModDownload(${mod.id})">
                 <i class="fas fa-download"></i>
                 Скачать
             </button>
@@ -333,17 +953,112 @@ function updateLoadMoreButton() {
     }
 }
 
-// Enhanced download function for mods
-function handleModDownload(modId, downloadUrl, affiliateUrl) {
+// Enhanced download function for mods with version selection
+function handleModDownload(modId) {
     // Find mod data
     const mod = modsData.find(m => m.id === modId);
     if (!mod) return;
 
+    // Show version selection modal if multiple versions available
+    if (mod.versions.length > 1) {
+        showVersionSelectionModal(mod);
+    } else {
+        // Direct download if only one version
+        performDownload(mod, mod.versions[0]);
+    }
+}
+
+// Show version selection modal
+function showVersionSelectionModal(mod) {
+    const modal = document.createElement('div');
+    modal.className = 'version-modal active';
+    modal.innerHTML = `
+        <div class="version-content">
+            <div class="version-header">
+                <h3 class="version-title">
+                    <i class="fas fa-download"></i>
+                    Выберите версию для ${mod.title}
+                </h3>
+                <button class="version-close">&times;</button>
+            </div>
+            <div class="version-body">
+                <div class="version-description">
+                    <p>Выберите версию Minecraft, для которой хотите скачать мод:</p>
+                </div>
+                <div class="version-list">
+                    ${mod.versions.map(version => `
+                        <div class="version-item" data-version="${version.version}">
+                            <div class="version-info">
+                                <div class="version-number">
+                                    <i class="fas fa-cube"></i>
+                                    Minecraft ${version.version}
+                                </div>
+                                <div class="version-details">
+                                    <span class="file-size">
+                                        <i class="fas fa-file-archive"></i>
+                                        ${version.fileSize}
+                                    </span>
+                                    <span class="release-date">
+                                        <i class="fas fa-calendar"></i>
+                                        ${formatDate(version.releaseDate)}
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="version-download-btn" onclick="performDownload(${mod.id}, '${version.version}')">
+                                <i class="fas fa-download"></i>
+                                Скачать
+                            </button>
+                        </div>
+                    `).join('')}
+                </div>
+                <div class="version-footer">
+                    <button class="version-cancel-btn" onclick="closeVersionModal()">
+                        <i class="fas fa-times"></i>
+                        Отмена
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    // Close modal functionality
+    modal.querySelector('.version-close').addEventListener('click', closeVersionModal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeVersionModal();
+        }
+    });
+}
+
+// Close version selection modal
+function closeVersionModal() {
+    const modal = document.querySelector('.version-modal');
+    if (modal) {
+        modal.classList.remove('active');
+        setTimeout(() => modal.remove(), 300);
+    }
+}
+
+// Perform actual download
+function performDownload(modId, versionId) {
+    const mod = typeof modId === 'object' ? modId : modsData.find(m => m.id === modId);
+    const version = typeof versionId === 'string' ?
+        mod.versions.find(v => v.version === versionId) : versionId;
+
+    if (!mod || !version) return;
+
+    // Close version modal if open
+    closeVersionModal();
+
     // Show loading state
-    const btn = event.target.closest('.download-btn');
+    const btn = event?.target?.closest('.version-download-btn') || event?.target?.closest('.download-btn');
     if (btn) {
         btn.classList.add('loading');
-        btn.textContent = 'Загрузка...';
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Загрузка...';
+        btn.disabled = true;
     }
 
     // Simulate download process
@@ -351,28 +1066,41 @@ function handleModDownload(modId, downloadUrl, affiliateUrl) {
         // Remove loading state
         if (btn) {
             btn.classList.remove('loading');
-            btn.innerHTML = '<i class="fas fa-download"></i> Скачать';
-        }
+            btn.innerHTML = '<i class="fas fa-check"></i> Скачано!';
+            btn.disabled = false;
 
-        // Show success animation
-        if (btn) {
-            btn.classList.add('success');
-            setTimeout(() => btn.classList.remove('success'), 2000);
+            // Reset button after 2 seconds
+            setTimeout(() => {
+            btn.innerHTML = '<i class="fas fa-download"></i> Скачать';
+            }, 2000);
         }
 
         // Redirect to affiliate URL for monetization
-        if (affiliateUrl && affiliateUrl !== '#') {
-            window.open(affiliateUrl, '_blank');
-        } else if (downloadUrl && downloadUrl !== '#') {
-            window.open(downloadUrl, '_blank');
+        if (mod.affiliateUrl && mod.affiliateUrl !== '#') {
+            window.open(mod.affiliateUrl, '_blank');
+        } else if (version.downloadUrl && version.downloadUrl !== '#') {
+            window.open(version.downloadUrl, '_blank');
         }
 
         // Show success notification
         if (window.CraftCorner && window.CraftCorner.showNotification) {
-            window.CraftCorner.showNotification(`Мод "${mod.title}" успешно скачан!`, 'success');
+            window.CraftCorner.showNotification(
+                `Мод "${mod.title}" (${version.version}) успешно скачан!`,
+                'success'
+            );
         }
 
     }, 2000);
+}
+
+// Format date helper function
+function formatDate(dateString) {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('ru-RU', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+    });
 }
 
 // Utility function for debouncing
@@ -409,7 +1137,7 @@ function showModPreview(modId) {
                 <div class="preview-info">
                     <div class="info-item">
                         <div class="info-label">Версия</div>
-                        <div class="info-value">${mod.version}</div>
+                        <div class="info-value">${mod.versions[0].version}</div>
                     </div>
                     <div class="info-item">
                         <div class="info-label">Категория</div>
@@ -421,7 +1149,7 @@ function showModPreview(modId) {
                     <p>${mod.description}</p>
                 </div>
                 <div class="preview-actions">
-                    <button class="download-btn" onclick="handleModDownload(${mod.id}, '${mod.downloadUrl}', '${mod.affiliateUrl}')">
+                    <button class="download-btn" onclick="handleModDownload(${mod.id})">
                         <i class="fas fa-download"></i>
                         Скачать мод
                     </button>
@@ -465,7 +1193,7 @@ function showModInfo(modId) {
                     <p>${mod.description}</p>
                 </div>
                 <div class="info-meta">
-                    <div><b>Версия:</b> ${mod.version}</div>
+                    <div><b>Версия:</b> ${mod.versions[0].version}</div>
                     <div><b>Категория:</b> ${getCategoryName(mod.category)}</div>
                     <div><b>Код:</b> ${mod.code}</div>
                 </div>
@@ -477,8 +1205,12 @@ function showModInfo(modId) {
                     <h4>Требования</h4>
                     <ul>${mod.requirements.map(req => `<li>${req}</li>`).join('')}</ul>
                 </div>
+                <div class="info-installation">
+                    <h4>Инструкция по установке</h4>
+                    <ol>${mod.installationInstructions.map(step => `<li>${step}</li>`).join('')}</ol>
+                </div>
                 <div class="info-actions">
-                    <button class="download-btn" onclick="handleDownload(${mod.id}, 'mod', '${mod.downloadUrl}', '${mod.affiliateUrl}')">
+                    <button class="download-btn" onclick="handleModDownload(${mod.id})">
                         <i class="fas fa-download"></i>
                         Скачать мод
                     </button>
@@ -500,7 +1232,46 @@ function showModInfo(modId) {
     });
 }
 
+// Populate version filter with all available versions
+function populateVersionFilter() {
+    const versionFilter = document.getElementById('versionFilter');
+    if (!versionFilter) return;
+
+    // Get all unique versions from mods data
+    const allVersions = new Set();
+    modsData.forEach(mod => {
+        mod.versions.forEach(version => {
+            allVersions.add(version.version);
+        });
+    });
+
+    // Sort versions in descending order (newest first)
+    const sortedVersions = Array.from(allVersions).sort((a, b) => {
+        const versionA = a.split('.').map(Number);
+        const versionB = b.split('.').map(Number);
+
+        for (let i = 0; i < Math.max(versionA.length, versionB.length); i++) {
+            const numA = versionA[i] || 0;
+            const numB = versionB[i] || 0;
+            if (numA !== numB) {
+                return numB - numA; // Descending order
+            }
+        }
+        return 0;
+    });
+
+    // Add version options to filter
+    sortedVersions.forEach(version => {
+        const option = document.createElement('option');
+        option.value = version;
+        option.textContent = `Minecraft ${version}`;
+        versionFilter.appendChild(option);
+    });
+}
+
 // Export functions for global use
 window.handleModDownload = handleModDownload;
 window.showModPreview = showModPreview;
 window.showModInfo = showModInfo;
+window.performDownload = performDownload;
+window.closeVersionModal = closeVersionModal;

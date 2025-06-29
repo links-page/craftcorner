@@ -1040,6 +1040,71 @@ body {
     margin-right: 0.5rem;
 }
 
+.info-installation {
+    margin-bottom: 1.5rem;
+}
+
+.info-installation h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.info-installation h4::before {
+    content: '📋';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.info-installation ol {
+    list-style: none;
+    padding: 0;
+    counter-reset: installation-step;
+}
+
+.info-installation li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-muted);
+    position: relative;
+    padding-left: 2rem;
+    counter-increment: installation-step;
+}
+
+.info-installation li:before {
+    content: counter(installation-step);
+    position: absolute;
+    left: 0;
+    top: 0.75rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.info-installation li:last-child {
+    border-bottom: none;
+}
+
+.info-installation li:hover {
+    background: var(--bg-secondary);
+    margin: 0 -1.5rem;
+    padding-left: 3.5rem;
+    padding-right: 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
 .info-actions {
     text-align: center;
     padding-top: 1rem;
@@ -1128,5 +1193,79 @@ body {
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
+    }
+}
+
+/* Custom Scrollbar Styles for Modals */
+.info-content::-webkit-scrollbar,
+.preview-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.info-content::-webkit-scrollbar-track,
+.preview-content::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.info-content::-webkit-scrollbar-thumb,
+.preview-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.info-content::-webkit-scrollbar-thumb:hover,
+.preview-content::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    transform: scaleX(1.2);
+}
+
+.info-content::-webkit-scrollbar-corner,
+.preview-content::-webkit-scrollbar-corner {
+    background: var(--bg-secondary);
+    border-radius: 4px;
+}
+
+/* Firefox scrollbar styles */
+.info-content,
+.preview-content {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--bg-secondary);
+}
+
+/* Enhanced modal animations */
+.info-modal.active .info-content,
+.preview-modal.active .preview-content {
+    animation: modalSlideUp 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes modalSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Modal backdrop enhancement */
+.info-modal.active,
+.preview-modal.active {
+    animation: backdropFadeIn 0.3s ease;
+}
+
+@keyframes backdropFadeIn {
+    0% {
+        backdrop-filter: blur(0px);
+        background: rgba(0, 0, 0, 0);
+    }
+    100% {
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.8);
     }
 }
