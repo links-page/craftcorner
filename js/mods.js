@@ -8,28 +8,28 @@ const modsData = [
         title: 'Industrial Craft 2',
         description: 'Добавляет множество технологических блоков и предметов для автоматизации производства',
         category: 'technology',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPklDMjwvdGV4dD48L3N2Zz4=',
-        affiliateUrl: 'https://example.com/affiliate/ic2',
+        image: 'https://minecraft-inside.ru/uploads/files/2023-02/9559_63ef2894aa98c.jpg',
+        affiliateUrl: 'https://vexfile.com/download/hfcxSGl82L',
         tags: ['Технологии', 'Автоматизация', 'Энергия'],
-        requirements: ['Forge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
             'Скачай мод',
-            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Разархивируйте файл в .minecraft\\mods',
             'Готово'
         ],
         versions: [
             {
-                version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/ic2-1.20.1.jar'
+                version: '1.12.2',
+                downloadUrl: 'https://vexfile.com/download/hfcxSGl82L'
             },
             {
-                version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/ic2-1.19.2.jar'
+                version: '1.10.2',
+                downloadUrl: 'https://vexfile.com/download/x1BpGHwbvJ'
             },
             {
-                version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/ic2-1.18.2.jar'
+                version: '1.7.10',
+                downloadUrl: 'https://vexfile.com/download/nBHlcJK9Sq'
             }
         ]
     },
@@ -39,24 +39,28 @@ const modsData = [
         title: 'Thaumcraft',
         description: 'Магический мод с системой заклинаний, исследования и магических устройств',
         category: 'magic',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlRoYXVtY3JhZnQ8L3RleHQ+PC9zdmc+',
-        affiliateUrl: 'https://example.com/affiliate/thaumcraft',
+        image: '',
+        affiliateUrl: 'https://vexfile.com/download/QXoXo5WfdW',
         tags: ['Магия', 'Заклинания', 'Исследования'],
-        requirements: ['Forge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
             'Скачай мод',
-            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Разархивируйте файл в .minecraft\\mods',
             'Готово'
         ],
         versions: [
             {
-                version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/thaumcraft-1.19.2.jar'
+                version: '1.12.2',
+                downloadUrl: 'https://vexfile.com/download/QXoXo5WfdW'
             },
             {
-                version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/thaumcraft-1.18.2.jar'
+                version: '1.10.2',
+                downloadUrl: 'https://vexfile.com/download/CrWBl76Lwt'
+            },
+            {
+                version: '1.7.10',
+                downloadUrl: 'https://vexfile.com/download/yG2wvpiIcp'
             }
         ]
     },
@@ -66,24 +70,32 @@ const modsData = [
         title: 'Biomes O\' Plenty',
         description: 'Добавляет множество новых биомов, растений и природных объектов',
         category: 'adventure',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkJPUDwvdGV4dD48L3N2Zz4=',
-        affiliateUrl: 'https://example.com/affiliate/bop',
+        image: 'https://minecraft-inside.ru/uploads/files/2018-05/Biomes_O_Plenty.jpg',
+        affiliateUrl: 'https://vexfile.com/download/23i68Spdpv',
         tags: ['Природа', 'Биомы', 'Растения'],
-        requirements: ['Forge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
             'Скачай мод',
-            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Разархивируйте файл в .minecraft\\mods',
             'Готово'
         ],
         versions: [
-            {
+             {
+                version: '1.21.6',
+                downloadUrl: 'https://vexfile.com/download/23i68Spdpv'
+            },
+             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/bop-1.20.1.jar'
+                downloadUrl: 'https://vexfile.com/download/jAZaELu1nQ'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/bop-1.19.2.jar'
+                downloadUrl: 'https://vexfile.com/download/vf27HM6Njd'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://vexfile.com/download/26G4I2qZOx'
             }
         ]
     },
@@ -93,28 +105,32 @@ const modsData = [
         title: 'Applied Energistics 2',
         description: 'Система цифрового хранения и автоматизации с использованием энергии',
         category: 'technology',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkFFMjwvdGV4dD48L3N2Zz4=',
-        affiliateUrl: 'https://example.com/affiliate/ae2',
+        image: 'https://raw.githubusercontent.com/AppliedEnergistics/Applied-Energistics-2/main/docs/logo.png',
+        affiliateUrl: 'https://vexfile.com/download/jfoY5lQPOi',
         tags: ['Технологии', 'Хранение', 'Автоматизация'],
-        requirements: ['Forge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
             'Скачай мод',
-            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Разархивируйте файл в .minecraft\\mods',
             'Готово'
         ],
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/ae2-1.20.1.jar'
+                downloadUrl: 'https://vexfile.com/download/jfoY5lQPOi'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/ae2-1.19.2.jar'
+                downloadUrl: 'https://vexfile.com/download/hbuZq3APHc'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/ae2-1.18.2.jar'
+                downloadUrl: 'https://vexfile.com/download/dptNTApcII'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://vexfile.com/download/MkiIRHQKx2'
             }
         ]
     },
@@ -124,24 +140,32 @@ const modsData = [
         title: 'Botania',
         description: 'Магический мод, основанный на природной магии и цветах',
         category: 'magic',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkJvdGFuaWE8L3RleHQ+PC9zdmc+',
+        image: 'https://minecraft-inside.ru/uploads/files/2023-02/9729_63ee465dcc92d.jpg',
         affiliateUrl: 'https://example.com/affiliate/botania',
         tags: ['Магия', 'Природа', 'Цветы'],
-        requirements: ['Forge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
-            'Скачай мод',
-            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Скачайте мод',
+            'Разархивируйте файл в .minecraft\\mods',
             'Готово'
         ],
         versions: [
             {
+                version: '1.20.1',
+                downloadUrl: 'https://vexfile.com/download/oGNBMohfnO'
+            },
+            {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/botania-1.19.2.jar'
+                downloadUrl: 'https://vexfile.com/download/dlHQLoefe3'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/botania-1.18.2.jar'
+                downloadUrl: 'https://vexfile.com/download/kOcZoTEUb2'
+            },
+            {
+                version: '1.16.5',
+                downloadUrl: 'https://vexfile.com/download/t6NMXXSFnj'
             }
         ]
     },
@@ -151,24 +175,24 @@ const modsData = [
         title: 'Chisel',
         description: 'Добавляет множество декоративных блоков и инструменты для их создания',
         category: 'decoration',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWQ0ZWQ4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkNoaXNlbDwvdGV4dD48L3N2Zz4=',
+        image: 'https://ru-minecraft.ru/uploads/posts/2013-08/1375515220_full.jpg',
         affiliateUrl: 'https://example.com/affiliate/chisel',
         tags: ['Декор', 'Блоки', 'Строительство'],
-        requirements: ['Forge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
             'Скачай мод',
-            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Разархивируйте файл в .minecraft\\mods',
             'Готово'
         ],
         versions: [
             {
-                version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/chisel-1.20.1.jar'
+                version: '1.16.5',
+                downloadUrl: 'https://vexfile.com/download/hw4AaFY6EB'
             },
             {
-                version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/chisel-1.19.2.jar'
+                version: '1.12.2',
+                downloadUrl: 'https://vexfile.com/download/gl7JddManK'
             }
         ]
     },
@@ -185,7 +209,7 @@ const modsData = [
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
             'Скачай мод',
-            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Разархивируйте файл в .minecraft\\mods',
             'Готово'
         ],
         versions: [
@@ -216,7 +240,7 @@ const modsData = [
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
             'Скачай мод',
-            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Разархивируйте файл в .minecraft\\mods',
             'Готово'
         ],
         versions: [
