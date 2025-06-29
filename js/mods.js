@@ -682,7 +682,7 @@ const modsData = [
         image: 'https://minecraft-inside.ru/uploads/files/2021-07/143334_60f530da8df15.png',
         affiliateUrl: 'https://vexfile.com/download/6nS1jjPHVJ',
         tags: ['Приключения', 'Структуры', 'Подземелья', 'Исследования'],
-        requirements: ['Forge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
             'Скачай мод',
@@ -717,7 +717,7 @@ const modsData = [
         image: 'https://minecraft-inside.ru/uploads/files/2023-10/34647_652a39687dce1.png',
         affiliateUrl: 'https://vexfile.com/download/LgF4PwOfLD',
         tags: ['Утилиты', 'Улучшения', 'Блоки', 'Механики', 'Декорации'],
-        requirements: ['Forge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
             'Скачай мод',
@@ -752,7 +752,7 @@ const modsData = [
         image: 'https://minecraft-inside.ru/uploads/files/2023-02/102865_63e48edbaf8f4.png',
         affiliateUrl: 'https://vexfile.com/download/g4y8dtthvj',
         tags: ['Технологии', 'Автоматизация', 'Дизайн', 'Строительство', 'Механики'],
-        requirements: ['Forge/NeoForge/Fabric/Quilt', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
             'Скачай мод',
@@ -788,7 +788,7 @@ const modsData = [
         image: 'https://minecraft-inside.ru/uploads/files/2022-07/50406_62c486bf17da9.png',
         affiliateUrl: 'https://vexfile.com/download/gSB5kMtYqD',
         tags: ['Приключения', 'Драконы', 'Существа', 'Боссы', 'Элементы'],
-        requirements: ['Forge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
             'Скачай и установи Minecraft Forge',
             'Для 1.15.2 и выше:',
@@ -824,9 +824,9 @@ const modsData = [
         image: 'https://minecraft-inside.ru/uploads/files/2023-02/9549_63ef25c63f91e.jpg',
         affiliateUrl: 'https://vexfile.com/download/AhjK0RWv2s',
         tags: ['Приключения', 'Измерение', 'Лес', 'Боссы', 'Структуры'],
-        requirements: ['Forge', 'Java 17+'],
+        requirements: ['Forge'],
         installationInstructions: [
-            'Скачайте и установите Minecraft Forge ,
+            'Скачайте и установите Minecraft Forge' ,
             'Скачайте мод',
             'Не распаковывая, скопируйте в .minecraft\\mods',
             'Готово'
