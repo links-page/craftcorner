@@ -21,21 +21,15 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/ic2-1.20.1.jar',
-                fileSize: '2.4 MB',
-                releaseDate: '2024-01-15'
+                downloadUrl: 'https://example.com/downloads/ic2-1.20.1.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/ic2-1.19.2.jar',
-                fileSize: '2.3 MB',
-                releaseDate: '2023-08-20'
+                downloadUrl: 'https://example.com/downloads/ic2-1.19.2.jar'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/ic2-1.18.2.jar',
-                fileSize: '2.2 MB',
-                releaseDate: '2023-03-10'
+                downloadUrl: 'https://example.com/downloads/ic2-1.18.2.jar'
             }
         ]
     },
@@ -58,15 +52,11 @@ const modsData = [
         versions: [
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/thaumcraft-1.19.2.jar',
-                fileSize: '3.1 MB',
-                releaseDate: '2023-09-05'
+                downloadUrl: 'https://example.com/downloads/thaumcraft-1.19.2.jar'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/thaumcraft-1.18.2.jar',
-                fileSize: '3.0 MB',
-                releaseDate: '2023-04-12'
+                downloadUrl: 'https://example.com/downloads/thaumcraft-1.18.2.jar'
             }
         ]
     },
@@ -89,15 +79,11 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/bop-1.20.1.jar',
-                fileSize: '4.2 MB',
-                releaseDate: '2024-02-01'
+                downloadUrl: 'https://example.com/downloads/bop-1.20.1.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/bop-1.19.2.jar',
-                fileSize: '4.1 MB',
-                releaseDate: '2023-10-15'
+                downloadUrl: 'https://example.com/downloads/bop-1.19.2.jar'
             }
         ]
     },
@@ -120,21 +106,15 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/ae2-1.20.1.jar',
-                fileSize: '5.8 MB',
-                releaseDate: '2024-01-20'
+                downloadUrl: 'https://example.com/downloads/ae2-1.20.1.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/ae2-1.19.2.jar',
-                fileSize: '5.7 MB',
-                releaseDate: '2023-08-30'
+                downloadUrl: 'https://example.com/downloads/ae2-1.19.2.jar'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/ae2-1.18.2.jar',
-                fileSize: '5.6 MB',
-                releaseDate: '2023-05-15'
+                downloadUrl: 'https://example.com/downloads/ae2-1.18.2.jar'
             }
         ]
     },
@@ -157,15 +137,11 @@ const modsData = [
         versions: [
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/botania-1.19.2.jar',
-                fileSize: '3.5 MB',
-                releaseDate: '2023-09-10'
+                downloadUrl: 'https://example.com/downloads/botania-1.19.2.jar'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/botania-1.18.2.jar',
-                fileSize: '3.4 MB',
-                releaseDate: '2023-04-20'
+                downloadUrl: 'https://example.com/downloads/botania-1.18.2.jar'
             }
         ]
     },
@@ -188,15 +164,11 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/chisel-1.20.1.jar',
-                fileSize: '1.8 MB',
-                releaseDate: '2024-01-25'
+                downloadUrl: 'https://example.com/downloads/chisel-1.20.1.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/chisel-1.19.2.jar',
-                fileSize: '1.7 MB',
-                releaseDate: '2023-08-25'
+                downloadUrl: 'https://example.com/downloads/chisel-1.19.2.jar'
             }
         ]
     },
@@ -219,21 +191,15 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/journeymap-1.20.1.jar',
-                fileSize: '2.1 MB',
-                releaseDate: '2024-02-05'
+                downloadUrl: 'https://example.com/downloads/journeymap-1.20.1.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/journeymap-1.19.2.jar',
-                fileSize: '2.0 MB',
-                releaseDate: '2023-09-15'
+                downloadUrl: 'https://example.com/downloads/journeymap-1.19.2.jar'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/journeymap-1.18.2.jar',
-                fileSize: '1.9 MB',
-                releaseDate: '2023-06-20'
+                downloadUrl: 'https://example.com/downloads/journeymap-1.18.2.jar'
             }
         ]
     },
@@ -256,15 +222,11 @@ const modsData = [
         versions: [
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/tinkers-1.19.2.jar',
-                fileSize: '4.5 MB',
-                releaseDate: '2023-09-20'
+                downloadUrl: 'https://example.com/downloads/tinkers-1.19.2.jar'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/tinkers-1.18.2.jar',
-                fileSize: '4.4 MB',
-                releaseDate: '2023-05-25'
+                downloadUrl: 'https://example.com/downloads/tinkers-1.18.2.jar'
             }
         ]
     },
@@ -290,27 +252,19 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/forge-1.20.1-installer.jar',
-                fileSize: '3.2 MB',
-                releaseDate: '2024-01-10'
+                downloadUrl: 'https://example.com/downloads/forge-1.20.1-installer.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/forge-1.19.2-installer.jar',
-                fileSize: '3.1 MB',
-                releaseDate: '2023-08-15'
+                downloadUrl: 'https://example.com/downloads/forge-1.19.2-installer.jar'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/forge-1.18.2-installer.jar',
-                fileSize: '3.0 MB',
-                releaseDate: '2023-03-20'
+                downloadUrl: 'https://example.com/downloads/forge-1.18.2-installer.jar'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/forge-1.16.5-installer.jar',
-                fileSize: '2.9 MB',
-                releaseDate: '2022-12-10'
+                downloadUrl: 'https://example.com/downloads/forge-1.16.5-installer.jar'
             }
         ]
     },
@@ -339,27 +293,19 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/lscataclysm-1.20.1.zip',
-                fileSize: '15.2 MB',
-                releaseDate: '2024-02-01'
+                downloadUrl: 'https://example.com/downloads/lscataclysm-1.20.1.zip'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/lscataclysm-1.19.2.zip',
-                fileSize: '14.8 MB',
-                releaseDate: '2023-09-15'
+                downloadUrl: 'https://example.com/downloads/lscataclysm-1.19.2.zip'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/lscataclysm-1.18.2.jar',
-                fileSize: '14.5 MB',
-                releaseDate: '2023-04-20'
+                downloadUrl: 'https://example.com/downloads/lscataclysm-1.18.2.jar'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/lscataclysm-1.16.5.jar',
-                fileSize: '14.0 MB',
-                releaseDate: '2022-12-15'
+                downloadUrl: 'https://example.com/downloads/lscataclysm-1.16.5.jar'
             }
         ]
     },
@@ -382,9 +328,7 @@ const modsData = [
         versions: [
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/citadel-1.16.5.jar',
-                fileSize: '1.8 MB',
-                releaseDate: '2022-11-20'
+                downloadUrl: 'https://example.com/downloads/citadel-1.16.5.jar'
             }
         ]
     },
@@ -407,27 +351,19 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/aquamirae-1.20.1.jar',
-                fileSize: '8.5 MB',
-                releaseDate: '2024-01-20'
+                downloadUrl: 'https://example.com/downloads/aquamirae-1.20.1.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/aquamirae-1.19.2.jar',
-                fileSize: '8.3 MB',
-                releaseDate: '2023-09-10'
+                downloadUrl: 'https://example.com/downloads/aquamirae-1.19.2.jar'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/aquamirae-1.18.2.jar',
-                fileSize: '8.1 MB',
-                releaseDate: '2023-04-15'
+                downloadUrl: 'https://example.com/downloads/aquamirae-1.18.2.jar'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/aquamirae-1.16.5.jar',
-                fileSize: '7.9 MB',
-                releaseDate: '2022-12-20'
+                downloadUrl: 'https://example.com/downloads/aquamirae-1.16.5.jar'
             }
         ]
     },
@@ -451,27 +387,19 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.20.1.jar',
-                fileSize: '12.5 MB',
-                releaseDate: '2024-01-25'
+                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.20.1.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.19.2.jar',
-                fileSize: '12.3 MB',
-                releaseDate: '2023-08-30'
+                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.19.2.jar'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.18.2.jar',
-                fileSize: '12.1 MB',
-                releaseDate: '2023-05-20'
+                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.18.2.jar'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.16.5.jar',
-                fileSize: '11.9 MB',
-                releaseDate: '2022-12-25'
+                downloadUrl: 'https://example.com/downloads/industrial-foregoing-1.16.5.jar'
             }
         ]
     },
@@ -495,27 +423,19 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/betterend-1.20.1.jar',
-                fileSize: '15.2 MB',
-                releaseDate: '2024-02-01'
+                downloadUrl: 'https://example.com/downloads/betterend-1.20.1.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/betterend-1.19.2.jar',
-                fileSize: '15.0 MB',
-                releaseDate: '2023-09-15'
+                downloadUrl: 'https://example.com/downloads/betterend-1.19.2.jar'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/betterend-1.18.2.jar',
-                fileSize: '14.8 MB',
-                releaseDate: '2023-04-25'
+                downloadUrl: 'https://example.com/downloads/betterend-1.18.2.jar'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/betterend-1.16.5.jar',
-                fileSize: '14.5 MB',
-                releaseDate: '2022-12-30'
+                downloadUrl: 'https://example.com/downloads/betterend-1.16.5.jar'
             }
         ]
     },
@@ -539,27 +459,19 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/wda-1.20.1.jar',
-                fileSize: '6.8 MB',
-                releaseDate: '2024-01-30'
+                downloadUrl: 'https://example.com/downloads/wda-1.20.1.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/wda-1.19.2.jar',
-                fileSize: '6.6 MB',
-                releaseDate: '2023-09-20'
+                downloadUrl: 'https://example.com/downloads/wda-1.19.2.jar'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/wda-1.18.2.jar',
-                fileSize: '6.4 MB',
-                releaseDate: '2023-05-10'
+                downloadUrl: 'https://example.com/downloads/wda-1.18.2.jar'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/wda-1.16.5.jar',
-                fileSize: '6.2 MB',
-                releaseDate: '2022-12-15'
+                downloadUrl: 'https://example.com/downloads/wda-1.16.5.jar'
             }
         ]
     },
@@ -582,21 +494,15 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/quark-1.20.1.jar',
-                fileSize: '4.2 MB',
-                releaseDate: '2024-01-15'
+                downloadUrl: 'https://example.com/downloads/quark-1.20.1.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/quark-1.19.2.jar',
-                fileSize: '4.1 MB',
-                releaseDate: '2023-08-25'
+                downloadUrl: 'https://example.com/downloads/quark-1.19.2.jar'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/quark-1.16.5.jar',
-                fileSize: '4.0 MB',
-                releaseDate: '2022-12-10'
+                downloadUrl: 'https://example.com/downloads/quark-1.16.5.jar'
             }
         ]
     },
@@ -620,27 +526,19 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/create-1.20.1.jar',
-                fileSize: '18.5 MB',
-                releaseDate: '2024-02-05'
+                downloadUrl: 'https://example.com/downloads/create-1.20.1.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/create-1.19.2.jar',
-                fileSize: '18.3 MB',
-                releaseDate: '2023-09-25'
+                downloadUrl: 'https://example.com/downloads/create-1.19.2.jar'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/create-1.18.2.jar',
-                fileSize: '18.1 MB',
-                releaseDate: '2023-05-15'
+                downloadUrl: 'https://example.com/downloads/create-1.18.2.jar'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/create-1.16.5.jar',
-                fileSize: '17.9 MB',
-                releaseDate: '2022-12-20'
+                downloadUrl: 'https://example.com/downloads/create-1.16.5.jar'
             }
         ]
     },
@@ -664,21 +562,15 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/ice-and-fire-1.20.1.jar',
-                fileSize: '22.5 MB',
-                releaseDate: '2024-01-30'
+                downloadUrl: 'https://example.com/downloads/ice-and-fire-1.20.1.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/ice-and-fire-1.19.2.jar',
-                fileSize: '22.3 MB',
-                releaseDate: '2023-09-20'
+                downloadUrl: 'https://example.com/downloads/ice-and-fire-1.19.2.jar'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/ice-and-fire-1.16.5.jar',
-                fileSize: '22.0 MB',
-                releaseDate: '2022-12-25'
+                downloadUrl: 'https://example.com/downloads/ice-and-fire-1.16.5.jar'
             }
         ]
     },
@@ -701,27 +593,19 @@ const modsData = [
         versions: [
             {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/twilight-forest-1.20.1.jar',
-                fileSize: '25.8 MB',
-                releaseDate: '2024-02-01'
+                downloadUrl: 'https://example.com/downloads/twilight-forest-1.20.1.jar'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/twilight-forest-1.19.2.jar',
-                fileSize: '25.6 MB',
-                releaseDate: '2023-09-30'
+                downloadUrl: 'https://example.com/downloads/twilight-forest-1.19.2.jar'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/twilight-forest-1.18.2.jar',
-                fileSize: '25.4 MB',
-                releaseDate: '2023-05-25'
+                downloadUrl: 'https://example.com/downloads/twilight-forest-1.18.2.jar'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/twilight-forest-1.16.5.jar',
-                fileSize: '25.2 MB',
-                releaseDate: '2022-12-30'
+                downloadUrl: 'https://example.com/downloads/twilight-forest-1.16.5.jar'
             }
         ]
     }
@@ -993,16 +877,6 @@ function showVersionSelectionModal(mod) {
                                     <i class="fas fa-cube"></i>
                                     Minecraft ${version.version}
                                 </div>
-                                <div class="version-details">
-                                    <span class="file-size">
-                                        <i class="fas fa-file-archive"></i>
-                                        ${version.fileSize}
-                                    </span>
-                                    <span class="release-date">
-                                        <i class="fas fa-calendar"></i>
-                                        ${formatDate(version.releaseDate)}
-                                    </span>
-                                </div>
                             </div>
                             <button class="version-download-btn" onclick="performDownload(${mod.id}, '${version.version}')">
                                 <i class="fas fa-download"></i>
@@ -1071,7 +945,7 @@ function performDownload(modId, versionId) {
 
             // Reset button after 2 seconds
             setTimeout(() => {
-            btn.innerHTML = '<i class="fas fa-download"></i> Скачать';
+                btn.innerHTML = '<i class="fas fa-download"></i> Скачать';
             }, 2000);
         }
 
@@ -1091,16 +965,6 @@ function performDownload(modId, versionId) {
         }
 
     }, 2000);
-}
-
-// Format date helper function
-function formatDate(dateString) {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('ru-RU', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric'
-    });
 }
 
 // Utility function for debouncing
