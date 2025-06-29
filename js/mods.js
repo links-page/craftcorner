@@ -1,5 +1,184 @@
 // Mods page JavaScript
 
+// Download statistics system
+const DownloadStats = {
+    // Get stats from localStorage or initialize defaults
+    getStats() {
+        const stats = localStorage.getItem('downloadStats');
+        if (stats) {
+            return JSON.parse(stats);
+        }
+
+        // Initialize with realistic data for a new site
+        const initialStats = {
+            totalDownloads: 1250, // Reduced from 15420 to 1250 for a new site
+            todayDownloads: 0,
+            lastResetDate: new Date().toDateString(),
+            lastRandomUpdate: null,
+            randomDownloadsToday: 0,
+            modStats: {}
+        };
+
+        // Initialize individual mod stats with realistic numbers for a new site
+        const modIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+        modIds.forEach(id => {
+            initialStats.modStats[id] = {
+                total: Math.floor(Math.random() * 200) + 50, // Reduced from 1000-6000 to 50-250
+                today: 0
+            };
+        });
+
+        localStorage.setItem('downloadStats', JSON.stringify(initialStats));
+        return initialStats;
+    },
+
+    // Save stats to localStorage
+    saveStats(stats) {
+        localStorage.setItem('downloadStats', JSON.stringify(stats));
+    },
+
+    // Check if we need to reset today's downloads (at 00:00 MSK)
+    checkDailyReset() {
+        const stats = this.getStats();
+        const now = new Date();
+        const mskTime = new Date(now.getTime() + (3 * 60 * 60 * 1000)); // UTC+3 for MSK
+        const today = mskTime.toDateString();
+
+        if (stats.lastResetDate !== today) {
+            // Reset today's downloads
+            stats.todayDownloads = 0;
+            stats.lastResetDate = today;
+            stats.lastRandomUpdate = null;
+            stats.randomDownloadsToday = 0;
+
+            // Reset individual mod stats
+            Object.keys(stats.modStats).forEach(modId => {
+                stats.modStats[modId].today = 0;
+            });
+
+            this.saveStats(stats);
+        }
+    },
+
+    // Add random downloads gradually over 4-6 hours after midnight
+    addRandomDownloads() {
+        const stats = this.getStats();
+        const now = new Date();
+        const mskTime = new Date(now.getTime() + (3 * 60 * 60 * 1000)); // UTC+3 for MSK
+        const hoursSinceMidnight = mskTime.getHours();
+        const minutesSinceMidnight = mskTime.getMinutes();
+        const totalMinutesSinceMidnight = hoursSinceMidnight * 60 + minutesSinceMidnight;
+
+        // Only add random downloads in the first 4-6 hours after midnight
+        if (hoursSinceMidnight >= 0 && hoursSinceMidnight <= 6) {
+            // Calculate how much time has passed since last update (max 10 minutes)
+            const lastUpdate = stats.lastRandomUpdate ? new Date(stats.lastRandomUpdate) : null;
+            const timeSinceLastUpdate = lastUpdate ? (now - lastUpdate) / (1000 * 60) : 10; // minutes
+
+            if (!lastUpdate || timeSinceLastUpdate >= 10) {
+                // Calculate target random downloads for this time period
+                const maxRandomDownloads = 15; // Reduced from 30 to 15
+                const timeProgress = Math.min(totalMinutesSinceMidnight / (6 * 60), 1); // 6 hours = 360 minutes
+                const targetDownloads = Math.floor(maxRandomDownloads * timeProgress);
+
+                // Get current random downloads count (stored separately)
+                const currentRandomDownloads = stats.randomDownloadsToday || 0;
+                const downloadsToAdd = Math.max(0, targetDownloads - currentRandomDownloads);
+
+                if (downloadsToAdd > 0) {
+                    // Add 1-2 downloads per update (reduced from 1-3)
+                    const actualDownloads = Math.min(downloadsToAdd, Math.floor(Math.random() * 2) + 1);
+                    stats.todayDownloads += actualDownloads;
+                    stats.randomDownloadsToday = (stats.randomDownloadsToday || 0) + actualDownloads;
+
+                    // Distribute random downloads among mods
+                    const modIds = Object.keys(stats.modStats);
+                    for (let i = 0; i < actualDownloads; i++) {
+                        const randomModId = modIds[Math.floor(Math.random() * modIds.length)];
+                        stats.modStats[randomModId].today += 1;
+                        // Don't add to total - only today's count
+                    }
+
+                    stats.lastRandomUpdate = now.toISOString();
+                    this.saveStats(stats);
+                }
+            }
+        }
+    },
+
+    // Record a real download
+    recordDownload(modId) {
+        const stats = this.getStats();
+        stats.totalDownloads += 1;
+        stats.todayDownloads += 1;
+
+        if (!stats.modStats[modId]) {
+            stats.modStats[modId] = { total: 0, today: 0 };
+        }
+
+        stats.modStats[modId].total += 1;
+        stats.modStats[modId].today += 1;
+
+        this.saveStats(stats);
+    },
+
+    // Format number with K/M suffix
+    formatNumber(num) {
+        if (num >= 1000000) {
+            return (num / 1000000).toFixed(1) + 'M';
+        } else if (num >= 1000) {
+            return (num / 1000).toFixed(1) + 'k';
+        }
+        return num.toString();
+    },
+
+    // Get formatted stats for display
+    getFormattedStats() {
+        const stats = this.getStats();
+        return {
+            total: this.formatNumber(stats.totalDownloads),
+            today: this.formatNumber(stats.todayDownloads)
+        };
+    },
+
+    // Get mod-specific stats
+    getModStats(modId) {
+        const stats = this.getStats();
+        const modStats = stats.modStats[modId] || { total: 0, today: 0 };
+        return {
+            total: this.formatNumber(modStats.total),
+            today: this.formatNumber(modStats.today)
+        };
+    },
+
+    // Initialize the stats system
+    init() {
+        this.checkDailyReset();
+
+        // Only add random downloads if this is the first time today or if enough time has passed
+        const stats = this.getStats();
+        const now = new Date();
+        const lastUpdate = stats.lastRandomUpdate ? new Date(stats.lastRandomUpdate) : null;
+
+        if (!lastUpdate || (now - lastUpdate) >= 10 * 60 * 1000) { // 10 minutes
+            this.addRandomDownloads();
+        }
+
+        // Set up periodic checks (every 10 minutes)
+        setInterval(() => {
+            this.checkDailyReset();
+            this.addRandomDownloads();
+        }, 10 * 60 * 1000); // 10 minutes
+    }
+};
+
+// Initialize download stats when page loads
+if (typeof window !== 'undefined') {
+    window.addEventListener('load', () => {
+        DownloadStats.init();
+    });
+}
+
 // Sample mods data with multiple Minecraft versions support
 const modsData = [
     {
@@ -654,6 +833,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function initializeModsPage() {
+    // Initialize download stats
+    DownloadStats.init();
+
     // Add event listeners for filters
     const searchInput = document.getElementById('modSearchInput');
     const versionFilter = document.getElementById('versionFilter');
@@ -676,6 +858,10 @@ function initializeModsPage() {
     if (loadMoreBtn) {
         loadMoreBtn.addEventListener('click', loadMoreMods);
     }
+
+    // Initialize filters and load mods
+    initializeFilters();
+    applyFilters();
 }
 
 function initializeFilters() {
@@ -957,6 +1143,12 @@ function performDownload(modId, versionId) {
 
     if (!mod || !version) return;
 
+    // Record the download in both local and global stats
+    DownloadStats.recordDownload(mod.id);
+    if (window.GlobalStats) {
+        GlobalStats.recordDownload('mods');
+    }
+
     // Close version modal if open
     closeVersionModal();
 
@@ -1177,6 +1369,22 @@ function populateVersionFilter() {
         option.textContent = `Minecraft ${version}`;
         versionFilter.appendChild(option);
     });
+}
+
+// Update stats display
+function updateStatsDisplay() {
+    const stats = DownloadStats.getFormattedStats();
+
+    const todayElement = document.getElementById('todayDownloads');
+    const totalElement = document.getElementById('totalDownloads');
+
+    if (todayElement) {
+        todayElement.textContent = stats.today;
+    }
+
+    if (totalElement) {
+        totalElement.textContent = stats.total;
+    }
 }
 
 // Export functions for global use
