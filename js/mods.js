@@ -684,9 +684,9 @@ const modsData = [
         tags: ['Приключения', 'Структуры', 'Подземелья', 'Исследования'],
         requirements: ['Forge'],
         installationInstructions: [
-            'Скачай и установи Minecraft Forge',
-            'Скачай мод',
-            'Не распаковывая, скопируй в .minecraft\\mods',
+            'Скачайте и установите Minecraft Forge',
+            'Скачайте архив',
+            'Распакуйте его в .minecraft\\mods',
             'Готово'
         ],
         versions: [
@@ -719,9 +719,9 @@ const modsData = [
         tags: ['Утилиты', 'Улучшения', 'Блоки', 'Механики', 'Декорации'],
         requirements: ['Forge'],
         installationInstructions: [
-            'Скачай и установи Minecraft Forge',
-            'Скачай мод',
-            'Для 1.10.2 и выше: Распакуй в .minecraft\\mods',
+            'Скачайте и установи Minecraft Forge',
+            'Скачайте архив',
+            'Распакуйте его в .minecraft\\mods',
             'Готово'
         ],
         versions: [
@@ -754,10 +754,9 @@ const modsData = [
         tags: ['Технологии', 'Автоматизация', 'Дизайн', 'Строительство', 'Механики'],
         requirements: ['Forge'],
         installationInstructions: [
-            'Скачай и установи Minecraft Forge',
-            'Скачай мод',
-            'Для forge 1.16.5 - 1.18.1: Распакуй в .minecraft\\mods',
-            'Для остальных: Не распаковывая, скопируй в .minecraft\\mods',
+            'Скачайте и установите Minecraft Forge',
+            'Скачайте архив',
+            'Распакуйте его в .minecraft\\mods',
             'Готово'
         ],
         versions: [
@@ -790,10 +789,9 @@ const modsData = [
         tags: ['Приключения', 'Драконы', 'Существа', 'Боссы', 'Элементы'],
         requirements: ['Forge'],
         installationInstructions: [
-            'Скачай и установи Minecraft Forge',
-            'Для 1.15.2 и выше:',
-            'Скачай архив',
-            'Распакуй в .minecraft\\mods',
+            'Скачайте и установите Minecraft Forge',
+            'Скачайте архив',
+            'Распакуйте его в .minecraft\\mods',
             'Готово'
         ],
         versions: [
