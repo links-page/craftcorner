@@ -644,7 +644,7 @@ const modsData = [
         description: 'Этот мод добавляет новые биомы в Энд, а также модифицирует существующие. В каждом биоме своя атмосфера, ресурсы и мобы.',
         category: 'adventure',
         image: 'https://minecraft-inside.ru/uploads/files/2024-05/140524_663f54d23b915.jpg',
-        affiliateUrl: 'https://example.com/affiliate/betterend',
+        affiliateUrl: 'https://vexfile.com/download/Pdi5KKdYad',
         tags: ['Приключения', 'Энд', 'Биомы', 'Ресурсы', 'Мобы'],
         requirements: ['Forge/Fabric', 'Java 17+'],
         installationInstructions: [
@@ -656,20 +656,24 @@ const modsData = [
         ],
         versions: [
             {
+                version: '1.21.1',
+                downloadUrl: 'https://vexfile.com/download/Pdi5KKdYad'
+            },
+            {
                 version: '1.20.1',
-                downloadUrl: 'https://example.com/downloads/betterend-1.20.1.jar'
+                downloadUrl: 'https://vexfile.com/download/MIxmtMmVYY'
             },
             {
                 version: '1.19.2',
-                downloadUrl: 'https://example.com/downloads/betterend-1.19.2.jar'
+                downloadUrl: 'https://vexfile.com/download/f937Jxb1AX'
             },
             {
                 version: '1.18.2',
-                downloadUrl: 'https://example.com/downloads/betterend-1.18.2.jar'
+                downloadUrl: 'https://vexfile.com/download/wWgCisuGM5'
             },
             {
                 version: '1.16.5',
-                downloadUrl: 'https://example.com/downloads/betterend-1.16.5.jar'
+                downloadUrl: 'https://vexfile.com/download/C9WxFsBKWM'
             }
         ]
     },
