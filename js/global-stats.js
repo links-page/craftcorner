@@ -9,11 +9,14 @@ const GlobalStats = {
 
         // Initialize with realistic data for a new site
         const initialStats = {
-            totalDownloads: 1250, // Total downloads across all sections
+            totalDownloads: 1300, // Total downloads across all sections (накрутка)
             todayDownloads: 0,
             lastResetDate: new Date().toDateString(),
             lastRandomUpdate: null,
             randomDownloadsToday: 0,
+            randomDownloadsLimit: Math.floor(Math.random() * 6) + 20, // 20-25
+            randomDownloadsDuration: Math.floor(Math.random() * 5) + 5, // 5-9 часов
+            randomDownloadsStart: null, // Время начала искусственных скачиваний
             sectionStats: {
                 mods: { total: 850, today: 0 },
                 resourcepacks: { total: 250, today: 0 },
@@ -43,17 +46,19 @@ const GlobalStats = {
             stats.lastResetDate = today;
             stats.lastRandomUpdate = null;
             stats.randomDownloadsToday = 0;
-
+            // Новый лимит и длительность для искусственных скачиваний
+            stats.randomDownloadsLimit = Math.floor(Math.random() * 6) + 20; // 20-25
+            stats.randomDownloadsDuration = Math.floor(Math.random() * 5) + 5; // 5-9 часов
+            stats.randomDownloadsStart = mskTime.toISOString();
             // Reset section stats
             Object.keys(stats.sectionStats).forEach(section => {
                 stats.sectionStats[section].today = 0;
             });
-
             this.saveStats(stats);
         }
     },
 
-    // Add random downloads gradually over 4-6 hours after midnight
+    // Add random downloads gradually over 5-9 hours after midnight
     addRandomDownloads() {
         const stats = this.getStats();
         const now = new Date();
@@ -62,36 +67,43 @@ const GlobalStats = {
         const minutesSinceMidnight = mskTime.getMinutes();
         const totalMinutesSinceMidnight = hoursSinceMidnight * 60 + minutesSinceMidnight;
 
-        // Only add random downloads in the first 4-6 hours after midnight
-        if (hoursSinceMidnight >= 0 && hoursSinceMidnight <= 6) {
+        // Проверяем, когда начался период искусственных скачиваний
+        let start = stats.randomDownloadsStart ? new Date(stats.randomDownloadsStart) : null;
+        if (!start) {
+            // Если нет времени старта, устанавливаем сейчас (на всякий случай)
+            stats.randomDownloadsStart = mskTime.toISOString();
+            start = new Date(stats.randomDownloadsStart);
+            this.saveStats(stats);
+        }
+        const elapsedMs = mskTime - start;
+        const elapsedHours = elapsedMs / (1000 * 60 * 60);
+
+        // Только если не вышли за пределы длительности и не достигли лимита
+        if (
+            elapsedHours >= 0 &&
+            elapsedHours <= stats.randomDownloadsDuration &&
+            stats.randomDownloadsToday < stats.randomDownloadsLimit
+        ) {
             // Calculate how much time has passed since last update (max 10 minutes)
             const lastUpdate = stats.lastRandomUpdate ? new Date(stats.lastRandomUpdate) : null;
             const timeSinceLastUpdate = lastUpdate ? (now - lastUpdate) / (1000 * 60) : 10; // minutes
 
             if (!lastUpdate || timeSinceLastUpdate >= 10) {
-                // Calculate target random downloads for this time period
-                const maxRandomDownloads = 15; // Reduced for a new site
-                const timeProgress = Math.min(totalMinutesSinceMidnight / (6 * 60), 1); // 6 hours = 360 minutes
-                const targetDownloads = Math.floor(maxRandomDownloads * timeProgress);
-
-                // Get current random downloads count (stored separately)
-                const currentRandomDownloads = stats.randomDownloadsToday || 0;
-                const downloadsToAdd = Math.max(0, targetDownloads - currentRandomDownloads);
-
-                if (downloadsToAdd > 0) {
-                    // Add 1-2 downloads per update
-                    const actualDownloads = Math.min(downloadsToAdd, Math.floor(Math.random() * 2) + 1);
+                // Сколько еще можно добавить
+                const remaining = stats.randomDownloadsLimit - stats.randomDownloadsToday;
+                // Добавляем 1-2 скачивания за раз, но не больше оставшегося лимита
+                const actualDownloads = Math.min(remaining, Math.floor(Math.random() * 2) + 1);
+                if (actualDownloads > 0) {
                     stats.todayDownloads += actualDownloads;
-                    stats.randomDownloadsToday = (stats.randomDownloadsToday || 0) + actualDownloads;
-
+                    stats.totalDownloads += actualDownloads;
+                    stats.randomDownloadsToday += actualDownloads;
                     // Distribute random downloads among sections
                     const sections = ['mods', 'resourcepacks', 'collections'];
                     for (let i = 0; i < actualDownloads; i++) {
                         const randomSection = sections[Math.floor(Math.random() * sections.length)];
                         stats.sectionStats[randomSection].today += 1;
-                        // Don't add to total - only today's count
+                        stats.sectionStats[randomSection].total += 1;
                     }
-
                     stats.lastRandomUpdate = now.toISOString();
                     this.saveStats(stats);
                 }
