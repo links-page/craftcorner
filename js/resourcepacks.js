@@ -58,7 +58,7 @@ const packsData = [
         downloadUrl: 'https://vexfile.com/download/8PFcEQag0Y',
         affiliateUrl: 'https://vexfile.com/download/8PFcEQag0Y',
         tags: ['Реалистичный', '16x'],
-        features: ['Текстуры мобов']
+        features: ['Текстуры мобов'],
         previews: [
             'https://ru-minecraft.ru/uploads/posts/2021-04/1619015733_ravager2.jpg',
             'https://ru-minecraft.ru/uploads/posts/2021-04/1619015700_2020-12-25_15.jpg',
@@ -81,7 +81,13 @@ const packsData = [
         downloadUrl: 'https://vexfile.com/download/KERAwoldJZ',
         affiliateUrl: 'https://vexfile.com/download/KERAwoldJZ',
         tags: ['Фэнтези', '16x', 'Средневековье'],
-        features: ['Все блоки']
+        features: ['Все блоки'],
+        previews: [
+            'https://static.planetminecraft.com/files/image/minecraft/texture-pack/2024/199/18253691-min_xl.webp',
+            'https://static.planetminecraft.com/files/image/minecraft/texture-pack/2024/199/18253603-min_xl.webp',
+            'https://static.planetminecraft.com/files/image/minecraft/texture-pack/2024/199/18253609-min_xl.webp',
+            'https://static.planetminecraft.com/files/image/minecraft/texture-pack/2024/199/18253610-min_xl.webp'
+        ]
     },
     {
         id: 5,
