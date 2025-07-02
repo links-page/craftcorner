@@ -5,8 +5,8 @@ let currentTheme = localStorage.getItem('theme') || 'light';
 
 // Statistics system
 let downloadStats = {
-    totalDownloads: parseInt(localStorage.getItem('totalDownloads')) || 15479,
-    todayDownloads: parseInt(localStorage.getItem('todayDownloads')) || 234,
+    totalDownloads: parseInt(localStorage.getItem('totalDownloads')) || 1300,
+    todayDownloads: parseInt(localStorage.getItem('todayDownloads')) || 0,
     totalUsers: parseInt(localStorage.getItem('totalUsers')) || 1247,
     lastUpdate: localStorage.getItem('lastUpdate') || new Date().toDateString()
 };
@@ -28,27 +28,28 @@ function initializeStats() {
         localStorage.setItem('lastUpdate', today);
     }
 
-    // Update display
-    updateStatsDisplay();
+    // Не обновляем отображение здесь, это делает GlobalStats
+    // updateStatsDisplay();
 
     // Save to localStorage
     saveStats();
 }
 
 function updateStatsDisplay() {
-    const totalElement = document.getElementById('totalDownloads');
-    const todayElement = document.getElementById('todayDownloads');
-    const usersElement = document.getElementById('totalUsers');
+    // Убираем обновление элементов, так как это делает GlobalStats
+    // const totalElement = document.getElementById('totalDownloads');
+    // const todayElement = document.getElementById('todayDownloads');
+    // const usersElement = document.getElementById('totalUsers');
 
-    if (totalElement) {
-        totalElement.textContent = formatNumber(downloadStats.totalDownloads);
-    }
-    if (todayElement) {
-        todayElement.textContent = formatNumber(downloadStats.todayDownloads);
-    }
-    if (usersElement) {
-        usersElement.textContent = formatNumber(downloadStats.totalUsers);
-    }
+    // if (totalElement) {
+    //     totalElement.textContent = formatNumber(downloadStats.totalDownloads);
+    // }
+    // if (todayElement) {
+    //     todayElement.textContent = formatNumber(downloadStats.todayDownloads);
+    // }
+    // if (usersElement) {
+    //     usersElement.textContent = formatNumber(downloadStats.totalUsers);
+    // }
 }
 
 function incrementDownloads(count = 1) {
@@ -60,7 +61,8 @@ function incrementDownloads(count = 1) {
         downloadStats.totalUsers += 1;
     }
 
-    updateStatsDisplay();
+    // Не обновляем отображение здесь, это делает GlobalStats
+    // updateStatsDisplay();
     saveStats();
 }
 
@@ -114,9 +116,6 @@ document.addEventListener('click', function(e) {
 
 // Download functionality with monetization
 function handleDownload(itemId, type, downloadUrl, affiliateUrl) {
-    // Increment download statistics
-    incrementDownloads();
-
     // Show loading state
     const btn = event.target.closest('.download-btn');
     if (btn) {
@@ -132,11 +131,23 @@ function handleDownload(itemId, type, downloadUrl, affiliateUrl) {
             btn.innerHTML = '<i class="fas fa-download"></i> Скачать';
         }
 
-        // Redirect to affiliate URL for monetization
-        if (affiliateUrl) {
-            window.open(affiliateUrl, '_blank');
-        } else if (downloadUrl) {
+        // Redirect to download URL (prioritize downloadUrl over affiliateUrl)
+        if (downloadUrl) {
             window.open(downloadUrl, '_blank');
+        } else if (affiliateUrl) {
+            window.open(affiliateUrl, '_blank');
+        }
+
+        // Increment download statistics (только после реального скачивания)
+        incrementDownloads();
+
+        // Update global stats
+        if (window.GlobalStats) {
+            if (type === 'pack') {
+                GlobalStats.recordDownload('resourcepacks');
+            } else if (type === 'collection') {
+                GlobalStats.recordDownload('collections');
+            }
         }
 
         // Show success message

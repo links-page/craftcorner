@@ -11,7 +11,7 @@ const DownloadStats = {
 
         // Initialize with realistic data for a new site
         const initialStats = {
-            totalDownloads: 1250, // Reduced from 15420 to 1250 for a new site
+            totalDownloads: 1300, // Total downloads across all sections (накрутка)
             todayDownloads: 0,
             lastResetDate: new Date().toDateString(),
             lastRandomUpdate: null,
@@ -1159,12 +1159,6 @@ function performDownload(modId, versionId) {
 
     if (!mod || !version) return;
 
-    // Record the download in both local and global stats
-    DownloadStats.recordDownload(mod.id);
-    if (window.GlobalStats) {
-        GlobalStats.recordDownload('mods');
-    }
-
     // Close version modal if open
     closeVersionModal();
 
@@ -1191,11 +1185,17 @@ function performDownload(modId, versionId) {
             }, 2000);
         }
 
-        // Redirect to affiliate URL for monetization
-        if (mod.affiliateUrl && mod.affiliateUrl !== '#') {
-            window.open(mod.affiliateUrl, '_blank');
-        } else if (version.downloadUrl && version.downloadUrl !== '#') {
+        // Redirect to download URL for the specific version
+        if (version.downloadUrl && version.downloadUrl !== '#') {
             window.open(version.downloadUrl, '_blank');
+        } else if (mod.affiliateUrl && mod.affiliateUrl !== '#') {
+            window.open(mod.affiliateUrl, '_blank');
+        }
+
+        // Record the download in both local and global stats (только после реального скачивания)
+        DownloadStats.recordDownload(mod.id);
+        if (window.GlobalStats) {
+            GlobalStats.recordDownload('mods');
         }
 
         // Show success notification
@@ -1389,18 +1389,19 @@ function populateVersionFilter() {
 
 // Update stats display
 function updateStatsDisplay() {
-    const stats = DownloadStats.getFormattedStats();
+    // Убираем обновление элементов, так как это делает GlobalStats
+    // const stats = DownloadStats.getFormattedStats();
 
-    const todayElement = document.getElementById('todayDownloads');
-    const totalElement = document.getElementById('totalDownloads');
+    // const todayElement = document.getElementById('todayDownloads');
+    // const totalElement = document.getElementById('totalDownloads');
 
-    if (todayElement) {
-        todayElement.textContent = stats.today;
-    }
+    // if (todayElement) {
+    //     todayElement.textContent = stats.today;
+    // }
 
-    if (totalElement) {
-        totalElement.textContent = stats.total;
-    }
+    // if (totalElement) {
+    //     totalElement.textContent = stats.total;
+    // }
 }
 
 // Export functions for global use
