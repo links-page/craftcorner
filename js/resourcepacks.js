@@ -15,7 +15,13 @@ const packsData = [
         downloadUrl: 'https://vexfile.com/download/NfjdHiLKX8',
         affiliateUrl: 'https://vexfile.com/download/NfjdHiLKX8',
         tags: ['Классический', '32x', 'Ваннила'],
-        features: ['Все блоки', 'Все предметы', 'Интерфейс']
+        features: ['Все блоки', 'Все предметы', 'Интерфейс'],
+        previews: [
+            'https://ru-minecraft.ru/uploads/posts/2021-03/1615996561_1-22.jpg',
+            'https://ru-minecraft.ru/uploads/posts/2021-03/1615996561_1-22.jpg',
+            'https://ru-minecraft.ru/uploads/posts/2021-03/1615996561_1-22.jpg',
+            'https://ru-minecraft.ru/uploads/posts/2021-03/1615996561_1-22.jpg'
+        ]
     },
     {
         id: 2,
@@ -30,7 +36,10 @@ const packsData = [
         downloadUrl: '#',
         affiliateUrl: 'https://example.com/affiliate/sphax',
         tags: ['Мультяшный', '128x', 'Яркий'],
-        features: ['Все блоки', 'Все предметы', 'Интерфейс', 'Анимации']
+        features: ['Все блоки', 'Все предметы', 'Интерфейс', 'Анимации'],
+        previews: [
+            'https://example.com/sphax-preview1.jpg'
+        ]
     },
     {
         id: 3,
@@ -360,7 +369,16 @@ function showPackPreview(packId) {
     const pack = packsData.find(p => p.id === packId);
     if (!pack) return;
 
-    // Create modal
+    // Генерируем HTML для превью
+    const previewsHtml = (pack.previews && pack.previews.length)
+        ? pack.previews.map(url => `
+            <div class="preview-image">
+                <img src="${url}" alt="Preview">
+            </div>
+        `).join('')
+        : `<div class="preview-image"><img src="${pack.image}" alt="${pack.title}"></div>`;
+
+    // Создаём модалку
     const modal = document.createElement('div');
     modal.className = 'preview-modal active';
     modal.innerHTML = `
@@ -371,15 +389,7 @@ function showPackPreview(packId) {
             </div>
             <div class="preview-body">
                 <div class="preview-gallery">
-                    <div class="preview-image">
-                        <img src="${pack.image}" alt="${pack.title}">
-                    </div>
-                    <div class="preview-image">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlByZXZpZXcgMTwvdGV4dD48L3N2Zz4=" alt="Preview 1">
-                    </div>
-                    <div class="preview-image">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlByZXZpZXcgMjwvdGV4dD48L3N2Zz4=" alt="Preview 2">
-                    </div>
+                    ${previewsHtml}
                 </div>
                 <div class="preview-info">
                     <div class="info-item">
