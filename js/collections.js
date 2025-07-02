@@ -48,8 +48,8 @@ const collectionsData = [
     {
         id: 3,
         code: 'PROM',
-        title: 'Prominence II RPG: Hasturian Era - огромная сборка',
-        description: 'Сборка, полностью основанная на модах Create и автоматизации',
+        title: 'Prominence II RPG: Hasturian Era ',
+        description: 'Prominence II RPG: Hasturian Era - это огромная сборка на тематику сражений, путешествий, магии, прокачки персонажа и технологий, сборка в которой каждый найдет для себя интересный контент и занятие. Невероятное количество контента, квесты, системы прокачки, измененный мир и новые измерения, все это позволит надолго погрузиться в игру.',
         version: '1.20.1',
         type: 'tech',
         size: '0.9 GB',
