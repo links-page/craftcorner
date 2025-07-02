@@ -98,7 +98,7 @@ const packsData = [
         style: 'realistic',
         size: '140 KB',
         resolution: '16x',
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM2I4MmY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk1vZGVybjwvdGV4dD48L3N2Zz4=',
+        image: 'https://minecraft-inside.ru/uploads/files/2020-01/Round_Trees.png',
         downloadUrl: 'https://vexfile.com/download/vMZ9in0hLD',
         affiliateUrl: 'https://vexfile.com/download/vMZ9in0hLD',
         tags: ['16x', 'Минимализм'],
