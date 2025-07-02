@@ -80,7 +80,7 @@ const collectionsData = [
         image: 'https://ru-minecraft.ru/uploads/posts/2024-09/1726759561_maxresdefault.jpg',
         downloadUrl: 'https://vexfile.com/download/xarfTqmcvu',
         affiliateUrl: 'https://vexfile.com/download/xarfTqmcvu',
-        mods: ["LS Cataclysm", 'STRAYED FATES: Forsaken', "Mowzie’s Mobs", 'Create', 'Dungeons and Taverns'],
+        mods: ["LS Cataclysm", 'STRAYED FATES: Forsaken', "Mowzie's Mobs", 'Create', 'Dungeons and Taverns'],
         requirements: ['Forge', '4GB RAM', '1.20.1'],
         installation: [
             'Скачайте файл и распакуйте его. (достаньте папки из архива)',

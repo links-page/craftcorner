@@ -3,83 +3,10 @@
 // Global variables
 let currentTheme = localStorage.getItem('theme') || 'light';
 
-// Statistics system
-let downloadStats = {
-    totalDownloads: parseInt(localStorage.getItem('totalDownloads')) || 1300,
-    todayDownloads: parseInt(localStorage.getItem('todayDownloads')) || 0,
-    totalUsers: parseInt(localStorage.getItem('totalUsers')) || 1247,
-    lastUpdate: localStorage.getItem('lastUpdate') || new Date().toDateString()
-};
-
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
     initializeTheme();
-    initializeStats();
 });
-
-// Statistics management
-function initializeStats() {
-    // Check if it's a new day
-    const today = new Date().toDateString();
-    if (downloadStats.lastUpdate !== today) {
-        // Reset today's downloads and add some random new ones
-        downloadStats.todayDownloads = Math.floor(Math.random() * 50) + 20;
-        downloadStats.lastUpdate = today;
-        localStorage.setItem('lastUpdate', today);
-    }
-
-    // Не обновляем отображение здесь, это делает GlobalStats
-    // updateStatsDisplay();
-
-    // Save to localStorage
-    saveStats();
-}
-
-function updateStatsDisplay() {
-    // Убираем обновление элементов, так как это делает GlobalStats
-    // const totalElement = document.getElementById('totalDownloads');
-    // const todayElement = document.getElementById('todayDownloads');
-    // const usersElement = document.getElementById('totalUsers');
-
-    // if (totalElement) {
-    //     totalElement.textContent = formatNumber(downloadStats.totalDownloads);
-    // }
-    // if (todayElement) {
-    //     todayElement.textContent = formatNumber(downloadStats.todayDownloads);
-    // }
-    // if (usersElement) {
-    //     usersElement.textContent = formatNumber(downloadStats.totalUsers);
-    // }
-}
-
-function incrementDownloads(count = 1) {
-    downloadStats.totalDownloads += count;
-    downloadStats.todayDownloads += count;
-
-    // Randomly increment users (1 in 10 chance)
-    if (Math.random() < 0.1) {
-        downloadStats.totalUsers += 1;
-    }
-
-    // Не обновляем отображение здесь, это делает GlobalStats
-    // updateStatsDisplay();
-    saveStats();
-}
-
-function saveStats() {
-    localStorage.setItem('totalDownloads', downloadStats.totalDownloads.toString());
-    localStorage.setItem('todayDownloads', downloadStats.todayDownloads.toString());
-    localStorage.setItem('totalUsers', downloadStats.totalUsers.toString());
-}
-
-function formatNumber(num) {
-    if (num >= 1000000) {
-        return (num / 1000000).toFixed(1) + 'M';
-    } else if (num >= 1000) {
-        return (num / 1000).toFixed(1) + 'K';
-    }
-    return num.toString();
-}
 
 // Theme management
 function initializeTheme() {
@@ -138,10 +65,7 @@ function handleDownload(itemId, type, downloadUrl, affiliateUrl) {
             window.open(affiliateUrl, '_blank');
         }
 
-        // Increment download statistics (только после реального скачивания)
-        incrementDownloads();
-
-        // Update global stats
+        // Мгновенно увеличить счетчик через GlobalStats
         if (window.GlobalStats) {
             if (type === 'pack') {
                 GlobalStats.recordDownload('resourcepacks');
@@ -228,9 +152,7 @@ function debounce(func, wait) {
 // Export functions for use in other files
 window.CraftCorner = {
     handleDownload,
-    showNotification,
-    incrementDownloads,
-    updateStatsDisplay
+    showNotification
 };
 
 // Also export handleDownload globally for direct access
