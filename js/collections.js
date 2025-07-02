@@ -228,7 +228,7 @@ const collectionsData = [
         type: 'adventure',
         size: '1.76 GB',
         modCount: 411,
-        image: 'https://images.boosty.to/image/8940763f-81ab-4c05-bb04-52b0b89a23a3?change_time=1743897870&mw=1150',
+        image: 'https://paradisestudios.ru/assets/thumbnail_1-C4P95eRx.png',
         downloadUrl: 'https://vexfile.com/download/evrwNw17pj',
         affiliateUrl: 'https://vexfile.com/download/evrwNw17pj',
         mods: ['BetterEnd', 'Celestialrealm', 'Create', 'Ice and Fire', 'Malus'],
